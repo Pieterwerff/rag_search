@@ -4,8 +4,8 @@ from vector_storage import store_chunks, get_chunks
 
 # --- Settings ---
 chunk_size = 1000
-chunkingStrategy = '' # might become a list of strings to iterate through
-llm = 'gpt' # might become a list of strings to iterate through
+chunking_strategy = 'contextual' # might become a list of strings to iterate through
+llm = 'gpt4o-mini' # might become a list of strings to iterate through
 
 # --- Step 1: Load markdown Document ---
 with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
@@ -13,11 +13,11 @@ with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
 
 # --- Step 2: Chunk Document using different types of chunking strategies ---
 
-chunks = chunk_file(document, chunk_size=chunk_size, overlap=200)
+chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
 
 # --- Step 3: Store Chunks in specific kind of chunk database ---
 
-collection = store_chunks(chunks, chunkingStrategy)
+collection = store_chunks(chunks, chunking_strategy)
 
 # --- Step 4: Handle User Query ---
 user_query = input("Stel je vraag: ")
