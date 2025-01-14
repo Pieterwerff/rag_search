@@ -1,6 +1,7 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import re
 from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from sklearn.metrics.pairwise import cosine_similarity
 import matplotlib.pyplot as plt
 import numpy as np
@@ -19,22 +20,28 @@ def chunk_recursive (document: str, chunk_size: int) -> list:
     return chunks
 
 
-def chunk_parapgraph (document: str) -> list: 
-    # Split the document into lines
+def chunk_paragraph(document: str) -> list:
+    # Split de tekst in regels
     lines = document.splitlines()
 
-    # Group lines into chunks, separated by blank lines
+    # Chunks groeperen op basis van dubbele witregels
     chunks = []
     paragraph = []
 
-    for line in lines:
-        if line.strip():  # Non-blank line
-            paragraph.append(line.strip())
-        elif paragraph:  # Blank line and there's content in paragraph
-            chunks.append(" ".join(paragraph))
-            paragraph = []
+    empty_line_count = 0
 
-    # Add the last paragraph if any
+    for line in lines:
+        if line.strip():  # Niet-lege regel
+            paragraph.append(line.strip())
+            empty_line_count = 0  # Reset de teller voor lege regels
+        else:  # Lege regel
+            empty_line_count += 1
+            if empty_line_count == 2 and paragraph:  # Twee lege regels
+                chunks.append(" ".join(paragraph))
+                paragraph = []
+                empty_line_count = 0  # Reset de teller
+
+    # Voeg de laatste paragraaf toe als er nog iets is
     if paragraph:
         chunks.append(" ".join(paragraph))
 
@@ -159,7 +166,7 @@ def chunk_file(document, chunking_strategy, chunk_size=1000):
         chunks = chunk_recursive(document, chunk_size)
     
     elif chunking_strategy == 'paragraph':
-        chunks = chunk_parapgraph(document)
+        chunks = chunk_paragraph(document)
     
     elif chunking_strategy == 'contextual':
         chunks = chunk_contextual(document)
@@ -171,4 +178,16 @@ def chunk_file(document, chunking_strategy, chunk_size=1000):
         )
     return chunks
  
-    
+
+# with open ('./leidraad.txt') as leidraad:
+#     leidraad = leidraad.read()
+#     leidraad = leidraad.replace('_', '')
+#     chunksParagraph = chunk_file(leidraad, 'paragraph')
+#     chunksRecursive = chunk_file(leidraad, 'recursive')
+#     # chunksContextual = chunk_file(leidraad, 'contextual')
+
+
+# # print(chunksContextual[:3])
+# print('paragraph chunks: ', chunksParagraph[:3])
+# print('\n\n')
+# print(chunksRecursive[:3])
