@@ -1,6 +1,7 @@
 from chunking import chunk_file
 from api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
+import chromadb
 
 # --- Settings ---
 chunk_size = 1000
@@ -17,7 +18,9 @@ chunks = chunk_file(document, chunk_size=chunk_size, overlap=200)
 
 # --- Step 3: Store Chunks in specific kind of chunk database ---
 
-collection = store_chunks(chunks, chunkingStrategy)
+# collection = store_chunks(chunks, chunkingStrategy)
+chroma_client = chromadb.PersistentClient(path="./databases")
+collection = chroma_client.get_collection("leidraad_ai_in_zorg")
 
 # --- Step 4: Handle User Query ---
 user_query = input("Stel je vraag: ")
