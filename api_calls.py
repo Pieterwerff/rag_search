@@ -1,9 +1,6 @@
 from openai import OpenAI
 import os
-from dotenv import load_dotenv
 
-# Load environment variables and initialize OpenAI client
-load_dotenv()
 OpenAI.api_key = os.getenv('OPENAI_API_KEY')
 
 def query_llm(retrieved_text, user_query, llm):
