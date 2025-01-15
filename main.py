@@ -4,7 +4,7 @@ from vector_storage import store_chunks, get_chunks
 
 # --- Settings ---
 chunk_size = 1000
-chunkingStrategy = '' # might become a list of strings to iterate through
+chunkingStrategy = 'contextual' # might become a list of strings to iterate through
 llm = 'gpt' # might become a list of strings to iterate through
 leidraad = 'leidraad_ai_in_zorg'
 storageStrategy = "Qdrant"
@@ -16,7 +16,7 @@ with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
 
 # --- Step 2: Chunk Document using different types of chunking strategies ---
 
-chunks = chunk_file(document, chunk_size=chunk_size, overlap=200)
+chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
 
 # --- Step 3: Store Chunks in specific kind of chunk database ---
 
