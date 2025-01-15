@@ -77,7 +77,7 @@ def combine_sentences(sentences, buffer_size=1):
 
     return sentences
 
-def chunk_contextual (document:str, breakpoint_percentile_threshold=95) -> list: # gebaseerd op (stap 5 van): https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb
+def chunk_contextual (document:str, breakpoint_percentile_threshold=90) -> list: # gebaseerd op (stap 5 van): https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb
     # Split the document into sentences using regular expression
     sentences_list = re.split(r'(?<!\w\.[a-zA-Z])(?<=[.!?])\s', document)
     print (f"{len(sentences_list)} sentences were found")

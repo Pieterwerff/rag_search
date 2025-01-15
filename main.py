@@ -4,10 +4,10 @@ from vector_storage import store_chunks, get_chunks
 
 # --- Settings ---
 chunk_size = 1000
-chunkingStrategy = 'contextual' # might become a list of strings to iterate through
-llm = 'gpt' # might become a list of strings to iterate through
+chunking_strategy = 'paragraph' # might become a list of strings to iterate through
+llm = 'gpt4o-mini' # might become a list of strings to iterate through
 leidraad = 'leidraad_ai_in_zorg'
-storageStrategy = "Qdrant"
+storageStrategy = "ChromaDB"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step 1: Load markdown Document ---
@@ -20,7 +20,7 @@ chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_
 
 # --- Step 3: Store Chunks in specific kind of chunk database ---
 
-collection = store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad)
+collection = store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, chunking_strategy)
 
 # --- Step 4: Handle User Query ---
 user_query = input("Stel je vraag: ")
