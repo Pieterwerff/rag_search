@@ -7,7 +7,7 @@ chunk_size = 1000
 chunking_strategy = 'paragraph' # might become a list of strings to iterate through
 llm = 'gpt4o-mini' # might become a list of strings to iterate through
 leidraad = 'leidraad_ai_in_zorg'
-storageStrategy = "ChromaDB"
+storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step 1: Load markdown Document ---
