@@ -51,13 +51,33 @@
     <div class="info-popup" id="infoPopup">
         <h3>Belangrijke informatie</h3>
         <p>
-            De RAG (Retrieval-Augmented Generation) gebruikt externe bronnen om antwoorden te genereren. Hoewel we ons best doen om accurate informatie te leveren, kan de RAG fouten maken. Controleer daarom altijd de gepresenteerde informatie.
+            Om uw vraag te beantwoorden wordt gebruik gemaakt van Retrieval-Augmented Generation (RAG). De RAG gebruikt de leidraad om antwoorden te genereren in combinatie met een Large Language Model (LLM). Hoewel we ons best doen om accurate informatie te leveren, kan de RAG fouten maken. Controleer daarom altijd de gepresenteerde informatie.
         </p>
         <p>
             Gebruik de leidraad om zelf een goed geïnformeerde beslissing te nemen.
         </p>
         <button onclick="toggleInfoPopup()">Sluiten</button>
     </div>
+</div>
+
+<h1>Architectuur RAG-applicatie</h1>
+<div class="gallery">
+    <!-- Voeg hier je afbeeldingen toe -->
+    <div class="image-card">
+        <img src="static\img\Agentic.png" alt="Afbeelding 1" onclick="showImage(this, 'Architectuur van de Agentic RAG.')">
+        <p>Architectuur van de Agentic RAG. 1</p>
+    </div>
+    <div class="image-card">
+        <img src="static\img\Opzet RAG.png" alt="Afbeelding 2" onclick="showImage(this, 'Architectuur van de RAG-pipeline.')">
+        <p>Architectuur van de RAG-pipeline.</p>
+    </div>
+</div>
+
+<!-- Vergrote afbeelding overlay -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img class="modal-content" id="modalImage" onclick="closeImage()">
+    <div id="modalCaption"></div>
 </div>
 
 <footer>
