@@ -42,7 +42,7 @@ def index():
         user_query = request.form["question"]
         chunks = get_chunks(collection, user_query, storageStrategy, n_chunks=request.form["chunks"])
         llm_response = query_llm(retrieved_text=chunks, user_query=user_query, llm=llm)
-        return render_template("result.html", question=user_query, chunks=chunks, llm_response=llm_response)
+        return render_template("result.html", question=user_query, chunks=chunks, llm_response=llm_response, n_chunks=request.form["chunks"])
     return render_template("index.html")
 
 if __name__ == "__main__":

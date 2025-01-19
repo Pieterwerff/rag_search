@@ -82,7 +82,7 @@
     <h2>Je vraag:</h2>
     <p>{{ question }}</p>
 
-    <h2>Top K Chunks:</h2>
+    <h2>Top {{n_chunks}} Chunks:</h2>
     {% for chunk in chunks %}
     <div class="chunk">
         <p>{{ chunk.payload.document }}</p>
