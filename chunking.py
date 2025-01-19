@@ -19,31 +19,22 @@ def chunk_recursive (document: str, chunk_size: int) -> list:
     chunks = text_splitter.create_documents([document])
     return chunks
 
+def chunk_paragraph(text):
+    """
+    Splits een tekst op basis van paragrafen, gescheiden door '-----'.
+
+    Args:
+        text (str): De volledige tekst als één string.
+
+    Returns:
+        list: Een lijst met individuele paragrafen.
+    """
+
+
 
 def chunk_paragraph(document: str) -> list:
-    # Split de tekst in regels
-    lines = document.splitlines()
-
-    # Chunks groeperen op basis van dubbele witregels
-    chunks = []
-    paragraph = []
-
-    empty_line_count = 0
-
-    for line in lines:
-        if line.strip():  # Niet-lege regel
-            paragraph.append(line.strip())
-            empty_line_count = 0  # Reset de teller voor lege regels
-        else:  # Lege regel
-            empty_line_count += 1
-            if empty_line_count == 2 and paragraph:  # Twee lege regels
-                chunks.append(" ".join(paragraph))
-                paragraph = []
-                empty_line_count = 0  # Reset de teller
-
-    # Voeg de laatste paragraaf toe als er nog iets is
-    if paragraph:
-        chunks.append(" ".join(paragraph))
+    # Splits de tekst op basis van '-----' en verwijder overbodige witruimte
+    chunks = [para.strip() for para in document.split('-----') if para.strip()]
 
     return chunks
 

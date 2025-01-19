@@ -146,7 +146,7 @@ def get_chunks(collection, user_query, storageStrategy):
         results = qdrant_client.search(
         collection_name=collection,
         query_vector=query_vector,  # Embedding for similarity search
-        limit=2,  # Number of results to return
+        limit=10,  # Number of results to return
         with_payload=True  # Include payload (e.g., original chunk text)
         )
         if results:
