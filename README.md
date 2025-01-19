@@ -1,5 +1,4 @@
 # RAG Search Tool
-================
 
 ## Overzicht
 ------------
@@ -64,11 +63,7 @@ Deze tool is een Retrieval-Augmented Generation (RAG)-gebaseerde applicatie die 
 ### Vereisten
 
 * Python 3.8 of hoger
-* Vereiste Python-pakketten (te vinden in `requirements.txt`, als aanwezig)
-
-### Installatie van afhankelijkheden
-
-* Gebruik pip om de benodigde Python-pakketten te installeren: `pip install -r requirements.txt`
+* Vereiste Python-pakketten 
 
 ### Instellen van .env
 
@@ -81,8 +76,9 @@ Deze tool is een Retrieval-Augmented Generation (RAG)-gebaseerde applicatie die 
 
 ### Via de webinterface
 
+* Run app.py, ga in je browser naar http://127.0.0.1:5000/
 * Open de indexpagina.
-* Stel een vraag in het tekstveld.
+* Stel een vraag in het tekstveld en geef aan hoeveel chunks op moeten worden gehaald.
 * Ontvang een antwoord samen met relevante bronnen op de resultpagina.
 
 ### Via main.py
@@ -93,6 +89,9 @@ Deze tool is een Retrieval-Augmented Generation (RAG)-gebaseerde applicatie die 
 ## Toekomstige verbeteringen
 -------------------------
 
-* Ondersteuning voor meerdere chunking- en LLM-strategieën.
-* Integratie met andere vectoropslagmethoden.
-* Uitbreiding van de webinterface met meer functies, zoals gebruikersauthenticatie.
+* Implementatie van de agentic structuur
+* Implementatie verschillende LLM's
+* Validatie van de resultaten.
+
+----
+_dit readme-bestand is geschreven met behulp van de codeium-extensie in vscode en daarna met de hand aangepast._
