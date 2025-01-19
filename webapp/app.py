@@ -32,9 +32,6 @@ collection = store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, 
 
 app = Flask(__name__)
 
-# @app.route("/")
-# def home():
-#     return "Hallo, wereld! Dit is een Flask-website."
 
 @app.route("/", methods=["GET", "POST"])
 def index():
