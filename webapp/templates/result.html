@@ -40,12 +40,43 @@
             background: #f0f8ff;
             border-left: 4px solid #005080;
             border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chunk p {
+            margin: 0;
+            line-height: 1.5;
+            max-height: 3em; /* Maximaal 2 regels hoogte */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .chunk.expanded p {
+            max-height: none; /* Verwijder de beperking bij uitklappen */
         }
 
         .chunk .source {
             font-size: 0.9em;
             color: #777;
             margin-top: 5px;
+        }
+
+        .chunk button {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: #005080;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+
+        .chunk button:hover {
+            background-color: #003d66;
         }
 
         .llm-response {
@@ -84,9 +115,10 @@
 
     <h2>Top {{n_chunks}} Chunks:</h2>
     {% for chunk in chunks %}
-    <div class="chunk">
+    <div class="chunk" id="chunk-{{ loop.index }}">
         <p>{{ chunk.payload.document }}</p>
         <p class="source">Bron: {{ chunk.source }} | Pagina: {{ chunk.page }}</p>
+        <button onclick="toggleChunk('chunk-{{ loop.index }}')">Lees meer</button>
     </div>
     {% endfor %}
 
@@ -98,5 +130,19 @@
     <a href="/" class="back-btn">Terug naar de startpagina</a>
 </div>
 
+<script>
+    function toggleChunk(chunkId) {
+        const chunkElement = document.getElementById(chunkId);
+        const button = chunkElement.querySelector("button");
+
+        if (chunkElement.classList.contains("expanded")) {
+            chunkElement.classList.remove("expanded");
+            button.textContent = "Lees meer";
+        } else {
+            chunkElement.classList.add("expanded");
+            button.textContent = "Lees minder";
+        }
+    }
+</script>
 </body>
 </html>
