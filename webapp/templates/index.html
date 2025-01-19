@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leidraad AI in de Zorg</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Welkom bij <span>Leidraad kwaliteit AI in de zorg</span></h1>
+</header>
+
+<div class="container">
+    <div class="highlight-box">
+        <h2>Waardevolle AI</h2>
+        <p>
+            Hoe beoordeel je voorspellende artificiële intelligentie (AI) algoritmen voor gezondheid op kwaliteit en effectiviteit? De Leidraad kwaliteit AI in de zorg geeft je een overzicht van de belangrijkste eisen en aanbevelingen per fase, van ontwikkeling tot implementatie.
+        </p>
+        <button>De volledige Leidraad (80 pagina's)</button>
+        <button>The English version</button>
+        <button>De samenvatting</button>
+        <button>Educatiematerialen</button>
+    </div>
+
+    <div class="box">
+        <h2>Doe de online cursus</h2>
+        <p>De online leeromgeving helpt u in korte tijd op weg de leidraad beter te begrijpen en toe te passen. De modules zijn zeer toegankelijk. U kunt direct aan de slag.</p>
+        <button>Start</button>
+    </div>
+
+    <div class="box">
+        <h2>Check uw kennis</h2>
+        <p>Wilt u na de online cursus of het lezen van de volledige Leidraad kwaliteit AI in de zorg kijken of u de stof hebt begrepen? Doe dan de korte toets en ontvang een certificaat als bewijs van deelname.</p>
+        <button>Start</button>
+    </div>
+</div>
+
+<div class="qa-tool">
+    <h4>Stel een vraag over de leidraad</h4>
+    <form method="POST">
+        <input type="text" name="question" placeholder="Typ hier je vraag...">
+        <input type="number" name="chunks" placeholder="Aantal chunks (alleen cijfers)" min="1" max="100">
+        <button type="submit">Verstuur</button>
+    </form>
+    <!-- Informatieknop -->
+    <div class="info-icon" onclick="toggleInfoPopup()">i</div>
+
+    <!-- Popup element -->
+    <div class="info-popup" id="infoPopup">
+        <h3>Belangrijke informatie</h3>
+        <p>
+            De RAG (Retrieval-Augmented Generation) gebruikt externe bronnen om antwoorden te genereren. Hoewel we ons best doen om accurate informatie te leveren, kan de RAG fouten maken. Controleer daarom altijd de gepresenteerde informatie.
+        </p>
+        <p>
+            Gebruik de leidraad om zelf een goed geïnformeerde beslissing te nemen.
+        </p>
+        <button onclick="toggleInfoPopup()">Sluiten</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Guideline AI Healthcare | <a href="#">Meer Informatie</a></p>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

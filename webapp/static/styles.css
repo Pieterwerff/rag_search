@@ -1,0 +1,198 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #005080;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h1 span {
+    color: #FF6600;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+}
+
+.box, .highlight-box {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-box {
+    background: #005080;
+    color: #ffffff;
+}
+
+.box {
+    background: #ffffff;
+}
+
+.highlight-box h2, .box h2 {
+    margin-top: 0;
+}
+
+.highlight-box button, .box button {
+    display: block;
+    width: 100%;
+    background-color: #FF6600;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.highlight-box button:hover, .box button:hover {
+    background-color: #e65500;
+}
+
+.qa-tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #005080;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.qa-tool h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+.qa-tool input[type="text"],
+.qa-tool input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qa-tool button {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.qa-tool button:hover {
+    background-color: #e65500;
+}
+
+.qa-tool .info-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #FF6600;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.qa-tool .info-icon:hover {
+    background-color: #e65500;
+}
+
+.info-popup {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.info-popup h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #005080;
+}
+
+.info-popup p {
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.info-popup button {
+    background-color: #005080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.info-popup button:hover {
+    background-color: #003d66;
+}
+footer {
+    background-color: #005080;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #FF6600;
+    text-decoration: none;
+}
