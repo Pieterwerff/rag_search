@@ -118,7 +118,7 @@ def store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, chunking_
 
 
 
-def get_chunks(collection, user_query, storageStrategy):
+def get_chunks(collection, user_query, storageStrategy, n_chunks=10):
     """
     Zoekt de meest relevante chunks op basis van vector similarity search
     
@@ -138,7 +138,7 @@ def get_chunks(collection, user_query, storageStrategy):
     if storageStrategy == "ChromaDB":
         results = collection.query(
         query_embeddings=[query_vector],  # Use embeddings for search
-        n_results=10
+        n_results=n_chunks
             )
         return results['documents'][0][0]  # Top relevant chunk from ChromaDB
     
@@ -146,7 +146,7 @@ def get_chunks(collection, user_query, storageStrategy):
         results = qdrant_client.search(
         collection_name=collection,
         query_vector=query_vector,  # Embedding for similarity search
-        limit=10,  # Number of results to return
+        limit=n_chunks,  # Number of results to return
         with_payload=True  # Include payload (e.g., original chunk text)
         )
         if results:

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultaten - RAG App</title>
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #005080;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #FF6600;
+        }
+
+        .chunk {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f0f8ff;
+            border-left: 4px solid #005080;
+            border-radius: 4px;
+        }
+
+        .chunk .source {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .llm-response {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e6f7e6;
+            border-left: 4px solid #28a745;
+            border-radius: 4px;
+            font-style: italic;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #005080;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-btn:hover {
+            background-color: #003d66;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>RAG Resultaten</h1>
+
+    <h2>Je vraag:</h2>
+    <p>{{ question }}</p>
+
+    <h2>Top K Chunks:</h2>
+    {% for chunk in chunks %}
+    <div class="chunk">
+        <p>{{ chunk.payload.document }}</p>
+        <p class="source">Bron: {{ chunk.source }} | Pagina: {{ chunk.page }}</p>
+    </div>
+    {% endfor %}
+
+    <h2>Antwoord van de LLM:</h2>
+    <div class="llm-response">
+        <p>{{ llm_response }}</p>
+    </div>
+
+    <a href="/" class="back-btn">Terug naar de startpagina</a>
+</div>
+
+</body>
+</html>
