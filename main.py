@@ -1,5 +1,5 @@
 from chunking import chunk_file
-from api_calls import query_llm
+from api_calls import query_gpt
 from vector_storage import store_chunks, get_chunks
 
 # --- Settings ---
@@ -26,7 +26,7 @@ user_query = input("Stel je vraag: ")
 retrieved_text = get_chunks(collection, user_query)
 
 # Query the LLM
-response = query_llm(retrieved_text=retrieved_text, user_query=user_query, llm=llm)
+response = query_gpt(retrieved_text=retrieved_text, user_query=user_query, llm=llm)
 
 # --- Step 6: Output Result ---
 print("Vraag:", user_query)
