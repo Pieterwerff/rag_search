@@ -138,7 +138,7 @@ _5.1_ Effectbeoordeling en bijbehorende studie opzetten ........................
 
 5.2 Health technology assessment .............................................................................................. 55
 
-5.3 Onzekerheid, risico’s en onverwachte uitkomsten................................................................ 55
+5.3 Onzekerheid, risicoï¿½s en onverwachte uitkomsten................................................................ 55
 
 5.3.1 Onzekerheid in voorspellingen ...................................................................................... 55
 
@@ -171,7 +171,7 @@ _5.1_ Effectbeoordeling en bijbehorende studie opzetten ........................
 
 6.4.2 Zorgorganisatie: ............................................................................................................. 69
 
-6.4.3 Patiënt, cliënt of burger ................................................................................................. 69
+6.4.3 Patiï¿½nt, cliï¿½nt of burger ................................................................................................. 69
 
 6.4.4 Fabrikant of ontwikkelende zorgorganisatie ................................................................. 70
 
@@ -179,7 +179,7 @@ _5.1_ Effectbeoordeling en bijbehorende studie opzetten ........................
 
 Toekomstperspectieven ......................................................................................................................... 72
 
-Dynamisch updaten van AIPA’s .......................................................................................................... 73
+Dynamisch updaten van AIPAï¿½s .......................................................................................................... 73
 
 Kosteneffectiviteitsevaluaties ............................................................................................................ 73
 
@@ -218,7 +218,7 @@ Deze leidraad is tot stand gekomen door de inzet van vele betrokkenen. In het bi
 
 danken wij Rosalie van Oostrom en Pieter Boone van VWS voor het organiseren en
 
-coördineren van de totstandkoming van deze leidraad, Roy Tomeij voor het voorzitten van de
+coï¿½rdineren van de totstandkoming van deze leidraad, Roy Tomeij voor het voorzitten van de
 
 werkgroepen en Rachel Peeters voor de ondersteuning tijdens en na de werkgroepen. Wij
 
@@ -228,11 +228,11 @@ betrokkenheid in de werkgroepen die hebben geleid tot deze leidraad. Daarnaast d
 
 alle reviewers en de deelnemers aan de praktijktoetsen voor de vele feedbackcommentaren
 
-die hebben geleid tot een verbetering van de conceptversies, en KPMG voor het coördineren
+die hebben geleid tot een verbetering van de conceptversies, en KPMG voor het coï¿½rdineren
 
 en organiseren van dit proces in samenwerking met de redactieraad. Verder danken we de
 
-NEN Nederlandse AI Medical Device expert Group, Patiëntenfederatie Nederland en
+NEN Nederlandse AI Medical Device expert Group, Patiï¿½ntenfederatie Nederland en
 
 Inspectie Jeugd en Gezondheid voor hun input.
 
@@ -269,9 +269,9 @@ Fase 4: Giovanni Cina, Martijn van der Meulen, Maurits Kaptein, Floor van Leeuwe
 
 Egge van der Poel, Marcel Hilgersom.
 
-Fase 5: Teus Kappen, Sade Faneyte, René Verhaart, Jonas Teuwen, Ewout
+Fase 5: Teus Kappen, Sade Faneyte, Renï¿½ Verhaart, Jonas Teuwen, Ewout
 
-Steyerberg, Leo Hovestadt, René Drost.
+Steyerberg, Leo Hovestadt, Renï¿½ Drost.
 
 Fase 6: Anne de Hond, Bart Geerts, Nynke Breimer, Karen Wiegant, Laure Wynants,
 
@@ -279,7 +279,7 @@ Lysette Meuleman.
 
 Reviewers (op alfabetische volgorde)
 
-Annemarie van ’t Veen, Charlotte Brouwer, Daniel Vijlbrief, Elise Quik, Jan-Jaap Visser, Jan
+Annemarie van ï¿½t Veen, Charlotte Brouwer, Daniel Vijlbrief, Elise Quik, Jan-Jaap Visser, Jan
 Kees van Wijnen, Jan-Willem Wasmann, Jean-Paul Kleijnen, Joris van Dijk, Leon Doorn,
 
 Lieke Poot, Maaike van Mourik, Mark Scheper, Martin van Buuren, Merel Huisman, Richard
@@ -290,13 +290,13 @@ Praktijktoets deelnemers:
 
 RetCAD, Thirona - Mark van Grinsven
 
-HUME, Mentech – Reon Smits en Erwin Meinders
+HUME, Mentech ï¿½ Reon Smits en Erwin Meinders
 
-U-Prevent, Ortec – John Jacobs
+U-Prevent, Ortec ï¿½ John Jacobs
 
-Risicotaxatie agressie in de psychiatrie, UMCU – Karin Hagoort
+Risicotaxatie agressie in de psychiatrie, UMCU ï¿½ Karin Hagoort
 
-Covid-19 severity score, Maasstad ziekenhuis – Sade Faneyte
+Covid-19 severity score, Maasstad ziekenhuis ï¿½ Sade Faneyte
 
 Redactieraad
 
@@ -355,7 +355,7 @@ documentatieverplichtingen die daaraan verbonden zullen zijn (in bijlage IV van 
 
 of het wetsvoorstel Elektronische gegevensuitwisseling in de Zorg (Wegiz) dat de
 
-mogelijkheid zal creëren organisaties te verplichten bepaalde data elektronisch uit te
+mogelijkheid zal creï¿½ren organisaties te verplichten bepaalde data elektronisch uit te
 
 wisselen. Beide voorstellen worden zeer relevant geacht voor de toekomst van het werkveld.
 
@@ -421,7 +421,7 @@ _Group on Artificial Intelligence van de Europese Commissie in box 1._
 
 **Box 1: Definitie AI van de AI HLEG van 18 december 2018**
 
-“Artificial intelligence (AI) systems are software (and possibly also hardware) systems
+ï¿½Artificial intelligence (AI) systems are software (and possibly also hardware) systems
 
 designed by humans that, given a complex goal, act in the physical or digital dimension by
 
@@ -443,7 +443,7 @@ reasoning (which includes planning, scheduling, knowledge representation and rea
 
 search, and optimization), and robotics (which includes control, perception, sensors and
 
-actuators, as well as the integration of all other techniques into cyber-physical systems).”
+actuators, as well as the integration of all other techniques into cyber-physical systems).ï¿½
 
 
 Onder de term AIPA wordt in deze leidraad verstaan:
@@ -456,7 +456,7 @@ Onder de term AIPA wordt in deze leidraad verstaan:
 
 **van gewenste of ongewenste gezondheidsuitkomsten.**
 
-Diagnostische AIPA’s voorspellen de kans op bijvoorbeeld het hebben van een aandoening
+Diagnostische AIPAï¿½s voorspellen de kans op bijvoorbeeld het hebben van een aandoening
 
 of ziekte bij bepaalde symptomen of klachten, of de kans op het hebben van een
 
@@ -467,9 +467,9 @@ onderliggende aandoening zonder dat men enige symptomen of klachten heeft bij in
 
 personen in de algemene bevolking (screening).
 
-Prognostische AIPA’s voorspellen de kans op het optreden in de tijd van
+Prognostische AIPAï¿½s voorspellen de kans op het optreden in de tijd van
 
-gezondheidsuitkomsten bij, bijvoorbeeld, patiënten met een bepaalde aandoening of ziekte,
+gezondheidsuitkomsten bij, bijvoorbeeld, patiï¿½nten met een bepaalde aandoening of ziekte,
 
 of ze voorspellen de kans op het moeten ondergaan van bepaalde behandeling of
 
@@ -479,7 +479,7 @@ ze op termijn een bepaalde aandoening of bepaalde kwaliteit van leven zullen ont
 
 De door het AIPA voorspelde gezondheidsuitkomsten betreft gezondheidsuitkomsten bij de
 
-_individuele patiënt, cliënt of burger, maar kan ook gezondheidsuitkomsten bij derden_
+_individuele patiï¿½nt, cliï¿½nt of burger, maar kan ook gezondheidsuitkomsten bij derden_
 
 omvatten, bijvoorbeeld in de geestelijke gezondheidszorg lijdensdruk bij familieleden of
 
@@ -489,7 +489,7 @@ _individuele gezondheidsuitkomsten vallen buiten het toepassingsbereik van deze 
 
 zoals bijvoorbeeld navigatietoepassingen in de robotica, toepassingen die op
 
-populatieniveau patiëntenstromen voorspellen ten behoeve van capaciteitsplanning, of
+populatieniveau patiï¿½ntenstromen voorspellen ten behoeve van capaciteitsplanning, of
 
 toepassingen die voor puur beschrijvende classificatie en segmentatie ingezet worden
 
@@ -540,9 +540,9 @@ ontwikkelen en testen, zorgorganisaties en zorgverleners die dergelijke hulpmidd
 
 inkopen en inzetten, en instanties die de kwaliteit, inzetbaarheid en vergoeding van het AIPA
 
-mede bepalen. De leidraad benoemt wat zorgverleners, burgers, patiënten,
+mede bepalen. De leidraad benoemt wat zorgverleners, burgers, patiï¿½nten,
 
-patiëntvertegenwoordigers, verzekeraars en beleidsmakers (zoals het Zorginstituut en de
+patiï¿½ntvertegenwoordigers, verzekeraars en beleidsmakers (zoals het Zorginstituut en de
 
 Nederlandse Zorgautoriteit) van een AIPA ontwikkelaar of fabrikant mogen verwachten, als
 
@@ -594,7 +594,7 @@ organisatie zorg aanbiedt, bijvoorbeeld een individuele huisarts, tandarts of ps
 
 dit geval ontbreekt een zorgorganisatie als tussenliggende partij.
 
-Onder de patiënt, cliënt of burger verstaan we de persoon waarop de voorspelling van het
+Onder de patiï¿½nt, cliï¿½nt of burger verstaan we de persoon waarop de voorspelling van het
 
 AIPA betrekking heeft. Deze persoon kan ook zelf direct de eindgebruiker van het hulpmiddel
 
@@ -609,13 +609,13 @@ ontwikkeling, validatie of gebruik van het AIPA of anderszins belanghebbende zij
 
 -----
 
-vallen alle bovenstaande categorieën zoals ontwikkelaars en gebruikers (bijv.
+vallen alle bovenstaande categorieï¿½n zoals ontwikkelaars en gebruikers (bijv.
 
-zorgprofessionals, patiënten, burgers) en ook controlerende en toezichthoudende of
+zorgprofessionals, patiï¿½nten, burgers) en ook controlerende en toezichthoudende of
 
 certificerende partijen (bijv. privacydeskundigen, notified bodies, METCs) en de uiteindelijke
 
-doelgroep bij of voor wie de voorspellingen gedaan worden (bijv. patiënten en burgers,
+doelgroep bij of voor wie de voorspellingen gedaan worden (bijv. patiï¿½nten en burgers,
 
 afhankelijk van de beoogde doelgroep van het AIPA).
 
@@ -637,15 +637,15 @@ en is uitlegbaar aan derden. Met een goede uitleg kan de leidraad nageleefd word
 
 dat alle aanbevelingen gevolgd worden. In sommige gevallen wordt bij de aanbeveling
 
-duidelijk gemaakt welke risico’s of omstandigheden tenminste tot een keuze voor uitleg
+duidelijk gemaakt welke risicoï¿½s of omstandigheden tenminste tot een keuze voor uitleg
 
 kunnen leiden.
 
-Impact van de voorspelling op de patiënt, cliënt of burger is een belangrijke overweging bij
+Impact van de voorspelling op de patiï¿½nt, cliï¿½nt of burger is een belangrijke overweging bij
 
-het inschatten van risico’s van het gebruik, inzetten en vergoeden van AIPA’s. Ook bij een
+het inschatten van risicoï¿½s van het gebruik, inzetten en vergoeden van AIPAï¿½s. Ook bij een
 
-verwachte lage impact van het AIPA op de patiënt, cliënt of burger blijft goed professioneel
+verwachte lage impact van het AIPA op de patiï¿½nt, cliï¿½nt of burger blijft goed professioneel
 
 handelen van belang, en blijven die delen van de leidraad die geen betrekking hebben op de
 
@@ -673,7 +673,7 @@ De leidraad is ingedeeld in zes fasen:
 
 De daarin veronderstelde chronologie is niet bedoeld als dwingend, en past lang niet altijd op
 
-de feitelijke of meest efficiënte volgorde van handelingen. Het dient wel als handvat voor
+de feitelijke of meest efficiï¿½nte volgorde van handelingen. Het dient wel als handvat voor
 
 intern toezicht, waarbij de fases kunnen dienen als structuur voor het organiseren van
 
@@ -690,7 +690,7 @@ Fase 4 tot en met 6 betrekken nadrukkelijker de fabrikant van het hulpmiddel, de
 
 zorgorganisatie die het AIPA gaat inzetten en de eindgebruikers en belanghebbenden zoals
 
-de zorgverleners, patiënten en burgers.
+de zorgverleners, patiï¿½nten en burgers.
 
 **Fase 0: Voorbereiding van het ontwikkelproces**
 
@@ -722,15 +722,15 @@ Om de overwegingen die centraal staan in fase 0 op een gedegen manier te kunnen 
 
 zal inzicht moeten worden verkregen in welke partijen en personen belang hebben bij het te
 
-ontwikkelen AIPA. Het is met name raadzaam om naast gebruikers ook patiënten,
+ontwikkelen AIPA. Het is met name raadzaam om naast gebruikers ook patiï¿½nten,
 
-patiëntvertegenwoordigers, cliënten of burgers al in deze fase te betrekken bij de
+patiï¿½ntvertegenwoordigers, cliï¿½nten of burgers al in deze fase te betrekken bij de
 
 ontwikkeling.
 
 Fase 0 is geen onderdeel van de leidraad. Wel is het van belang om in deze fase al na te
 
-denken over de invulling van specifieke normen en aanbevelingen uit de leidraad. Risico’s en
+denken over de invulling van specifieke normen en aanbevelingen uit de leidraad. Risicoï¿½s en
 
 medisch-ethische overwegingen bepalen bijvoorbeeld welke aanbevelingen uit deze leidraad
 
@@ -781,7 +781,7 @@ het veld van commentaar voorzien, welke via brede publieke oproepen vanuit het m
 
 van volksgezondheid zijn geworven. Verder heeft een praktijktoets aan de hand van vijf
 
-verschillende AIPA’s plaatsgevonden en hebben de Patiëntenfederatie Nederland, de
+verschillende AIPAï¿½s plaatsgevonden en hebben de Patiï¿½ntenfederatie Nederland, de
 
 Nederlandse AI Medical Device expert Group van het NEN en Inspectie Gezondheidszorg en
 
@@ -794,16 +794,16 @@ Jeugd input geleverd.
 
 1 A definition of Artificial Intelligence: main capabilities and scientific disciplines | Shaping
 
-Europe’s digital future. https://digital-strategy.ec.europa.eu/en/library/definition-artificial
+Europeï¿½s digital future. https://digital-strategy.ec.europa.eu/en/library/definition-artificial
 intelligence-main-capabilities-and-scientific-disciplines (24 June 2021)
 
 2 Anne A.H. de Hond*, Artuur M. Leeuwenberg*, Lotty Hooft, Ilse M.J. Kant, Steven W.J.
 
 Nijman, Hendrikus J. A. van Os, Jiska J. Aardoom, Thomas P.A. Debray, Ewoud Schuit,
 
-Maarten van Smeden, Johannes B. Reitsma, Ewout W. Steyerberg, Niels H. Chavannes‡
+Maarten van Smeden, Johannes B. Reitsma, Ewout W. Steyerberg, Niels H. Chavannesï¿½
 
-and Karel G.M. Moons‡. *Shared first author, ‡ shared last author. Guidance and Quality
+and Karel G.M. Moonsï¿½. *Shared first author, ï¿½ shared last author. Guidance and Quality
 
 Criteria for artificial intelligence-based prediction models in healthcare: a scoping review.
 
@@ -856,7 +856,7 @@ procedures vastgelegd over het verzamelen van benodigde (meta)data, het opslaan 
 
 deze (meta)data en de toegankelijkheid ervan.
 
-**Eén AIPA, meerdere datamanagementplannen**
+**Eï¿½n AIPA, meerdere datamanagementplannen**
 
 De verschillende AIPA ontwikkel-, test-, en implementatiefasen vragen om verschillende
 
@@ -962,9 +962,9 @@ van de dataverzameling, locatie(s) van verzameling (bijv. of uit ziekenhuizen of
 registers data werd verzameld),
 
 (ii) Het originele doel en de context van de dataverzameling incl. de toegepaste in
-en exclusiecriteria van de beoogde doelgroep (bijv. patiënten of burgers), en in
+en exclusiecriteria van de beoogde doelgroep (bijv. patiï¿½nten of burgers), en in
 
-die gevallen dat dataverwerking berust op expliciete toestemming van patiënt,
+die gevallen dat dataverwerking berust op expliciete toestemming van patiï¿½nt,
 
 
 14
@@ -972,7 +972,7 @@ die gevallen dat dataverwerking berust op expliciete toestemming van patiënt,
 
 -----
 
-cliënt of burger, de voorwaarden waaronder de patiënt of burger toestemming
+cliï¿½nt of burger, de voorwaarden waaronder de patiï¿½nt of burger toestemming
 
 heeft verleend (o.a. het verwerkingsdoel),
 
@@ -982,7 +982,7 @@ van de datacollectie (bijv. cohortonderzoek, routinematig verzamelde
 
 zorggegevens), de timing van metingen waarmee data van individuen wordt
 
-verzameld (bijv. meting van patiënten direct na ziekenhuisopname, periodieke
+verzameld (bijv. meting van patiï¿½nten direct na ziekenhuisopname, periodieke
 
 herhalingen van metingen) en indien van toepassing de technische
 
@@ -1061,9 +1061,9 @@ of METC te benaderen, ook wanneer hier geen juridische verplichting toe bestaat.
 
 Het datamanagementplan moet een gedetailleerde beschrijving geven van metadata. (1.3a)
 
-Metadata is data die de karakteristieken van de verzamelde data inzichtelijk maakt – data
+Metadata is data die de karakteristieken van de verzamelde data inzichtelijk maakt ï¿½ data
 
-over data – en beschrijft onder meer de verzameling, rapportage en toegankelijkheid van de
+over data ï¿½ en beschrijft onder meer de verzameling, rapportage en toegankelijkheid van de
 
 verzamelde data. Het gaat hier in essentie om het vastleggen van de in algemene zin
 
@@ -1087,15 +1087,15 @@ aanbevelingen omtrent herleidbaarheid in 1.2.1.
 
 - _Medische context: informatie over het ontwerp (design) van de datacollectie en de_
 
-populatiecontext (bijv. consecutieve patiënten bij de huisarts met huidklachten,
+populatiecontext (bijv. consecutieve patiï¿½nten bij de huisarts met huidklachten,
 
-ziekenhuispatiënten verwezen voor een CT vanwege verdenking longembolie, gezonde
+ziekenhuispatiï¿½nten verwezen voor een CT vanwege verdenking longembolie, gezonde
 
 mensen in de algemene bevolking van 70 jaar of ouder waarbij nagegaan wordt hoe
 
 groot hun kans op een bepaalde kanker is). Daarnaast beschrijft dit ook de fysieke en
 
-sociale omgevingsdeterminanten van de geïncludeerde populatie, indien relevant voor de
+sociale omgevingsdeterminanten van de geï¿½ncludeerde populatie, indien relevant voor de
 
 toepassing van het AIPA.
 
@@ -1177,7 +1177,7 @@ informatiestandaarden voor informatie-uitwisseling in de zorg die voor de Nederl
 
 zorgcontext beheerd worden door Nictiz[3] en een belangrijke rol spelen bij de uitwisseling van
 
-patiëntdata tussen verschillende zorginstellingen en zorgverleners. Internationaal kan
+patiï¿½ntdata tussen verschillende zorginstellingen en zorgverleners. Internationaal kan
 
 bijvoorbeeld gedacht worden aan het medisch terminologiestelsel SNOMED[4].
 
@@ -1203,9 +1203,9 @@ de dataverzameling of -verwerking betrokken partijen. (1.5a)
 
 maken, bijvoorbeeld door het te plaatsen op een openbaar toegankelijke website. (1.5b)
 
-Deze aanbeveling mag afgewogen worden tegen commerciële belangen.
+Deze aanbeveling mag afgewogen worden tegen commerciï¿½le belangen.
 
-Voor alle onderdelen van het datamanagementplan moet versiebeheer geïmplementeerd
+Voor alle onderdelen van het datamanagementplan moet versiebeheer geï¿½mplementeerd
 
 worden. (1.5c)
 
@@ -1225,9 +1225,9 @@ bijgewerkt wordt of opnieuw wordt opgesteld in een volgende fase.
 
 **1.6.** **Referenties**
 
-1. Gupta A. Data Provenance. In: Liu L, Özsu MT, eds. Encyclopedia of Database Systems
+1. Gupta A. Data Provenance. In: Liu L, ï¿½zsu MT, eds. Encyclopedia of Database Systems
 
-Boston, MA: Springer US; 2009. P. 608–608
+Boston, MA: Springer US; 2009. P. 608ï¿½608
 
 2. Wilkinson MD, Dumontier M, Aalbersberg IjJ, Appleton G, Axton M, Baak A, Blomberg N,
 
@@ -1235,7 +1235,7 @@ Boiten J-W, Silva Santos LB da, Bourne PE, Bouwman J, Brookes AJ, Clark T, Crosa
 
 M, Dillo I, Dumon O, Edmunds S, Evelo CT, Finkers R, Gonzalez-Beltran A, Gray AJG,
 
-Groth rowth P, Goble C, Grethe JS, Heringa J, Hoen PAC ’t, Hooft R, Kuhn T, Kok R,
+Groth rowth P, Goble C, Grethe JS, Heringa J, Hoen PAC ï¿½t, Hooft R, Kuhn T, Kok R,
 
 Kok J, et al. The FAIR Guiding Principles for scientific data management and
 
@@ -1279,7 +1279,7 @@ resultaat van analyse van de trainingsdata. In dit document wordt geen concreet 
 
 voor de analytische AIPA modelontwikkeling gegeven, de lezer wordt daarvoor verwezen
 
-naar bestaande literatuur.[1–6].
+naar bestaande literatuur.[1ï¿½6].
 
 **Sterk aanbevolen wordt om een gestandaardiseerd stappenplan te gebruiken voor een**
 
@@ -1287,13 +1287,13 @@ complete vastlegging van de ontwikkelingsstappen en de procedures en resultaten 
 
 interne validatie (zie onder) van het AIPA. (2a)
 
-[De TRIPOD reporting guidelines[7–9] (www.tripod-statement.org) dienen daarbij als leidraad,](http://www.tripod-statement.org/)
+[De TRIPOD reporting guidelines[7ï¿½9] (www.tripod-statement.org) dienen daarbij als leidraad,](http://www.tripod-statement.org/)
 
 en een specifieke TRIPOD-AI reporting guideline is bijna voltooid.
 
 **1.1.** **Uitleg doelgebruik**
 
-De ontwikkelaar van het model moet duidelijk het doelgebruik van het AIPA definiëren en
+De ontwikkelaar van het model moet duidelijk het doelgebruik van het AIPA definiï¿½ren en
 
 vastleggen. (2.1a)
 
@@ -1305,9 +1305,9 @@ welke medische context, indicatie of doelpopulatie) en wie de beoogde
 
 eindgebruiker is (bijv. een specifiek specialisme, eerstelijnszorgverlener, of de
 
-patiënt, cliënt of burger zelf);
+patiï¿½nt, cliï¿½nt of burger zelf);
 
-ii) Welk medisch of gezondheidszorgproces beïnvloed beoogt te worden door het
+ii) Welk medisch of gezondheidszorgproces beï¿½nvloed beoogt te worden door het
 
 AIPA en wat de verwachte meerwaarde t.o.v. het huidige proces is (bijv. het
 
@@ -1333,7 +1333,7 @@ voorspellingen: hoever in de tijd het AIPA voorspelt). (2.1b)
 
 **Sterk aanbevolen wordt om bij de definitie van doelgebruik stakeholders zoals gebruikers**
 
-en patiënten, cliënten of burgers te betrekken. (2.1c)
+en patiï¿½nten, cliï¿½nten of burgers te betrekken. (2.1c)
 
 _2.1.1 Dataset(s) en doelgebruik_
 
@@ -1347,7 +1347,7 @@ In fase 1 is reeds een precieze beschrijving vastgelegd van de oorsprong van de 
 
 (bijv. tijd/plaats) die worden gebruikt voor ontwikkeling van het AIPA model, het design van
 
-dataverzameling (bijv. opeenvolgende patiënten), meet- en registratieprocedures, eventuele
+dataverzameling (bijv. opeenvolgende patiï¿½nten), meet- en registratieprocedures, eventuele
 
 selecties, in- en exclusiecriteria van deelnemers of datapunten in het onderzoek.
 
@@ -1365,7 +1365,7 @@ worden gedocumenteerd en inhoudelijk worden onderbouwd. (2.1.1b)
 
 De ontwikkelaar van het model moet alle analyse- en modelontwikkeling stappen
 
-vastleggen. Daarbij horen alle voorbereidingsstappen (bijv. initiële data analyse[10], feature
+vastleggen. Daarbij horen alle voorbereidingsstappen (bijv. initiï¿½le data analyse[10], feature
 
 engineering), gebruikte modelleringstechniek (bijv. neuraal netwerk, random forest, time-to
 _event, logistische regressie), alle modeleringstappen (bijv. modelselectie, tuning, (her-)_
@@ -1374,7 +1374,7 @@ kalibratie). (2.2a) Het uitgangspunt is dat de achtereenvolgende analyse- en
 
 modeleringstappen voldoende gedetailleerd zijn zodat een derde partij op basis van de
 
-beschrijving alle analyse- en modelstappen exact zou kunnen reproduceren [7–9, 11].
+beschrijving alle analyse- en modelstappen exact zou kunnen reproduceren [7ï¿½9, 11].
 
 **2.3** **Interne evaluatie van het model**
 
@@ -1396,7 +1396,7 @@ voorspelkracht context-afhankelijk is.
 
 **Sterk** **aanbevolen wordt om de voorspelkracht zoveel mogelijk in context te beschrijven,**
 
-bijv. door vergelijking met andere voorspelmodellen of AIPA’s voor dezelfde medische
+bijv. door vergelijking met andere voorspelmodellen of AIPAï¿½s voor dezelfde medische
 
 context of doelpopulatie, of door vergelijking met een benchmark relevant voor de medische
 
@@ -1424,11 +1424,11 @@ alle modelontwikkelstappen (inner loop) wordt gescheiden van het intern validere
 
 model (outer loop).
 
-**Sterk aanbevolen wordt om statistisch efficiënte interne validatiemethoden toe te passen**
+**Sterk aanbevolen wordt om statistisch efficiï¿½nte interne validatiemethoden toe te passen**
 
 (bijv. cross-validatie, bootstrap), waarin alle data die beschikbaar zijn voor de ontwikkeling
 
-worden gebruikt voor de ontwikkeling van het model, boven inefficiënte interne
+worden gebruikt voor de ontwikkeling van het model, boven inefficiï¿½nte interne
 
 validatiemethoden (bijv. enkele train-test splits)[13]. (2.3.1c)
 
@@ -1460,7 +1460,7 @@ verrichten en deze expliciet te relateren aan het doelgebruik.
 
 **Aanbevolen wordt om samen met stakeholders uit de medische context die bij het**
 
-doelgebruik beoogd wordt, een inschatting te maken van fairness risico’s. Zie sectie 3.3 voor
+doelgebruik beoogd wordt, een inschatting te maken van fairness risicoï¿½s. Zie sectie 3.3 voor
 
 een gedetailleerdere uitwerking. (2.3.2b)
 
@@ -1470,9 +1470,9 @@ Daarom wordt sterk aanbevolen om zoveel mogelijk heterogeniteit in de geschatte
 
 voorspelkracht van het AIPA in kaart te brengen, bijvoorbeeld door gebruik van data uit
 
-meerdere locaties (bijv. verschillende medische centra) of andere patiënt relevante contexten
+meerdere locaties (bijv. verschillende medische centra) of andere patiï¿½nt relevante contexten
 
-– bijvoorbeeld met behulp van internal-external cross-validation[14,15]. (2.3.2c).
+ï¿½ bijvoorbeeld met behulp van internal-external cross-validation[14,15]. (2.3.2c).
 
 
 23
@@ -1482,7 +1482,7 @@ meerdere locaties (bijv. verschillende medische centra) of andere patiënt releva
 
 Indien hiervan wordt afgeweken moet dit worden onderbouwd met verwijzing naar de
 
-doelstelling van het model en een afweging van de risico’s voor de robuustheid van het
+doelstelling van het model en een afweging van de risicoï¿½s voor de robuustheid van het
 
 model.
 
@@ -1579,9 +1579,9 @@ bestaan dit soort regels voor a priori berekeningen van minimale grootte van de 
 
 (nog) niet. Wel bestaan er a posteriori sample size criteria[22], bijv. zogenaamde learning
 
-_curves[23], waarmee kan worden geëvalueerd of de dataset aan minimale criteria voldoet,_
+_curves[23], waarmee kan worden geï¿½valueerd of de dataset aan minimale criteria voldoet,_
 
-zoals beperkt risico op overfitting en precieze schatting van de geïndividualiseerde kansen
+zoals beperkt risico op overfitting en precieze schatting van de geï¿½ndividualiseerde kansen
 
 op de uitkomst.
 
@@ -1635,11 +1635,11 @@ op aanvraag beschikbaar te stellen. (2.6.1d)
 
 Daarbij dient natuurlijk rekening te worden gehouden met de huidige wet- en regelgeving
 
-omtrent privacy, en daaruit voortkomende beperkingen en risico’s zoals de kans op
+omtrent privacy, en daaruit voortkomende beperkingen en risicoï¿½s zoals de kans op
 
 identificatie van betrokkenen. Ook mogen deze aanbevelingen afgewogen worden tegen
 
-commerciële belangen, en kan als argument aangevoerd worden dat externe validatie door
+commerciï¿½le belangen, en kan als argument aangevoerd worden dat externe validatie door
 
 een vertrouwde derde plaats zal vinden.
 
@@ -1653,17 +1653,17 @@ volledig vastgelegd worden, bijvoorbeeld door het toekennen van een versienummer
 
 Deze versiegeschiedenis van het model is een aanvulling op de versiegeschiedenis van de
 
-software, zoals bijv. geëist door de MDR.
+software, zoals bijv. geï¿½ist door de MDR.
 
 Daarnaast wordt sterk aanbevolen het feitelijke model en/of modellen (bijv.
 
-modelcoëfficiënten indien van toepassing, nomogrammen, computercode (met het feitelijk
+modelcoï¿½fficiï¿½nten indien van toepassing, nomogrammen, computercode (met het feitelijk
 
 model)) openbaar toegankelijk te maken, indien beschikbaar inclusief (minimale) software
 
 rondom het model ter demonstratie. (2.6.2b)
 
-Indien hiervan wordt afgeweken, moet dit worden onderbouwd. Commerciële belangen
+Indien hiervan wordt afgeweken, moet dit worden onderbouwd. Commerciï¿½le belangen
 
 kunnen in deze afweging doorslaggevend zijn.
 
@@ -1715,7 +1715,7 @@ AJ, Ransohoff DF, Collins GS. Transparent Reporting of a multivariable predictio
 
 for Individual Prognosis Or Diagnosis (TRIPOD): Explanation and Elaboration. Ann
 
-_Intern Med 2015;162:W1–W73._
+_Intern Med 2015;162:W1ï¿½W73._
 
 9. Collins GS, Moons KGM. Reporting of artificial intelligence prediction models. Lancet
 
@@ -1723,7 +1723,7 @@ _Intern Med 2015;162:W1–W73._
 
 10. Huebner M, Vach W, Cessie S le. A systematic approach to initial data analysis is good
 
-research practice. J Thorac Cardiovasc Surg 2016;151:25–27.
+research practice. J Thorac Cardiovasc Surg 2016;151:25ï¿½27.
 
 11. Collins GS, van Smeden M, Riley RD. COVID-19 prediction models should adhere to
 
@@ -1747,9 +1747,9 @@ Methods group. Individual participant data (IPD) meta-analyses of diagnostic and
 
 prognostic modeling studies: guidance on their use. PloS Med. 2015; 12:e1001886.
 
-14. Steyerberg EW, Harrell FE. Prediction models need appropriate internal, internal–
+14. Steyerberg EW, Harrell FE. Prediction models need appropriate internal, internalï¿½
 
-external, and external validation. J Clin Epidemiol 2016;69:245–247.
+external, and external validation. J Clin Epidemiol 2016;69:245ï¿½247.
 
 15. Debray TP, Damen JA, Riley RD, Snell K, Reitsma JB, Hooft L, Collins GS, Moons KG.
 
@@ -1775,13 +1775,13 @@ economic evaluation of diagnostic and prognostic prediction models. A systematic
 
 review. Value in Health 2014;17:A560.
 
-19. Barredo Arrieta A, Díaz-Rodríguez N, Del Ser J, Bennetot A, Tabik S, Barbado A, Garcia
+19. Barredo Arrieta A, Dï¿½az-Rodrï¿½guez N, Del Ser J, Bennetot A, Tabik S, Barbado A, Garcia
 
 S, Gil-Lopez S, Molina D, Benjamins R, Chatila R, Herrera F. Explainable Artificial
 
 Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward
 
-responsible AI. Inf Fusion 2020;58:82–115.
+responsible AI. Inf Fusion 2020;58:82ï¿½115.
 
 20. van Smeden M, Moons KG, de Groot JA, Collins GS, Altman DG, Eijkemans MJ,
 
@@ -1801,7 +1801,7 @@ Ramirez SC, Kong D, Moody AR, Tyrrell PN. Sample-Size Determination Methodologie
 
 for Machine Learning in Medical Imaging Research: A Systematic Review. Can Assoc
 
-_Radiol J 2019;70:344–353._
+_Radiol J 2019;70:344ï¿½353._
 
 23. Christodoulou E, Smeden M van, Edlinger M, Timmerman D, Wanitschek M, Steyerberg
 
@@ -1817,7 +1817,7 @@ prediction models. Diagn Progn Res 2021;5:6.
 
 24. Community TTW, Arnold B, Bowler L, Gibson S, Herterich P, Higman R, Krystalli A,
 
-Morley A, O’Reilly M, Whitaker K. The Turing Way: A Handbook for Reproducible Data
+Morley A, Oï¿½Reilly M, Whitaker K. The Turing Way: A Handbook for Reproducible Data
 
 Science. Zenodo; 2019.
 
@@ -1845,7 +1845,7 @@ Fase 3 beslaat het (extern) valideren van de in fase 2 ontwikkelde AIPA. Met ext
 
 validatie wordt de evaluatie van de voorspellingen van het AIPA model bedoeld met data die
 
-niet is gebruikt voor de ontwikkeling (of doorontwikkeling) in fase 2[1–3]. We maken daarbij
+niet is gebruikt voor de ontwikkeling (of doorontwikkeling) in fase 2[1ï¿½3]. We maken daarbij
 
 onderscheid tussen de evaluatie van de statistische ofwel voorspellende waarde, de
 
@@ -1863,7 +1863,7 @@ externe validatie wordt expliciet niet bedoeld: het (her-)trainen of (her-)tunen
 
 Complete of gedeeltelijke her-training van een ontwikkelde AIPA kan wel een consequentie
 
-zijn van een externe validatie. Dit wordt ook wel model updating genoemd[4–6]. Het is dan
+zijn van een externe validatie. Dit wordt ook wel model updating genoemd[4ï¿½6]. Het is dan
 
 nodig (een gedeelte van) fase 1 en 2 nogmaals te doorlopen en vast te leggen.
 
@@ -1899,7 +1899,7 @@ zogenaamde gezonde controles wordt gebruikt. (3.1.1b)
 
 Een precieze beschrijving van de oorsprong van de data (bijv. tijd en plaats), de manier van
 
-dataverzameling (bijv. opvolgende patiënten), meet- en registratieprocedures, eventuele
+dataverzameling (bijv. opvolgende patiï¿½nten), meet- en registratieprocedures, eventuele
 
 selecties en in- en exclusiecriteria moeten zijn vastgelegd in het datamanagementplan om
 
@@ -1915,7 +1915,7 @@ gehouden, zoals vastgelegd in fase 2.
 
 -----
 
-**Aanbevolen wordt exclusie van individuen die wel tot de doelpopulatie of –context behoren**
+**Aanbevolen wordt exclusie van individuen die wel tot de doelpopulatie of ï¿½context behoren**
 
 te vermijden. (3.1.1d)
 
@@ -2024,7 +2024,7 @@ worden gekeken. (3.2a)
 
 **Aanbevolen wordt een analyse van voorziene kosten en baten te maken. (3.2b)**
 
-Dit kan bijvoorbeeld, net als in fase 2, worden geïmplementeerd door een decision curve
+Dit kan bijvoorbeeld, net als in fase 2, worden geï¿½mplementeerd door een decision curve
 
 _analysis[11]. Een andere, veelal uitgebreidere, manier om de impact ten opzichte van de_
 
@@ -2032,7 +2032,7 @@ huidige medische praktijk te onderzoeken is met een early Health Technology Asse
 
 (eHTA[12,13]), zoals eerder genoemd in fase 2.
 
-**Aanbevolen wordt een inschatting te maken van verwachtte barrières voor implementatie**
+**Aanbevolen wordt een inschatting te maken van verwachtte barriï¿½res voor implementatie**
 
 van het AIPA en die in deze fase vast te leggen, ten behoeve van fase 5 en 6. (3.2c)
 
@@ -2042,15 +2042,15 @@ data, een inschatting van de tijd (bijv. invoer van data of de rekentijd van het
 
 kosten (bijv. metingen) die nodig zijn om het model te gebruiken in de praktijk, en verwachtte
 
-barrières met betrekking tot de inpassing van het AIPA in de huidige processen van de
+barriï¿½res met betrekking tot de inpassing van het AIPA in de huidige processen van de
 
 beoogde medische praktijk.
 
 **Sterk aanbevolen wordt stakeholders uit de medische setting die bij het doelgebruik beoogd**
 
-wordt (zowel eindgebruikers als patiënten) bij de evaluatie van medische eigenschappen, de
+wordt (zowel eindgebruikers als patiï¿½nten) bij de evaluatie van medische eigenschappen, de
 
-analyse van kosten en baten en de inschatting van barrières te betrekken. (3.2d)
+analyse van kosten en baten en de inschatting van barriï¿½res te betrekken. (3.2d)
 
 
 33
@@ -2148,9 +2148,9 @@ Daarnaast moet het risico op ongelijke behandeling of ongewenste uitkomstongelij
 
 voor bepaalde groepen in de populatie worden onderzocht en vastgelegd. (3.3b)
 
-**Sterk aanbevolen wordt stakeholders zoals eindgebruikers en patiënten te betrekken bij**
+**Sterk aanbevolen wordt stakeholders zoals eindgebruikers en patiï¿½nten te betrekken bij**
 
-deze evaluatie van fairness-risico’s, bijvoorbeeld m.b.v. de aanpak begeleidingsethiek[24].
+deze evaluatie van fairness-risicoï¿½s, bijvoorbeeld m.b.v. de aanpak begeleidingsethiek[24].
 
 **(3.3c)**
 
@@ -2244,7 +2244,7 @@ Daarbij dient natuurlijk rekening te worden gehouden met de regelgeving omtrent 
 
 daaruit voortkomende beperkingen. Ook mogen deze aanbevelingen afgewogen worden
 
-tegen commerciële belangen, en kan als argument aangevoerd worden dat externe validatie
+tegen commerciï¿½le belangen, en kan als argument aangevoerd worden dat externe validatie
 
 door een vertrouwde derde heeft plaatsgevonden.
 
@@ -2258,11 +2258,11 @@ door een vertrouwde derde heeft plaatsgevonden.
 
 1. Altman DG, Royston P. What do we mean by validating a prognostic model? Stat Med
 
-2000;19:453–473.
+2000;19:453ï¿½473.
 
 2. Altman DG, Vergouwe Y, Royston P, Moons KGM. Prognosis and prognostic research:
 
-validating a prognostic model. BMJ 2009;338:b605–b605.
+validating a prognostic model. BMJ 2009;338:b605ï¿½b605.
 
 3. Riley RD, Ensor J, Snell KIE, Debray TPA, Altman DG, Moons KGM, Collins GS.
 
@@ -2274,7 +2274,7 @@ or IPD meta-analysis: opportunities and challenges. BMJ 2016;i3140.
 
 M. Risk prediction models: II. External validation, model updating, and impact
 
-assessment. Heart 2012;98:691–698.
+assessment. Heart 2012;98:691ï¿½698.
 
 5. Harrell FE. Regression Modeling Strategies: with applications to linear models, logistic
 
@@ -2300,13 +2300,13 @@ Vickers AJ, Ransohoff DF, Collins GS. Transparent Reporting of a multivariable
 
 prediction model for Individual Prognosis Or Diagnosis (TRIPOD): Explanation and
 
-Elaboration. Ann Intern Med 2015;162:W1–W73.
+Elaboration. Ann Intern Med 2015;162:W1ï¿½W73.
 
 10. Debray TPA, Vergouwe Y, Koffijberg H, Nieboer D, Steyerberg EW, Moons KGM. A new
 
 framework to enhance the interpretation of external validation studies of clinical
 
-prediction models. J Clin Epidemiol 2015;68:279–289.
+prediction models. J Clin Epidemiol 2015;68:279ï¿½289.
 
 11. Vickers AJ, Calster B van, Steyerberg EW. A simple, step-by-step guide to interpreting
 
@@ -2318,7 +2318,7 @@ Koffijberg H, Reitsma JB. Decision analytic modeling was useful to assess the im
 
 a prediction model on health outcomes before a randomized trial. J Clin Epidemiol
 
-2019;115:106–115.
+2019;115:106ï¿½115.
 
 13. Van Giessen A, Wilcher B, Peters J, Hyde C, Moons KG, Wit GA de, Koffijberg H. Health
 
@@ -2348,9 +2348,9 @@ Timmerman D, Bourne T, Ukaegbu C. Changing predictor measurement procedures
 
 affected the performance of prediction models in clinical examples. J Clin Epidemiol
 
-2020;119:7–18.
+2020;119:7ï¿½18.
 
-17. Ethics guidelines for trustworthy AI | Shaping Europe’s digital future. https://digital
+17. Ethics guidelines for trustworthy AI | Shaping Europeï¿½s digital future. https://digital
 strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai (25 June 2021)
 
 18. Rutjes AWS, Reitsma JB, Coomarasamy A, Khan KS, Bossuyt PMM. Evaluation of
@@ -2359,7 +2359,7 @@ diagnostic tests when there is no gold standard. A review of methods. Health Tec
 
 _Assess Department of Clinical Epidemiology, Biostatistics and Bioinformatics,_
 
-Academical Medical Center, University of Amsterdam, The Netherlands; 2007;11:ix–51.
+Academical Medical Center, University of Amsterdam, The Netherlands; 2007;11:ixï¿½51.
 
 19. Naaktgeboren CA, Groot JAH de, Rutjes AWS, Bossuyt PMM, Reitsma JB, Moons KGM.
 
@@ -2379,7 +2379,7 @@ diagnostic research: a systematic review of published methods and reporting. PLo
 
 Forcing dichotomous disease classification from reference standards leads to bias in
 
-diagnostic accuracy estimates: A simulation study. J Clin Epidemiol 2019;111:1–10.
+diagnostic accuracy estimates: A simulation study. J Clin Epidemiol 2019;111:1ï¿½10.
 
 22. Riley RD, Debray TPA, Collins GS, Archer L, Ensor J, Smeden M, Snell KIE. Minimum
 
@@ -2391,7 +2391,7 @@ _Stat Med 2021;sim.9025._
 
 external validation of a clinical prediction model with a continuous outcome. Stat Med
 
-2021;40:133–146.
+2021;40:133ï¿½146.
 
 24. ECP. Handleiding aanpak begeleidingsethiek voor AI in de zorg.
 
@@ -2436,7 +2436,7 @@ Daarnaast behoort de informatie die wordt geleverd bij de software tot deze fase
 
 Opgemerkt dient te worden dat de ontwikkelaar en de zorgorganisatie waar het AIPA
 
-geïmplementeerd wordt dezelfde partij kunnen zijn. In die gevallen is er geen sprake van
+geï¿½mplementeerd wordt dezelfde partij kunnen zijn. In die gevallen is er geen sprake van
 
 interactie tussen een fabrikant en een zorgorganisatie. In dat geval dienen de eisen en
 
@@ -2498,7 +2498,7 @@ In het geval van een complex model (bijv. een algoritme op basis van deep learni
 
 relatie tussen inputvariabelen en voorspelde uitkomsten dusdanig complex is dat deze niet
 
-meer te overzien is (zogenoemde ‘black-box’ algoritmen). Post-hoc informatie en
+meer te overzien is (zogenoemde ï¿½black-boxï¿½ algoritmen). Post-hoc informatie en
 
 interpretatie van het model heeft dan extra aandacht nodig in de presentatie van het model
 
@@ -2526,7 +2526,7 @@ sectie 4.4), presentatie van de voorspelde uitkomsten inclusief informatie over 
 
 (bijvoorbeeld door een betrouwbaarheidsinterval weer te geven), taalgebruik passend bij de
 
-eindgebruiker (bijvoorbeeld voor een zorgverlener anders dan voor een patiënt), intuïtieve
+eindgebruiker (bijvoorbeeld voor een zorgverlener anders dan voor een patiï¿½nt), intuï¿½tieve
 
 visualisatie, de integratie van de software in het zorg- en werkproces en voor zover van
 
@@ -2534,7 +2534,7 @@ toepassing de mogelijkheid tot interactie met het AIPA model.
 
 **Sterk aanbevolen wordt om bij de het ontwerp van de modelpresentatie en -uitleg**
 
-stakeholders zoals gebruikers en patiënten, cliënten of burgers te betrekken. (4.1.1e)
+stakeholders zoals gebruikers en patiï¿½nten, cliï¿½nten of burgers te betrekken. (4.1.1e)
 
 _4.1.2 Informatie behorend bij de software_
 
@@ -2554,7 +2554,7 @@ en daarmee vertrouwen te wekken;
 
   - De eindgebruiker van voldoende informatie te voorzien om de essentie van het AIPA
 
-te kunnen uitleggen aan derden (bijv. de patiënt, cliënt of burger indien deze geen
+te kunnen uitleggen aan derden (bijv. de patiï¿½nt, cliï¿½nt of burger indien deze geen
 
 eindgebruiker is), dat wil zeggen de betekenis van de output te kunnen interpreteren
 
@@ -2580,8 +2580,8 @@ context, bijv.:
 ```
      o Zorgorganisatie (niet-zorginhoudelijk)
      o Zorgverlener (intercollegiaal)
-     o Zorgverlener (in gesprek met patiënt, cliënt)
-     o Patiënt, cliënt of burger (al dan niet in hun eigen omgeving)
+     o Zorgverlener (in gesprek met patiï¿½nt, cliï¿½nt)
+     o Patiï¿½nt, cliï¿½nt of burger (al dan niet in hun eigen omgeving)
 
 ```
   - Op welke wijze (periodiek) de informatiebehoefte van de eindgebruiker is en wordt
@@ -2592,7 +2592,7 @@ bepaald;
 
 door het beantwoorden van de volgende vragen:
 ```
-     o Zorgverlener (en tot op zekere hoogte ook patiënt, cliënt en burger):
+     o Zorgverlener (en tot op zekere hoogte ook patiï¿½nt, cliï¿½nt en burger):
 
 ```
             - Is deze AIPA software al elders toegepast?
@@ -2619,7 +2619,7 @@ welke processen en methodiek hierbij gevolgd zijn en wat de
 
 resultaten waren (zie ook fase 3)?
 ```
-     o Patiënt, cliënt of burger: 
+     o Patiï¿½nt, cliï¿½nt of burger: 
 
 ```
             - Welke invloed heeft de toepassing van de AIPA software op het
@@ -2861,7 +2861,7 @@ impact with artificial intelligence. BMC Med 2019;17(1):195. doi: 10.1186/s12916
 
 Ilse Kant, Maarten van Smeden, Hine van Os, Teus Kappen, Jonas Teuwen, Leo Hovestadt,
 
-Ewout Steyerberg, René Drost, Sade Faneyte, René Verhaart, Lotty Hooft, Carl Moons,
+Ewout Steyerberg, Renï¿½ Drost, Sade Faneyte, Renï¿½ Verhaart, Lotty Hooft, Carl Moons,
 
 Niels Chavannes
 
@@ -2875,9 +2875,9 @@ Fase 5 beslaat het bepalen van de impact of meerwaarde van het gebruik van het A
 
 onderdeel van de software op respectievelijk de beoogde medische praktijk of context, het
 
-medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep (bijv. de patiënt,
+medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep (bijv. de patiï¿½nt,
 
-cliënt of burger). Ook een een Health technology assessment vindt plaats in deze fase[2]. Het
+cliï¿½nt of burger). Ook een een Health technology assessment vindt plaats in deze fase[2]. Het
 
 bepalen van impact en meerwaarde is een verantwoordelijkheid van de fabrikant (of in het
 
@@ -2889,15 +2889,15 @@ meerwaarde van het gebruik van het AIPA, inclusief de benodigde software, op en 
 
 medische praktijk kan op verschillende manieren worden bereikt. Bijvoorbeeld door het
 
-ondersteunen van de zorgverlener, patiënt, cliënt, of burger bij het maken van behandel- of
+ondersteunen van de zorgverlener, patiï¿½nt, cliï¿½nt, of burger bij het maken van behandel- of
 
-leefstijlbeslissingen of door een verandering in het zorgproces die efficiënt
+leefstijlbeslissingen of door een verandering in het zorgproces die efficiï¿½nt
 
 (kostenbesparend) werkt.
 
-Op dit moment zijn er nog relatief weinig AIPA’s in gebruik in de dagelijkse medische praktijk,
+Op dit moment zijn er nog relatief weinig AIPAï¿½s in gebruik in de dagelijkse medische praktijk,
 
-en daarmee is ook van relatief weinig AIPA’s de impact onderzocht[3-6]. De aansluiting van het
+en daarmee is ook van relatief weinig AIPAï¿½s de impact onderzocht[3-6]. De aansluiting van het
 
 AIPA bij de dagelijkse medische praktijk en zorg blijkt een struikelblok. De hoop en
 
@@ -2905,7 +2905,7 @@ verwachting is dat de toepassing in de komende jaren zal toenemen. Voor een over
 
 de stand van zaken omtrent de toepassing van AI in de medische context en praktijk wordt
 
-verwezen naar het rapport ‘Inventarisatie AI in gezondheid en zorg’[7].
+verwezen naar het rapport ï¿½Inventarisatie AI in gezondheid en zorgï¿½[7].
 
 **_5.1_** **Effectbeoordeling en bijbehorende studie opzetten**
 
@@ -2913,7 +2913,7 @@ De fabrikant moet een effectbeoordeling van het AIPA (als onderdeel van de softw
 
 binnen het beoogde doelgebruik uitvoeren. (5.1a)
 
-Dit is nodig om de potentiële toegevoegde waarde van het AIPA in de dagelijkse medische
+Dit is nodig om de potentiï¿½le toegevoegde waarde van het AIPA in de dagelijkse medische
 
 praktijk te toetsen. Naast de generieke methoden voor het empirisch toetsen van de
 
@@ -2927,7 +2927,7 @@ De ontwikkeling van de software waar het AIPA deel van uitmaakt en de bijbehoren
 
 effectbeoordeling moet een proces zijn, waarbij de fabrikant ervoor zorgt dat eindgebruikers
 
-(bijv. zorgverleners) en patiënten, cliënten of burgers zo vroeg mogelijk worden betrokken en
+(bijv. zorgverleners) en patiï¿½nten, cliï¿½nten of burgers zo vroeg mogelijk worden betrokken en
 
 meerdere contactgelegenheden krijgen. (5.1b)
 
@@ -2937,7 +2937,7 @@ effectbeoordeling als een vorm van implementatie worden beschouwd.
 
 In het geval dat de effectbeoordeling (deels) binnen het zorgproces wordt uitgevoerd en
 
-daarmee dus wordt geïmplementeerd, wordt sterk aanbevolen een implementatieplan,
+daarmee dus wordt geï¿½mplementeerd, wordt sterk aanbevolen een implementatieplan,
 
 zoals beschreven in sectie 6.1, op te stellen en relevante onderdelen, zoals het invullen van
 
@@ -2949,7 +2949,7 @@ zoals beschreven in sectie 6.1, op te stellen en relevante onderdelen, zoals het
 
 het implementatieteam en een lokale evaluatie, een pilot of run-in periode, uit te voeren
 
-vóórdat een grootschalige empirische studie wordt gestart. (5.1c)
+vï¿½ï¿½rdat een grootschalige empirische studie wordt gestart. (5.1c)
 
 In het geval van ontwikkeling binnen een zorgorganisatie moet aanbeveling 5.1c worden
 
@@ -2975,7 +2975,7 @@ fase 2) en de bijbehorende indications of claims die worden gemaakt door de ontw
 
 (MDR), en daarmee voldoende bewijs op meerwaarde te leveren dat nodig is om in de
 
-medische praktijk te kunnen worden geïntroduceerd.
+medische praktijk te kunnen worden geï¿½ntroduceerd.
 
 De stappen zijn de volgende:
 
@@ -2985,7 +2985,7 @@ verwacht dat het AIPA effect zal hebben op het beoogde medische zorgproces en
 
 gezondheidsuitkomsten in de beoogde medische context
 
-2. Risico-inventarisatie: schat mogelijke risico’s en onbedoelde effecten voorafgaand
+2. Risico-inventarisatie: schat mogelijke risicoï¿½s en onbedoelde effecten voorafgaand
 
 aan implementatie van het AIPA in de dagelijkse praktijk in;
 
@@ -3027,7 +3027,7 @@ eindgebruiker op basis van de voorspelde uitkomsten of classificaties; 2) de ver
 
 effecten en consequenties van deze voorspellingen en beslissingen op latere
 
-(gezondheids)uitkomsten van de patiënt, cliënt, burger, en/of op de lokale zorgcontext of de
+(gezondheids)uitkomsten van de patiï¿½nt, cliï¿½nt, burger, en/of op de lokale zorgcontext of de
 
 maatschappij.
 
@@ -3052,7 +3052,7 @@ zelfstandig een voorspelling of classificatie, neemt zelfstandig de medische ver
 
 of beslissing en voert deze uit, maar laat zich - daarvoor of daarna - controleren door een
 
-mens (veelal zorgverlener of patiënt). Wanneer de menselijke beslissing wordt gemaakt
+mens (veelal zorgverlener of patiï¿½nt). Wanneer de menselijke beslissing wordt gemaakt
 
 op basis van het advies van de software, spreken we van joint- of computer-assisted
 
@@ -3060,7 +3060,7 @@ _decision making. Als in de zorg over clinical decision support gesproken wordt,
 
 meestal over dit niveau van automatisering.
 
-Figuur 1: het niveau van automatisering. Verreweg de meeste AIPA’s in
+Figuur 1: het niveau van automatisering. Verreweg de meeste AIPAï¿½s in
 
 softwaretoepassingen bevinden zich tot nu toe in de computer assisted' of joint decision
 
@@ -3073,7 +3073,7 @@ de doelen zoals gedefinieerd in het quadruple aim model voor het verbeteren van 
 
 zorgsector, dat wordt toegepast in waardegedreven zorg[18]:
 
-### 1) het verbeteren van de patiënt/burgerervaring m.b.t. de kwaliteit van zorg;
+### 1) het verbeteren van de patiï¿½nt/burgerervaring m.b.t. de kwaliteit van zorg;
 
  2) het verlagen van de zorgkosten; 
 
@@ -3097,13 +3097,13 @@ voor de zorgverlener (bijv. het sneller of beter stellen van een diagnose of
 
 prognose, mogelijkheid tot eerder ziekenhuisontslag of -opname, verbeterde
 
-werkprocessen zoals thuis- of zelfmonitoring van de patiënt)?
+werkprocessen zoals thuis- of zelfmonitoring van de patiï¿½nt)?
 
       - _Korte termijn gezondheidsuitkomsten_
 
 Leidt het veranderde proces na introductie van het AIPA tot verbeterde
 
-gezondheidsuitkomsten bij de individuele patiënten/burgers op de korte
+gezondheidsuitkomsten bij de individuele patiï¿½nten/burgers op de korte
 
 termijn?
 
@@ -3111,7 +3111,7 @@ termijn?
 
 Leidt het veranderde proces na introductie van het AIPA tot verbetering van
 
-lange termijn gezondheidsuitkomsten bij de individuele patiënten/burgers op
+lange termijn gezondheidsuitkomsten bij de individuele patiï¿½nten/burgers op
 
 de lange termijn, of tot een verbeterde preventie (bijv. betere overleving,
 
@@ -3138,7 +3138,7 @@ _introduceren van een AIPA in de beoogde medische context._
 
 5.1.1b, te maken in een multidisciplinair verband, in samenspraak met de eindgebruiker(s)
 
-en patiënten, cliënten of burgers. (5.1.1d)
+en patiï¿½nten, cliï¿½nten of burgers. (5.1.1d)
 
 Kijk hierbij naar elke stap in de zorgketen van gebeurtenissen waar het AIPA deel van gaat
 
@@ -3152,7 +3152,7 @@ inschattingen kunnen worden gebruikt om risico mitigerende maatregelen te nemen
 
 _5.1.2 Risico-inventarisatie_
 
-Er moet een risico-inventarisatie worden uitgevoerd om de mogelijke risico’s van het gebruik
+Er moet een risico-inventarisatie worden uitgevoerd om de mogelijke risicoï¿½s van het gebruik
 
 van het AIPA in de dagelijkse medische praktijk in kaart te brengen. (5.1.2a)
 
@@ -3160,28 +3160,28 @@ Hiertoe behoren de verwachte onbedoelde beslissingen en effecten in het gehele z
 
 (zie sectie 5.1.1) en redelijkerwijs voorzienbaar verkeerd gebruik.
 
-De mogelijke ongewenste effecten (risico’s) van implementatie van het AIPA in het
+De mogelijke ongewenste effecten (risicoï¿½s) van implementatie van het AIPA in het
 
 zorgproces moeten per onderdeel van het zorgproces in kaart worden gebracht in de risico
 inventarisatie in nauwe samenwerking met de stakeholders (bijv. eindgebruikers en
 
-patiënten). (5.1.2b)
+patiï¿½nten). (5.1.2b)
 
-Op basis van de in de risico-inventarisatie geïdentificeerde risico’s moeten risicomitigerende
+Op basis van de in de risico-inventarisatie geï¿½dentificeerde risicoï¿½s moeten risicomitigerende
 
-maatregelen worden gekozen en geïmplementeerd. (5.1.2c)
+maatregelen worden gekozen en geï¿½mplementeerd. (5.1.2c)
 
 Bronnen van onzekerheid zoals benoemd in 5.3.1a moeten worden meegenomen in de
 
 risico-inventarisatie. (5.1.2d).
 
-Geïdentificeerde risico’s in de risico-inventarisatie moeten worden meegenomen in de
+Geï¿½dentificeerde risicoï¿½s in de risico-inventarisatie moeten worden meegenomen in de
 
 uitkomsten van de empirische studie (zie sectie 5.1.4). (5.1.2e)
 
 **Sterk aanbevolen wordt om bij de risico-inventarisatie stakeholders zoals gebruikers en**
 
-patiënten, cliënten of burgers te betrekken. (5.1.2f)
+patiï¿½nten, cliï¿½nten of burgers te betrekken. (5.1.2f)
 
 De hierboven beschreven risico inventarisatie door de fabrikant is vergelijkbaar met een
 
@@ -3225,7 +3225,7 @@ Daarnaast moeten verwachte veranderingen in de zorgcontext (bijv. veranderingen 
 
 werkproces) door interactie met de software in kaart gebracht worden, bij voorkeur in
 
-samenspraak met de beoogde gebruiker en patiënt, cliënt of burger. (5.1.3c)
+samenspraak met de beoogde gebruiker en patiï¿½nt, cliï¿½nt of burger. (5.1.3c)
 
 Vanzelfsprekend moeten lokale medische richtlijnen die van toepassing zijn worden gevolgd.
 
@@ -3233,7 +3233,7 @@ Indien nieuwe informatie beschikbaar is gekomen die aantoont dat door invoering 
 
 AIPA het volgen van de huidige richtlijnen niet langer wenselijk blijkt te zijn (bijv. door een
 
-nieuw werkproces met behulp van het AIPA, dat zorgt voor minder risico voor patiënten of
+nieuw werkproces met behulp van het AIPA, dat zorgt voor minder risico voor patiï¿½nten of
 
 burgers), is dit aanleiding om een verandering aan te vragen in de lokale medische richtlijnen
 
@@ -3259,7 +3259,7 @@ workflow om optimaal gebruik aan te moedigen. Deze moeten onder meer aansluiten 
 
 _werkdruk van de eindgebruiker. (5.1.3e)_
 
-**Sterk aanbevolen wordt om hierbij ook de zogenaamde faciliterende factoren en barrières**
+**Sterk aanbevolen wordt om hierbij ook de zogenaamde faciliterende factoren en barriï¿½res**
 
 rondom de implementatie van het AIPA in de praktijk in kaart te brengen, door gebruik te
 
@@ -3273,7 +3273,7 @@ maken van kwalitatieve onderzoeksmethoden zoals focusgroepen en vragenlijsten. B
 
 dit onderzoek naast de ontwikkelaar van het AIPA en de fabrikant van de software altijd
 
-meerdere eindgebruikers en patiënten, cliënten of burgers[10 17]. (5.1.3f)
+meerdere eindgebruikers en patiï¿½nten, cliï¿½nten of burgers[10 17]. (5.1.3f)
 
 _5.1.4 Vergelijkende studie_
 
@@ -3307,7 +3307,7 @@ controlegroep, lange duur van een studie (bijv. in het geval van zeldzame ziekte
 
 langetermijneffecten), onhaalbaar hoge kosten, of een onhaalbaar te includeren aantal
 
-patiënten[9 11-13].
+patiï¿½nten[9 11-13].
 
 Alternatieven voor een gerandomiseerde studie zijn: een gecontroleerde prospectieve voor
 na studie, onderbroken tijd series, geografische vergelijking, of een cross-sectionele
@@ -3368,13 +3368,13 @@ noodzakelijk is, is een passende HTA daarom nodig om voor deze vergoeding, of
 
 conditionele vergoeding, van het gebruik in aanmerking te komen. In het rapport
 
-‘Waardevolle AI voor gezondheid’ is een routekaart voor de uitvoering van een HTA voor
+ï¿½Waardevolle AI voor gezondheidï¿½ is een routekaart voor de uitvoering van een HTA voor
 
 AIPA software bijgevoegd. Deze routekaart geeft een overzicht van de kosten en de
 
 mogelijke financieringsbronnen van HTA onderzoek voor AI en dus ook voor een AIPA[24 25].
 
-**5.3** **Onzekerheid, risico’s en onverwachte uitkomsten**
+**5.3** **Onzekerheid, risicoï¿½s en onverwachte uitkomsten**
 
 _5.3.1 Onzekerheid in voorspellingen_
 
@@ -3590,7 +3590,7 @@ interventions involving artificial intelligence: the CONSORT-AI extension. Nat M
 
 -----
 
-22. Haverinen J, Keränen N, Falkenbach P, et al. Digi-HTA Health technology assessment
+22. Haverinen J, Kerï¿½nen N, Falkenbach P, et al. Digi-HTA Health technology assessment
 
 framework for digital healthcare services. Finnish Journal of eHealth and Welfare
 
@@ -3647,7 +3647,7 @@ Chavannes
 
 Fase 6 beslaat de implementatie en het gebruik van de AIPA in de
 
-gezondheidszorgverlening. Centrale thema’s zijn in deze fase implementatie, monitoring en
+gezondheidszorgverlening. Centrale themaï¿½s zijn in deze fase implementatie, monitoring en
 
 educatie door de zorgorganisatie. Voor een AIPA die deel uit maakt van een medisch
 
@@ -3655,7 +3655,7 @@ hulpmiddel als bedoeld in de MDR, moet er in fase 6 ook rekening worden gehouden
 
 wettelijke eisen aan post-market surveillance voor fabrikanten. Opgemerkt dient te worden
 
-dat de ontwikkelaar en de zorgorganisatie waar het AIPA geïmplementeerd wordt dezelfde
+dat de ontwikkelaar en de zorgorganisatie waar het AIPA geï¿½mplementeerd wordt dezelfde
 
 partij kunnen zijn. In die gevallen is er geen sprake van interactie tussen een fabrikant en
 
@@ -3665,9 +3665,9 @@ als eisen en aanbevelingen aan de ontwikkelende zorgorganisatie gelezen te worde
 
 kunnen schijnbare duplicaties die daardoor ontstaan genegeerd worden.
 
-Ook is het mogelijk dat het AIPA niet als zodanig bij een zorgorganisatie geïmplementeerd
+Ook is het mogelijk dat het AIPA niet als zodanig bij een zorgorganisatie geï¿½mplementeerd
 
-wordt, bijvoorbeeld wanneer een AIPA direct door patiënten, cliënten of burgers in de
+wordt, bijvoorbeeld wanneer een AIPA direct door patiï¿½nten, cliï¿½nten of burgers in de
 
 thuissituatie gebruikt wordt, zonder tussenkomt van een zorgverlener. In die gevallen zijn de
 
@@ -3675,7 +3675,7 @@ subhoofdstukken 6.1, 6.2.2 en 6.3.2 niet van toepassing.
 
 **6.1** **Implementatieplan**
 
-Wanneer een AIPA geïmplementeerd en toegepast wordt binnen een zorgorganisatie moet
+Wanneer een AIPA geï¿½mplementeerd en toegepast wordt binnen een zorgorganisatie moet
 
 een implementatieplan worden opgesteld door de zorgorganisatie. (6.1a).
 
@@ -3691,7 +3691,7 @@ Klinische Praktijk[10]
 
 Als onderdeel van het lokale implementatieproces moet de betrouwbaarheid en
 
-toepasbaarheid van het AIPA geëvalueerd worden door middel van een beoordeling van (de
+toepasbaarheid van het AIPA geï¿½valueerd worden door middel van een beoordeling van (de
 
 resultaten van) eerdere studies uitgevoerd als onderdeel van fase 3 en 5. (6.1b)
 
@@ -3703,7 +3703,7 @@ het AIPA worden uitgevoerd (zie ook fase 3).
 
 Daarnaast moet het AIPA en het bijbehorende werkproces waarin het AIPA gebruikt wordt
 
-op gecontroleerde wijze worden geïntroduceerd in het zorgproces, bijvoorbeeld in de vorm
+op gecontroleerde wijze worden geï¿½ntroduceerd in het zorgproces, bijvoorbeeld in de vorm
 
 van een pilot, run-in periode of door middel van het schaduwdraaien van het AIPA naast het
 
@@ -3717,11 +3717,11 @@ traditionele zorgproces. (6.1c)
 
 Er moet een prospectieve risico-inventarisatie (PRI) worden uitgevoerd om de mogelijke
 
-risico’s van het gebruik van het AIPA in de dagelijkse medische praktijk in kaart te brengen.
+risicoï¿½s van het gebruik van het AIPA in de dagelijkse medische praktijk in kaart te brengen.
 
 **(6.1d)**
 
-In een PRI wordt geëxpliciteerd welke medische relevantie iedere verwachte fout heeft en
+In een PRI wordt geï¿½xpliciteerd welke medische relevantie iedere verwachte fout heeft en
 
 hoe waarschijnlijk het is dat deze fout op kan treden. Een PRI is onderdeel van het
 
@@ -3737,11 +3737,11 @@ en specifiek de risico-inventarisatie zoals uitgevoerd door de fabrikant in fase
 
 beschikbaar, expliciet op te nemen in de PRI. (6.1e)
 
-De in de PRI geïdentificeerde risico’s moeten worden geëvalueerd, op basis hiervan worden
+De in de PRI geï¿½dentificeerde risicoï¿½s moeten worden geï¿½valueerd, op basis hiervan worden
 
-risico’s expliciet geaccepteerd worden of risicomitigerende maatregelen worden gekozen.
+risicoï¿½s expliciet geaccepteerd worden of risicomitigerende maatregelen worden gekozen.
 
-Zowel acceptatie van risico’s als eventuele risico mitigerende maatregelen worden
+Zowel acceptatie van risicoï¿½s als eventuele risico mitigerende maatregelen worden
 
 opgenomen in het implementatieplan. (6.1f)
 
@@ -3773,9 +3773,9 @@ biomedisch technoloog, technisch geneeskundige);
 
 gezondheidswetenschapper, beleidsmaker, bestuurskundige).
 
-**Sterk aanbevolen wordt het implementatie plan op te stellen in samenwerking met patiënten**
+**Sterk aanbevolen wordt het implementatie plan op te stellen in samenwerking met patiï¿½nten**
 
-of cliënten. (6.1i)
+of cliï¿½nten. (6.1i)
 
 Het implementatieteam moet worden ondersteund door de ambitie en bewuste keuze voor
 
@@ -3827,9 +3827,9 @@ zorg (en maatschappij) hebben als het AIPA op grote schaal gebruikt wordt[8].
 
 Voor de ontwikkelaar en fabrikant van de AIPA zijn er twee sporen om de productveiligheid
 
-te borgen: via een post market surveillance systeem en via vigilantie (“waakzaamheid”)
+te borgen: via een post market surveillance systeem en via vigilantie (ï¿½waakzaamheidï¿½)
 
-betreffende incidentrapportages en veiligheidswaarschuwingen (‘Field Safety Notices’). Voor
+betreffende incidentrapportages en veiligheidswaarschuwingen (ï¿½Field Safety Noticesï¿½). Voor
 
 verdere details aangaande deze systemen wordt verwezen naar de MDR en het CMT (MDR
 
@@ -3880,7 +3880,7 @@ is, maar deze blijkt kwaadaardig);
 ```
   - Monitoring op technische fouten (bijv. de AIPA software geeft geen output voor
 
-bepaalde individuen/patiënten, is niet toegankelijk, is niet goed geïntegreerd in
+bepaalde individuen/patiï¿½nten, is niet toegankelijk, is niet goed geï¿½ntegreerd in
 
 bestaande IT-systemen, de responstijd is niet acceptabel). De software moet een
 
@@ -3892,11 +3892,11 @@ en/of de fabrikant (zie fase 4).
 
   - Monitoring op fairness: om fairness (en bias) te kunnen meten moet voor kwetsbare
 
-groepen zoals geïdentificeerd in fase 3 getest worden of er geen ongewenste
+groepen zoals geï¿½dentificeerd in fase 3 getest worden of er geen ongewenste
 
 verschillen voorkomen in de effecten en uitkomsten van een AIPA, ook na introductie
 
-van het AIPA in de medische praktijk. Hierbij is het van belang dat essentiële
+van het AIPA in de medische praktijk. Hierbij is het van belang dat essentiï¿½le
 
 variabelen die socio-economische determinanten van gezondheid vangen voor zover
 
@@ -3904,7 +3904,7 @@ mogelijk verzameld worden.
 
   - Monitoring op de in de risico-inventarisatie (zie sectie 5.1.2) en analyse van
 
-onzekerheden (zie sectie 5.3.1) onderkende risico’s;
+onzekerheden (zie sectie 5.3.1) onderkende risicoï¿½s;
 
   - Monitoring op deployment bias, zie aanbeveling 6.2.1c. (6.2.1b)
 
@@ -3932,7 +3932,7 @@ verantwoordelijkheid om juiste werking en gebruik van het AIPA blijvend te monit
 
 Er moet een lokaal monitoringsplan worden opgesteld door de zorgorganisatie waar de
 
-software die het AIPA bevat wordt geïmplementeerd. (6.2.2a)
+software die het AIPA bevat wordt geï¿½mplementeerd. (6.2.2a)
 
 
 64
@@ -3958,11 +3958,11 @@ samenwerking met de fabrikant worden ingericht;
 
   - Monitoring op technische fouten (bijv. de AIPA software geeft geen output voor
 
-bepaalde individuen/patiënten, is niet toegankelijk, is niet goed geïntegreerd in
+bepaalde individuen/patiï¿½nten, is niet toegankelijk, is niet goed geï¿½ntegreerd in
 
 bestaande IT-systemen, of de responstijd is niet acceptabel);
 
-  - Monitoring op onverwachte effecten voor de zorgverlener, patiënt, organisatie, de
+  - Monitoring op onverwachte effecten voor de zorgverlener, patiï¿½nt, organisatie, de
 
 zorgprocessen en/of de maatschappij. Deze effecten moeten worden gemeld door
 
@@ -3975,9 +3975,9 @@ zorgverlener, zorgorganisatie en/of de fabrikant;
 ```
 zwaar mee in de beslissingen van een zorgverlener. Monitor daarnaast op
 
-_‘deskilling’: het verleren van medische handelingen door automatisering; en_
+_ï¿½deskillingï¿½: het verleren van medische handelingen door automatisering; en_
 
-`o` _Deployment bias: oneigenlijk gebruik (bijv. toepassing bij patiënten waarvoor_
+`o` _Deployment bias: oneigenlijk gebruik (bijv. toepassing bij patiï¿½nten waarvoor_
 
 de AIPA software niet ontwikkeld is, niet naleven van model aanbevelingen) of
 
@@ -3987,7 +3987,7 @@ een foute interpretatie van de uitkomst. Zie aanbeveling 6.2.2d.
 
 waarschijnlijk het is dat deze fout op kan treden, op basis van de prospectieve risico
 
-inventarisatie (PRI, zie eis 6.1d). Monitoring op de in de PRI onderkende risico’s;
+inventarisatie (PRI, zie eis 6.1d). Monitoring op de in de PRI onderkende risicoï¿½s;
 
   - Onderbouwing van welke gegevens (data) worden verzameld ten behoeve van
 
@@ -4005,7 +4005,7 @@ vice versa bij een onverwachte uitkomst waarvan de oorzaak niet te herleiden is
 
 **Aanbevolen wordt om als onderdeel van het monitoringplan individuele ervaringen van**
 
-stakeholders (bijv. van de patiënt en zorgverlener) waar mogelijk op te vragen. (6.2.2c)
+stakeholders (bijv. van de patiï¿½nt en zorgverlener) waar mogelijk op te vragen. (6.2.2c)
 
 Voor het vaststellen van lokale deployment bias wordt sterk **aanbevolen:**
 
@@ -4039,7 +4039,7 @@ en ingebruikname algoritme. (6.2.2d)
 
 _6.3.1 Eindgebruiker_
 
-De eindgebruiker (bijv. een patiënt of de zorgverlener) moet toegang hebben tot informatie
+De eindgebruiker (bijv. een patiï¿½nt of de zorgverlener) moet toegang hebben tot informatie
 
 over de onderwerpen beschreven in box 6.1, te leveren door de ontwikkelaar of fabrikant.
 
@@ -4116,11 +4116,11 @@ Dit heeft als doel om de zorgorganisatie bewust te maken van de verantwoordelijk
 
 komen bij de inkoop of ontwikkeling in eigen huis van een AIPA die zal worden
 
-geïmplementeerd en gebruikt in de medische praktijk. De zorgorganisatie draagt hierbij de
+geï¿½mplementeerd en gebruikt in de medische praktijk. De zorgorganisatie draagt hierbij de
 
 verantwoordelijkheid en moet zich informeren; het is een randvoorwaarde om de benodigde
 
-kennis in huis te hebben en/of halen betreffende implementatie van AIPA’s.
+kennis in huis te hebben en/of halen betreffende implementatie van AIPAï¿½s.
 
 Eindgebruikers (bijv. zorgverleners) moeten de ruimte en mogelijkheid krijgen voor onderwijs
 
@@ -4140,7 +4140,7 @@ betreffende het AIPA. (6.3.2b)
 
 beheer van de cloud, ondersteuning van IT infrastructuur, opslag en service grote
 
-datastromen, communicatie met beheerder elektronisch patiënten dossier.
+datastromen, communicatie met beheerder elektronisch patiï¿½nten dossier.
 
   - _De resultaten van uitgevoerde evaluaties en beoordelingen als onderdeel van_
 
@@ -4167,9 +4167,9 @@ een verantwoordelijke introductie, dat wil zeggen lettend op de veiligheid en to
 
 waarde van AIPA software in de praktijk. Er is onderscheid gemaakt tussen vier
 
-stakeholders: de zorgverlener, de zorgorganisatie, de patiënt en de fabrikant.
+stakeholders: de zorgverlener, de zorgorganisatie, de patiï¿½nt en de fabrikant.
 
-Het gebruik van de lijst rechten en plichten van zorgverleners, zorgorganisatie, patiënt/burger
+Het gebruik van de lijst rechten en plichten van zorgverleners, zorgorganisatie, patiï¿½nt/burger
 
 en fabrikant om te controleren en vast te stellen dat alle rechten en plichten effectief
 
@@ -4193,7 +4193,7 @@ Plichten:
 
    - Bewust bekwaam zijn in het gebruik van het AIPA;
 
-   - Het bedoelde gebruik naleven in het belang van de patiënt en fabrikant;
+   - Het bedoelde gebruik naleven in het belang van de patiï¿½nt en fabrikant;
 
    - Implementatie volgens het implementatieplan van de zorgorganisatie;
 
@@ -4205,13 +4205,13 @@ Plichten:
 
    - Transparantie over het gebruik van AI in prognose of diagnose (aan zorgorganisatie
 
-en patiënt, bijvoorbeeld in het dossier);
+en patiï¿½nt, bijvoorbeeld in het dossier);
 
    - Terug melden incidenten in het kwaliteitsmanagementsysteem;
 
-   - Transparantie over het gebruik van patiëntdata ter verbetering van AI aan patiënt, en
+   - Transparantie over het gebruik van patiï¿½ntdata ter verbetering van AI aan patiï¿½nt, en
 
-waar nodig het verkrijgen van geïnformeerde toestemming.
+waar nodig het verkrijgen van geï¿½nformeerde toestemming.
 
 _6.4.2 Zorgorganisatie:_
 
@@ -4231,25 +4231,25 @@ Plichten, zowel bij toepassing van AIPA van fabrikant and eigen ontwikkeling:
 
    - Borgen bekwaamheid van (AI) betrokken medewerkers;
 
-   - Het bedoelde gebruik naleven in belang van de patiënt en fabrikant;
+   - Het bedoelde gebruik naleven in belang van de patiï¿½nt en fabrikant;
 
    - In het algemeen vermelden dat AI gebruikt wordt;
 
-   - Borgen dat incidentrapportages en veiligheidswaarschuwingen (‘Field Safety
+   - Borgen dat incidentrapportages en veiligheidswaarschuwingen (ï¿½Field Safety
 
-Notices’) te allen tijde kunnen worden ontvangen en verwerkt
+Noticesï¿½) te allen tijde kunnen worden ontvangen en verwerkt
 
-   - Terug melden incidenten (aan fabrikant, zorgorganisatie, patiënt en in dossier);
+   - Terug melden incidenten (aan fabrikant, zorgorganisatie, patiï¿½nt en in dossier);
 
    - Zorgen dat er een implementatieplan is dat wordt uitgevoerd in lijn met de leidraad
 
 (zie sectie 6.1);
 
-   - Transparantie over het gebruik van patiëntgegevens ter verbetering van het AIPA;
+   - Transparantie over het gebruik van patiï¿½ntgegevens ter verbetering van het AIPA;
 
    - Werken met een kwaliteitsmanagementsysteem.
 
-_6.4.3 Patiënt, cliënt of burger_
+_6.4.3 Patiï¿½nt, cliï¿½nt of burger_
 
 Rechten
 
@@ -4259,12 +4259,12 @@ zorgorganisatie;
 
    - Transparantie over het gebruik van AI in de zorgorganisatie;
 
-   - Transparantie over het gebruik van patiëntdata ter verbetering van AI;
+   - Transparantie over het gebruik van patiï¿½ntdata ter verbetering van AI;
 
    - Ondersteuning fabrikant bij rechtstreekse relatie in zelfzorgtoepassingen (bijv. e
 _health toepassingen);_
 
-   - Terugkoppeling door fabrikant op individuele door patiënt zelf gemelde incidenten;
+   - Terugkoppeling door fabrikant op individuele door patiï¿½nt zelf gemelde incidenten;
 
    - Terugkoppeling van bugs en kwaliteitsbewaking;
 
@@ -4300,11 +4300,11 @@ _6.4.4 Fabrikant of ontwikkelende zorgorganisatie_
 
 Rechten
 
-  - Verkrijgen informatie over meldingen van de zorgorganisatie, zorgverlener of patiënt.
+  - Verkrijgen informatie over meldingen van de zorgorganisatie, zorgverlener of patiï¿½nt.
 
 Plichten
 
-  - Ondersteuning aan zorgverlener en patiënt voor onderhoud en kennis van juist
+  - Ondersteuning aan zorgverlener en patiï¿½nt voor onderhoud en kennis van juist
 
 gebruik van het AIPA (zoals verplicht door de MDR);
 
@@ -4314,7 +4314,7 @@ uitgevoerde studies;
 
   - Aanbod van informatie over monitoring en kwaliteitsmanagementsysteem;
 
-Behandeling en terugkoppeling aan zorgverlener of patiënt op door hen gemelde incidenten
+Behandeling en terugkoppeling aan zorgverlener of patiï¿½nt op door hen gemelde incidenten
 (waarbij ook verplichtingen omtrent vigilantie als besproken in 5.3.2).
 
 
@@ -4403,7 +4403,7 @@ Auteurs: Ilse Kant, Maarten van Smeden, namens de werkgroepen medische AI
 
 -----
 
-De werkgroepen ‘veldnorm medische AI’ hadden als doel om gemeenschappelijk
+De werkgroepen ï¿½veldnorm medische AIï¿½ hadden als doel om gemeenschappelijk
 
 opgestelde, publiek inzichtelijke criteria op te stellen om medische AIPA software te kunnen
 
@@ -4417,13 +4417,13 @@ reeds door de werkgroepleden gesignaleerd en wordt het door hen van belang geach
 
 hier in het bijzonder aandacht aan moet worden besteed bij toekomstige doorontwikkelingen.
 
-**Dynamisch updaten van AIPA’s**
+**Dynamisch updaten van AIPAï¿½s**
 
 AI technologie maakt een snelle ontwikkeling door die de huidige normen en regelgeving op
 
 enkele punten voorbij dreigt te streven. De werkgroepleden signaleren als probleem dat het
 
-naleven van de MDR in zijn huidige vorm óf zeer onzeker óf zeer bewerkelijk is voor een
+naleven van de MDR in zijn huidige vorm ï¿½f zeer onzeker ï¿½f zeer bewerkelijk is voor een
 
 AIPA die zeer frequent hertraind wordt met nieuwe data om het AIPA continue tijdens
 
@@ -4457,7 +4457,7 @@ daarom in de toekomst moeten worden opgenomen in de leidraad.
 
 De werkgroepleden onderstrepen het belang van (inter)nationale samenwerking op het
 
-gebied van data delen en AIPA’s om toekomstige ontwikkelingen in de gezondheidszorg aan
+gebied van data delen en AIPAï¿½s om toekomstige ontwikkelingen in de gezondheidszorg aan
 
 te moedigen en ondersteunen. Voorbeelden van initiatieven die hier al aan werken zijn de
 
@@ -4545,7 +4545,7 @@ zeggen bij artsen, verpleegkundigen en andere betrokkenen die in toenemende mate
 
 te maken zullen krijgen in hun dagelijkse zorgwerkzaamheden. In voorkomende gevallen is
 
-het zelfs de patiënt die over deze basiskennis zou moeten beschikken. Om AIPA technologie
+het zelfs de patiï¿½nt die over deze basiskennis zou moeten beschikken. Om AIPA technologie
 
 effectief en verantwoordelijk te kunnen introduceren in de dagelijkse medische praktijk zal
 
@@ -4609,7 +4609,7 @@ Voor inhoudelijke vragen of opmerkingen kunt u terecht bij de auteurs:
 
 dr. Maarten van Smeden - M.vanSmeden@umcutrecht.nl
 
-dr. Ilse Kant – I.M.J.Kant@lumc.nl
+dr. Ilse Kant ï¿½ I.M.J.Kant@lumc.nl
 
 
 -----

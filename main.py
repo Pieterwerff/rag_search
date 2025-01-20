@@ -2,6 +2,7 @@ from chunking import chunk_file
 from api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
 from agent import language_agent
+from agentic_chunker import chunk_file_with_metadata 
 # --- Settings ---
 chunk_size = 1000
 chunking_strategy = 'paragraph' # might become a list of strings to iterate through
@@ -16,13 +17,15 @@ with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
 
 # --- Step: Load markdown Document ---
 
-language = language_agent(input("Stel je vraag: "))
-print(language)
+# language = language_agent(input("Stel je vraag: "))
+# print(language)
 user_query = input("Stel je vraag: ")
+
 
 # --- Step: Chunk Document using different types of chunking strategies ---
 
-chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
+# chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
+
 
 # --- Step: Store Chunks in specific kind of chunk database ---
 
