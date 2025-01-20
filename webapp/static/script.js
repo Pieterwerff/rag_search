@@ -25,3 +25,17 @@ function closeImage() {
     const modal = document.getElementById("imageModal");
     modal.style.display = "none";
 }
+
+
+function toggleChunk(chunkId) {
+    const chunkElement = document.getElementById(chunkId);
+    const button = chunkElement.querySelector("button");
+
+    if (chunkElement.classList.contains("expanded")) {
+        chunkElement.classList.remove("expanded");
+        button.textContent = "Lees meer";
+    } else {
+        chunkElement.classList.add("expanded");
+        button.textContent = "Lees minder";
+    }
+}

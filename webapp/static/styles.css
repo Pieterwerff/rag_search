@@ -36,6 +36,12 @@ header h1 span {
     align-items: center; /* Centreert de items verticaal */
 }
 
+.result-container {
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
 .box, .highlight-box {
     flex: 1; /* Make the elements take up an equal amount of space */
     padding: 20px;
@@ -271,4 +277,85 @@ footer a {
     font-size: 2em;
     font-weight: bold;
     cursor: pointer;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #005080;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #FF6600;
+}
+.chunk {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f0f8ff;
+    border-left: 4px solid #005080;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chunk p {
+    margin: 0;
+    line-height: 1.5;
+    max-height: 3em; /* Maximaal 2 regels hoogte */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chunk.expanded p {
+    max-height: none; /* Verwijder de beperking bij uitklappen */
+}
+
+.chunk .source {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.chunk button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #005080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.chunk button:hover {
+    background-color: #003d66;
+}
+
+.llm-response {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e6f7e6;
+    border-left: 4px solid #28a745;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #005080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:hover {
+    background-color: #003d66;
 }

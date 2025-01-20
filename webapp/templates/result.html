@@ -4,110 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultaten - RAG App</title>
-    <style>
-        body {
-            font-family: 'Open Sans', Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #ffffff;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #005080;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            margin-top: 20px;
-            color: #FF6600;
-        }
-
-        .chunk {
-            margin-bottom: 15px;
-            padding: 10px;
-            background: #f0f8ff;
-            border-left: 4px solid #005080;
-            border-radius: 4px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .chunk p {
-            margin: 0;
-            line-height: 1.5;
-            max-height: 3em; /* Maximaal 2 regels hoogte */
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .chunk.expanded p {
-            max-height: none; /* Verwijder de beperking bij uitklappen */
-        }
-
-        .chunk .source {
-            font-size: 0.9em;
-            color: #777;
-            margin-top: 5px;
-        }
-
-        .chunk button {
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            background: #005080;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            font-size: 0.9em;
-            cursor: pointer;
-        }
-
-        .chunk button:hover {
-            background-color: #003d66;
-        }
-
-        .llm-response {
-            margin-top: 20px;
-            padding: 15px;
-            background: #e6f7e6;
-            border-left: 4px solid #28a745;
-            border-radius: 4px;
-            font-style: italic;
-        }
-
-        .back-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 15px;
-            background-color: #005080;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .back-btn:hover {
-            background-color: #003d66;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div class="container">
+<header>
+   <h1>Welkom bij <span>Leidraad kwaliteit AI in de zorg</span></h1>
+</header>
+<div class="container result-container">
     <h1>RAG Resultaten</h1>
 
     <h2>Je vraag:</h2>
@@ -129,6 +33,11 @@
 
     <a href="/" class="back-btn">Terug naar de startpagina</a>
 </div>
+
+<footer>
+    <p>© 2025 Guideline AI Healthcare | <a href="#">Meer Informatie</a></p>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 <script>
     function toggleChunk(chunkId) {
