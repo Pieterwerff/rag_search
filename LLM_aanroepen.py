@@ -1,6 +1,5 @@
 # Importeren van benodigde modules
 import openai
-from transformers import pipeline
 import requests
 import os
 from dotenv import load_dotenv
@@ -11,63 +10,29 @@ load_dotenv()
 # API-sleutels ophalen uit .env-bestand
 openai_api_key = os.getenv('OPENAI_API_KEY')
 anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
-qdrant_api_key = os.getenv('QDRANT_API_KEY')
+llama_api_key = os.getenv('LLAMA_API_KEY')
 
-# Controleren of API-sleutels aanwezig zijn
-if not openai_api_key:
-    raise ValueError("OpenAI API-sleutel ontbreekt. Voeg deze toe in het .env bestand.")
-if not qdrant_api_key:
-    print("Qdrant API-sleutel ontbreekt. Deze is optioneel, maar voeg deze toe als nodig.")
-if not anthropic_api_key:
-    print("Anthropic API-sleutel ontbreekt. Voeg deze toe in het .env bestand als je de Claude API wilt gebruiken.")
+# Debugging: Controleren of API-sleutels worden geladen
+print(f"OpenAI API Key geladen: {'Ja' if openai_api_key else 'Nee'}")
+print(f"LLaMA API Key geladen: {'Ja' if llama_api_key else 'Nee'}")
+print(f"Anthropic API Key geladen: {'Ja' if anthropic_api_key else 'Nee'}")
 
-def call_gpt(retrieved_text, user_query, api_key):
+# Generieke functie om een LLM aan te roepen
+def call_llm(llm_name, retrieved_text, user_query, max_length=200):
     """
-    Roept ChatGPT aan via OpenAI API.
+    Roept een LLM aan op basis van de opgegeven naam.
 
     Parameters:
+        llm_name (str): Naam van de LLM ("chatgpt", "llama", "anthropic").
         retrieved_text (str): De tekst van de leidraad voor context.
-        user_query (str): De vraag van de gezondheidszorgprofessional.
-        api_key (str): OpenAI API-sleutel.
+        user_query (str): De vraag van de gebruiker.
+        max_length (int): Maximale lengte van het gegenereerde antwoord (indien ondersteund).
 
     Returns:
-        str: gegenereerde tekst van ChatGPT.
+        str: Het gegenereerde antwoord of een foutmelding.
     """
-    client = openai.OpenAI(api_key=api_key)
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "Je bent een assistent die vragen over de Leidraad AI in de zorg beantwoordt."},
-            {"role": "user", "content": f'''Baseer je antwoord op deze tekst: {retrieved_text}\n\n
-                vraag: wat is AIPA
-                antwoord: AIPA staat voor artificial intelligence prediction algorithm
-                vraag: Mag ik pannenkoeken?
-                antwoord: Dit antwoord kan ik niet vinden in de gegeven context
-                vraag: {user_query}
-                antwoord:
-            '''}
-        ]
-    )
-    return response.choices[0].message.content
-
-def call_llama(retrieved_text, user_query, model="meta-llama/Llama-2-7b", max_length=200):
-    """
-    Roept Llama aan via Hugging Face Transformers pipeline.
-
-    Parameters:
-        retrieved_text (str): De tekst van de leidraad voor context.
-        user_query (str): De vraag van de gezondheidszorgprofessional.
-        model (str): Naam van het Hugging Face model.
-        max_length (int): Maximale lengte van de gegenereerde tekst.
-
-    Returns:
-        str: gegenereerde tekst van Llama.
-    """
-    llama_pipeline = pipeline("text-generation", model=model)
-    prompt = f"""Je bent een assistent die vragen over de Leidraad AI in de zorg beantwoordt.
-
-    Baseer je antwoord op deze tekst: {retrieved_text}
-
+    # Gemeenschappelijke prompt voor alle modellen
+    prompt = f"""Baseer je antwoord op deze tekst: {retrieved_text}\n\n
     vraag: wat is AIPA
     antwoord: AIPA staat voor artificial intelligence prediction algorithm
     vraag: Mag ik pannenkoeken?
@@ -75,95 +40,91 @@ def call_llama(retrieved_text, user_query, model="meta-llama/Llama-2-7b", max_le
     vraag: {user_query}
     antwoord:
     """
-    response = llama_pipeline(prompt, max_length=max_length)
-    return response[0]['generated_text']
 
-def call_t5(retrieved_text, user_query, model="t5-base", max_length=200):
-    """
-    Roept T5 aan via Hugging Face Transformers pipeline.
+    # Logica voor specifieke LLMs
+    try:
+        if llm_name == "chatgpt":
+            # ChatGPT via OpenAI API
+            openai.api_key = openai_api_key
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[
+                    {"role": "system", "content": "Je bent een assistent die vragen over de Leidraad AI in de zorg beantwoordt."},
+                    {"role": "user", "content": prompt}
+                ]
+            )
+            return response['choices'][0]['message']['content']
 
-    Parameters:
-        retrieved_text (str): De tekst van de leidraad voor context.
-        user_query (str): De vraag van de gezondheidszorgprofessional.
-        model (str): Naam van het Hugging Face model.
-        max_length (int): Maximale lengte van de gegenereerde tekst.
-
-    Returns:
-        str: gegenereerde tekst van T5.
-    """
-    t5_pipeline = pipeline("text2text-generation", model=model)
-    prompt = f"""Je bent een assistent die vragen over de Leidraad AI in de zorg beantwoordt.
-
-    Baseer je antwoord op deze tekst: {retrieved_text}
-
-    vraag: wat is AIPA
-    antwoord: AIPA staat voor artificial intelligence prediction algorithm
-    vraag: Mag ik pannenkoeken?
-    antwoord: Dit antwoord kan ik niet vinden in de gegeven context
-    vraag: {user_query}
-    antwoord:
-    """
-    response = t5_pipeline(prompt, max_length=max_length)
-    return response[0]['generated_text']
-
-def call_anthropic(retrieved_text, user_query, api_key, model="claude-2", max_length=200):
-    """
-    Roept Claude aan via de Anthropic API.
-
-    Parameters:
-        retrieved_text (str): De tekst van de leidraad voor context.
-        user_query (str): De vraag van de gezondheidszorgprofessional.
-        api_key (str): Anthropic API-sleutel.
-        model (str): Naam van het Claude-model.
-        max_length (int): Maximale lengte van de gegenereerde tekst.
-
-    Returns:
-        str: gegenereerde tekst van Claude.
-    """
-    headers = {
-        "x-api-key": api_key,
-        "Content-Type": "application/json",
-        "anthropic-version": "2023-06-01"
-    }
-    
-    prompt = f"""Je bent een assistent die vragen over de Leidraad AI in de zorg beantwoordt.
-
-    Baseer je antwoord op deze tekst: {retrieved_text}
-
-    vraag: wat is AIPA
-    antwoord: AIPA staat voor artificial intelligence prediction algorithm
-    vraag: Mag ik pannenkoeken?
-    antwoord: Dit antwoord kan ik niet vinden in de gegeven context
-    vraag: {user_query}
-    antwoord:
-    """
-    
-    data = {
-        "model": model,
-        "max_tokens": max_length,
-        "messages": [
-            {
-                "role": "user",
-                "content": prompt
+        elif llm_name == "llama":
+            # LLaMA via Hugging Face API
+            api_url = f"https://api-inference.huggingface.co/models/meta-llama/Llama-2-7b"
+            headers = {
+                "Authorization": f"Bearer {llama_api_key}",
+                "Content-Type": "application/json"
             }
-        ]
-    }
-    
-    response = requests.post(
-        "https://api.anthropic.com/v1/messages",
-        headers=headers,
-        json=data
-    )
-    
-    if response.status_code == 200:
-        return response.json().get("content", "")[0].get("text", "")
-    else:
-        return f"Anthropic API error: {response.status_code}, {response.text}"
+            data = {
+                "inputs": prompt,
+                "parameters": {"max_length": max_length, "return_full_text": False},
+            }
+            response = requests.post(api_url, headers=headers, json=data)
+            if response.status_code == 200:
+                return response.json()[0]['generated_text']
+            elif response.status_code == 401:
+                return "LLaMA API error: Ongeldige API-sleutel of geen toegang tot het model."
+            elif response.status_code == 403:
+                return "LLaMA API error: Toegang tot het model geweigerd. Controleer of je de gebruiksvoorwaarden hebt geaccepteerd."
+            else:
+                return f"LLaMA API error: {response.status_code}, {response.text}"
 
-# Test code
+        elif llm_name == "anthropic":
+            # Claude via Anthropic API
+            headers = {
+                "x-api-key": anthropic_api_key,
+                "Content-Type": "application/json",
+                "anthropic-version": "2023-06-01"
+            }
+            data = {
+                "model": "claude-2",
+                "max_tokens": max_length,
+                "messages": [{"role": "user", "content": prompt}]
+            }
+            response = requests.post(
+                "https://api.anthropic.com/v1/complete",
+                headers=headers,
+                json=data
+            )
+            if response.status_code == 200:
+                return response.json().get("completion", "")
+            else:
+                return f"Anthropic API error: {response.status_code}, {response.text}"
+
+        else:
+            return f"Onbekend LLM: {llm_name}"
+
+    except Exception as e:
+        return f"Er trad een fout op bij het aanroepen van {llm_name}: {e}"
+
+# Testcode
 if __name__ == "__main__":
-    # Prompt instellen en LLM kiezen
-    llm_name = "chatgpt"  # Kies: "chatgpt", "llama", "t5", "anthropic"
+    # Terminalinterface voor keuze van LLM
+    print("Kies de LLM die je wilt gebruiken:")
+    print("1. ChatGPT (OpenAI)")
+    print("2. LLaMA (Hugging Face)")
+    print("3. Anthropic Claude")
+
+    choice = input("Typ het nummer van je keuze (1/2/3): ").strip()
+
+    if choice == "1":
+        llm_name = "chatgpt"
+    elif choice == "2":
+        llm_name = "llama"
+    elif choice == "3":
+        llm_name = "anthropic"
+    else:
+        print("Ongeldige keuze! Standaard wordt ChatGPT gebruikt.")
+        llm_name = "chatgpt"
+
+    # Testvraag en context
     prompt = "Mag ik AI gebruiken voor het stellen van diagnoses bij patiënten?"
     retrieved_text = """
     Bij het gebruik van AI voor diagnose moet zorgvuldig worden gekeken naar de validatie van het systeem. 
@@ -172,20 +133,7 @@ if __name__ == "__main__":
     Het systeem moet CE-gecertificeerd zijn voor diagnostisch gebruik en voldoen aan de MDR-wetgeving.
     """
 
-    # LLM aanroepen
-    try:
-        if llm_name == "chatgpt":
-            output = call_gpt(retrieved_text, prompt, openai_api_key)
-        elif llm_name == "llama":
-            output = call_llama(retrieved_text, prompt)
-        elif llm_name == "t5":
-            output = call_t5(retrieved_text, prompt)
-        elif llm_name == "anthropic":
-            output = call_anthropic(retrieved_text, prompt, api_key=anthropic_api_key)
-        else:
-            raise ValueError(f"Onbekende LLM gekozen: {llm_name}")
-        
-        print(f"Output van {llm_name}:\n{output}")
-
-    except Exception as e:
-        print(f"Er trad een fout op bij het aanroepen van {llm_name}: {e}")
+    # Aanroepen van LLM met testdata
+    print(f"# Aanroepen van {llm_name}")
+    output = call_llm(llm_name, retrieved_text, prompt)
+    print(f"Output van {llm_name}:\n{output}")
