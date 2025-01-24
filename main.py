@@ -8,7 +8,7 @@ chunk_size = 1000
 chunking_strategy = 'paragraph' # might become a list of strings to iterate through
 llm = 'gpt4o-mini' # might become a list of strings to iterate through
 leidraad = 'leidraad_ai_in_zorg'
-storageStrategy = "ChromaDB"
+storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step: Load markdown Document ---
@@ -21,11 +21,9 @@ with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
 # print(language)
 user_query = input("Stel je vraag: ")
 
-
 # --- Step: Chunk Document using different types of chunking strategies ---
 
-# chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
-
+chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
 
 # --- Step: Store Chunks in specific kind of chunk database ---
 
