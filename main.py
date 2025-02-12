@@ -5,7 +5,6 @@ from agent import language_agent
 from agentic_chunker import chunk_file_with_metadata 
 import pandas as pd
 
-
 # --- Settings ---
 chunk_size = 1000
 chunking_strategy = 'paragraph' # might become a list of strings to iterate through
