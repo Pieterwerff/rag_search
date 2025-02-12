@@ -3,6 +3,7 @@ from api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
 from agent import language_agent
 from agentic_chunker import chunk_file_with_metadata 
+import pandas as pd
 # --- Settings ---
 chunk_size = 1000
 chunking_strategy = 'paragraph' # might become a list of strings to iterate through
@@ -12,7 +13,7 @@ storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step: Load markdown Document ---
-with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
+with open("leidraad origineel.txt", "r", encoding="ISO-8859-1") as file:
     document = file.read()  # Read content into a string
 
 # --- Step: Load markdown Document ---
@@ -35,9 +36,12 @@ retrieved_text = get_chunks(collection, user_query, storageStrategy)
 # Query the LLM
 response = query_llm(retrieved_text=retrieved_text, user_query=user_query, llm=llm)
 
+# references = pd.read_csv("extracted_references.csv")
+
 # --- Step 6: Output Result ---
 print("Vraag:", user_query)
 print("Antwoord:", response)
+
 
 # --- Step 7: Validate Output ---
 # TODO
