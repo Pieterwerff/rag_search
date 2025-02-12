@@ -1,3 +1,4 @@
+from flask import json
 from openai import OpenAI
 import os
 import requests
@@ -37,6 +38,7 @@ def query_llm(retrieved_object, user_query, llm):
                         "Als je je antwoord baseert op een zin waar een bron in staat, geef je deze bron mee in het JSON-object. "
                         "Als de bron NIET wordt gebruikt om een antwoord op te baseren, geef je deze NIET mee aan het JSON-object.\n\n"
                         "Daarnaast geef je de id mee van de chunk waar je je antwoord op hebt gebaseerd. \n\n"
+                        "Als je het antwoord niet kan baseren op de informatie uit de chunks, geef dan als antwoord in het JSON-object: \"Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.\".\n\n"
                         "Voorbeeld: \n\n"
                         "{\n"
                         "  \"antwoord\": \"Op basis van de aangeleverde tekst kan geconcludeerd worden dat er een duidelijke relatie bestaat tussen X en Y. "
@@ -59,6 +61,9 @@ def query_llm(retrieved_object, user_query, llm):
                 }
             ]
         )
+
+
+
     if llm == 'gpt-3.5-turbo':
         client = OpenAI()
         response = client.chat.completions.create(
