@@ -46,6 +46,7 @@ def store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, chunking_
     # Maak naam van huidige leidraad + chunk strategie
     leidraad = leidraad+"_"+chunking_strategy
 
+    # QdrantClient.delete_collection(qdrant_client, leidraad)
     # Maakt Qdrant storage aan als deze nog niet bestaan
     if storageStrategy == "Qdrant":
         try:
@@ -76,12 +77,12 @@ def store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, chunking_
             leidraad = chroma_client.create_collection(leidraad)
 
     # Als de storage aangemaakt moest worden wordt hier het embedden en toevoegen van de chunks gedaan
-    for idx, chunk in enumerate(chunks):
+    for idx, chunk in chunks.iterrows():
         print(f"Embedding chunk {idx}")
         
         # Generate embedding
         embedding = openAI_client.embeddings.create(
-            input=chunk,
+            input=chunk['content'],
             model=embeddingStrategy
         )
 
@@ -96,8 +97,9 @@ def store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, chunking_
             print(f"Chunk {idx} added to ChromaDB storage")
             leidraad.add(
                 ids=[str(idx)],
-                documents=[chunk],
-                embeddings=[embedding_vector]
+                documents=[chunk['content']],
+                embeddings=[embedding_vector],
+                metadata=[{'chapter_name': chunk['chapter_name'], 'chapter_number': chunk['chapter_number']}]
             )
         elif storageStrategy == "Qdrant":
             print(f"Chunk {idx} added to Qdrant storage")
@@ -106,7 +108,11 @@ def store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, chunking_
                 points=[
                     models.PointStruct(
                         id=str(uuid4()),  # Unieke ID voor de string
-                        payload={"document": chunk},  # Payload = document, willen we later uitbreiden met metadata
+                        payload={
+                            "document": chunk['content'],
+                            "chapter_name": chunk['chapter_name'],
+                            "chapter_number": chunk['chapter_number']
+                        },  # Payload = document, willen we later uitbreiden met metadata
                         vector=embedding_vector  # vector
                     )
                 ]
