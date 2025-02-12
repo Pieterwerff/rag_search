@@ -1,0 +1,1725 @@
+
+
+**1.1** **Juridische randvoorwaarden**
+
+De juridische randvoorwaarden en context moeten door de ontwikkelaar worden benoemd in
+
+het datamanagementplan, door middel van beschrijving of verwijzing. (1.1a)
+
+Daarbij moet tenminste worden beschreven welke nationale en Europese wet- en
+
+regelgeving van toepassing zijn op de data en de daarop gebaseerde AIPA. (1.1b)
+
+In deze context kan worden gedacht aan onder meer de Medical Device Regulation (MDR),
+
+de Wet op de Geneeskundige Behandelovereenkomst (WGBO), de Wet beveiliging netwerk
+_en informatiesystemen (WBNI), de Wet medisch-wetenschappelijk onderzoek met mensen_
+
+(WMO), en de Algemene Verordening Gegevensbescherming (AVG). Verdere juridische
+
+randvoorwaarden hangen af van de doelstelling van het AIPA en de vorm waarin deze
+
+ingezet gaat worden.
+
+Daarnaast moet, in het geval van een samenwerking tussen organisaties of gebruik van data
+
+van derde partijen, worden beschreven welke overeenkomsten (bijv.
+
+verwerkersovereenkomsten met externe partijen) zijn gesloten of worden gesloten, welke
+
+afspraken in deze overeenkomsten zijn opgenomen (bijv. wat betreft informatiebeveiliging en
+
+bewaartermijnen) en welke afspraken er worden gemaakt wat betreft intellectueel
+
+eigendomsrecht. (1.1c)
+
+Daarnaast wordt sterk aanbevolen bestaan en werking van algemene
+
+informatiebeveiligingsmaatregelen omtrent toegang tot data die dienen ter naleving van de
+
+wet vast te leggen door naar passende documentatie, zoals bijv. een ISO 27001 of NEN
+
+7510 certificering te verwijzen. (1.1d)
+
+**1.2** **Dataverzameling**
+
+De eigenschappen van de dataverzameling moeten nauwkeurig en gedetailleerd door de
+
+ontwikkelaar worden vastgelegd in het datamanagementplan dat betrekking heeft op de
+
+specifieke AIPA ontwikkel-, evaluatie-, of implementatie-fase. (1.2a)
+
+Voor een dataverzameling, moeten daarbij tenminste worden vastgelegd:
+
+(i) De herkomst van de data, zoals de (verwachte) begin- en (verwachte) einddatum
+
+van de dataverzameling, locatie(s) van verzameling (bijv. of uit ziekenhuizen of
+
+registers data werd verzameld),
+
+(ii) Het originele doel en de context van de dataverzameling incl. de toegepaste in
+en exclusiecriteria van de beoogde doelgroep (bijv. pati nten of burgers), en in
+
+die gevallen dat dataverwerking berust op expliciete toestemming van pati nt,
+
+
+14
+
+
+-----
+
+cli nt of burger, de voorwaarden waaronder de pati nt of burger toestemming
+
+heeft verleend (o.a. het verwerkingsdoel),
+
+(iii) De procedures van metingen en registratie van data, zoals het ontwerp (design)
+
+van de datacollectie (bijv. cohortonderzoek, routinematig verzamelde
+
+zorggegevens), de timing van metingen waarmee data van individuen wordt
+
+verzameld (bijv. meting van pati nten direct na ziekenhuisopname, periodieke
+
+herhalingen van metingen) en indien van toepassing de technische
+
+eigenschappen van meetinstrumenten (bijv. fabrikant, type nummer en
+
+sensitiviteit/responsiviteit). (1.2b)
+
+Het uitgangspunt van fase 1 (en de bijbehorende datamanagementplannen) is dat deze
+
+beschrijvingen voldoende gedetailleerd zijn om de dataverzameling en/of data-extractie in
+
+beginsel te kunnen reproduceren, al dan niet door een derde partij.
+
+_1.2.1 Privacy en herleidbaarheid_
+
+Ten aanzien van privacy is de geldende regelgeving (de huidige AVG) leidend, ongeacht of
+
+de data betrekking heeft op ingezetenen van de Europese Unie.
+
+De privacy van personen waar data van is verkregen moet door de ontwikkelaar worden
+
+gerespecteerd en gewaarborgd. (1.2.1a)
+
+Herleidbaarheid van data naar personen moet worden voorkomen (anonimisering) of
+
+beperkt (pseudonimisering). (1.2.1b)
+
+Daarnaast moet het principe van dataminimalisatie gevolgd worden, daarmee wordt bedoeld
+
+dat niet meer data per subject wordt vastgelegd dan nodig voor de ontwikkeling of het
+
+gebruik van het AIPA. (1.2.1c)
+
+Metadata kan in voorkomende gevallen worden gebruikt om, in combinatie met data zelf,
+
+personen te identificeren. Aanbevolen wordt de mogelijkheid op reidentificatie van
+
+personen door middel van combinatie van de data over de persoon en de metadata over de
+
+data te onderzoeken en de resultaten van dit onderzoek bij de keuze voor vastlegging van
+
+metadata mee te wegen. (1.2.1d)
+
+Daarnaast moet, indien van toepassing, door de AIPA-ontwikkelaar of -tester expliciet in het
+
+datamanagementplan worden vastgelegd hoe om wordt gegaan met eventuele
+
+toevalsbevindingen (bevindingen die aan het licht komen tijdens een onderzoek wat een
+
+ander doel dient) en het recht op vernietiging van data van personen waar data van is
+
+verkregen. (1.2.1e)
+
+
+15
+
+
+-----
+
+In verschillende fasen kan dataverzameling onder de WMO vallen. Onderzoek dat onder de
+
+WMO valt moet, afhankelijk van het type onderzoek, vooraf door een erkende medisch
+ethische toetsingscommissie (METC) of de Centrale Commissie Mensgebonden Onderzoek
+
+(CCMO) worden getoetst. Daarnaast is vaak ook een
+
+gegevensbeschermingseffectbeoordeling (GEB) in het kader van de AVG vereist.
+
+**Sterk aanbevolen wordt de plannen rondom privacy en herleidbaarheid door een**
+
+gegevensbeschermingseffectbeoordeling (GEB) te laten toetsen of een privacy-deskundige
+
+of METC te benaderen, ook wanneer hier geen juridische verplichting toe bestaat. (1.2.1e)
+
+**1.3** **Metadata**
+
+Het datamanagementplan moet een gedetailleerde beschrijving geven van metadata. (1.3a)
+
+Metadata is data die de karakteristieken van de verzamelde data inzichtelijk maakt   data
+
+over data   en beschrijft onder meer de verzameling, rapportage en toegankelijkheid van de
+
+verzamelde data. Het gaat hier in essentie om het vastleggen van de in algemene zin
+
+omschreven eigenschappen en processen (zoals beschreven in 1.2) in de dataverzameling
+
+zelf. De nadruk moet daarbij liggen op het verschaffen van transparantie en duidelijkheid
+
+over de verzamelde data.
+
+**Sterk aanbevolen wordt metadata vast te leggen op de volgende niveaus:**
+
+- _Data provenance[1] (ofwel data lineage): bevat informatie over de herkomst van de_
+
+verzamelde data(punten), eventuele veranderingen en transformaties aan de data
+
+inclusief classificatie van het doel van de verandering en overige details die informatie
+
+kunnen geven over de validiteit van de verzamelde data, voor zover verenigbaar met de
+
+aanbevelingen omtrent herleidbaarheid in 1.2.1.
+
+- _Medische context: informatie over het ontwerp (design) van de datacollectie en de_
+
+populatiecontext (bijv. consecutieve pati nten bij de huisarts met huidklachten,
+
+ziekenhuispati nten verwezen voor een CT vanwege verdenking longembolie, gezonde
+
+mensen in de algemene bevolking van 70 jaar of ouder waarbij nagegaan wordt hoe
+
+groot hun kans op een bepaalde kanker is). Daarnaast beschrijft dit ook de fysieke en
+
+sociale omgevingsdeterminanten van de ge ncludeerde populatie, indien relevant voor de
+
+toepassing van het AIPA.
+
+- _Eigenschappen en beschrijvende statistiek van de data, zoals de eenheden,_
+
+gemiddelden, ranges van waarden, beschrijving ontbrekende waarnemingen en
+
+eventuele verschuivingen of trends in relatie tot de tijd. (1.3b)
+
+De keuze voor metadata en de omschrijving van metadata moet gebaseerd zijn op een
+
+inventarisatie van de belangen van de verschillende stakeholders die inzage in de metadata
+
+
+16
+
+
+-----
+
+zouden moeten kunnen krijgen, in het bijzonder controlerende of certificerende instanties en
+
+in het geval van samenwerkingsverbanden, partner (zorg)organisaties. (1.3d)
+
+Indien er meerdere databronnen in een bepaalde fase worden gebruikt, bijvoorbeeld
+
+verschillende datasets uit verschillende dataverzamelingsprocessen voor het valideren (fase
+
+3) van het AIPA, wordt sterk aanbevolen om de metadata voor elke databron apart te
+
+presenteren en te specificeren hoe de bronnen gekoppeld zijn. (1.3e)
+
+**1.4** **Beschikbaarheid data**
+
+Het datamanagementplan moet duidelijke informatie verschaffen over de beschikbaarheid
+
+van de data, voor belanghebbenden en derden. (1.4a)
+
+Voor het (intern of extern) beschikbaar stellen van data wordt sterk aanbevolen om de
+
+FAIR-principes[2] te volgen. (1.4b)
+
+FAIR is een acroniem voor Findable (vindbaar), Accessible (toegankelijk), Interoperable
+
+(uitwisselbaar) en Reusable (herbruikbaar). De FAIR-principes zijn richtlijnen voor de
+
+beschrijving, opslag en publicatie van (meta)data.
+
+In het geval dat data beschikbaar gesteld wordt aan partners of derden moet in het
+
+datamanagementplan worden vastgelegd welke afspraken bestaan over de opslag van de
+
+gebruikte data. Daarbij moet tenminste worden vermeld: de vorm waarin data wordt
+
+opgeslagen, de locatie(s) van dataopslag, de planning van incidentele en periodieke data
+
+back-ups, afspraken over mogelijk incidenten zoals data lekken en de (resterende)
+
+bewaartermijn van de data. (1.4c)
+
+Hierbij moet waar van toepassing worden vastgelegd hoe wordt voldaan aan de geldende
+
+nationale en internationale wet- en regelgeving omtrent verwerking van persoonsgegevens,
+
+dataopslag en databeveiliging, zoals beschreven in o.a. de Algemene Verordening
+
+Gegevensbescherming (AVG) en de Wet beveiliging netwerk- en informatiesystemen (WBNI)
+
+en daarop berustende richtlijnen. (1.4d)
+
+Daarnaast wordt aanbevolen de data beschikbaar te maken in vormen die aansluiten bij
+
+informatiestandaarden die gebruikelijk zijn in digitale informatie-uitwisseling in de
+
+gezondheidszorg. (1.4e)
+
+Daarbij kan voor Nederland bijvoorbeeld gedacht worden aan de diverse
+
+informatiestandaarden voor informatie-uitwisseling in de zorg die voor de Nederlandse
+
+zorgcontext beheerd worden door Nictiz[3] en een belangrijke rol spelen bij de uitwisseling van
+
+pati ntdata tussen verschillende zorginstellingen en zorgverleners. Internationaal kan
+
+bijvoorbeeld gedacht worden aan het medisch terminologiestelsel SNOMED[4].
+
+
+17
+
+
+-----
+
+Voor invulling van bovenstaande eisen kan in het datamanagementplan worden verwezen
+
+naar de gesloten verwerkingsovereenkomsten, in zoverre de overeenkomsten afspraken
+
+over al deze punten bevatten.
+
+**1.5** **Versiebeheer en beschikbaarheid van het datamanagementplan**
+
+Het datamanagementplan moet door de ontwikkelaar beschikbaar worden gesteld aan de bij
+
+de dataverzameling of -verwerking betrokken partijen. (1.5a)
+
+**Aanbevolen wordt het datamanagementplan openbaar of op aanvraag toegankelijk te**
+
+maken, bijvoorbeeld door het te plaatsen op een openbaar toegankelijke website. (1.5b)
+
+Deze aanbeveling mag afgewogen worden tegen commerci le belangen.
+
+Voor alle onderdelen van het datamanagementplan moet versiebeheer ge mplementeerd
+
+worden. (1.5c)
+
+Dit betekent dat eventuele veranderingen aan het datamanagementplan over de tijd
+
+nauwkeurig moeten worden geregistreerd en vastgelegd. Daarmee is het
+
+datamanagementplan een levend document, dat in de opvolgende fasen regelmatig
+
+bijgewerkt wordt of opnieuw wordt opgesteld in een volgende fase.
+
+
+18
+
+
+-----
+
+**1.6.** **Referenties**
+
+1. Gupta A. Data Provenance. In: Liu L,  zsu MT, eds. Encyclopedia of Database Systems
+
+Boston, MA: Springer US; 2009. P. 608 608
+
+2. Wilkinson MD, Dumontier M, Aalbersberg IjJ, Appleton G, Axton M, Baak A, Blomberg N,
+
+Boiten J-W, Silva Santos LB da, Bourne PE, Bouwman J, Brookes AJ, Clark T, Crosas
+
+M, Dillo I, Dumon O, Edmunds S, Evelo CT, Finkers R, Gonzalez-Beltran A, Gray AJG,
+
+Groth rowth P, Goble C, Grethe JS, Heringa J, Hoen PAC  t, Hooft R, Kuhn T, Kok R,
+
+Kok J, et al. The FAIR Guiding Principles for scientific data management and
+
+stewardship. Sci Data 2016;3:160018.
+
+3. Nictiz. Standaardisatie van digitale gegevensuitwisseling in de zorg.
+
+https://www.nictiz.nl/overig/standaardisatie-van-digitale-gegevensuitwisseling-in-de
+zorg/. Published December 5, 2018. Accessed December 8, 2021.
+
+4. SNOMED. SNOMED International. https://www.snomed.org/. 2021. Accessed December
+
+8, 2021.
+
+
+19
+
+
+-----
+
+## 2 Ontwikkeling van het AIPA 
+
+**Auteurs**
+
+Maarten van Smeden, Ilse Kant, Lotty Hooft, Gabrielle Davelaar, Desy Kakiay, Evangelos
+
+Kanoulas, Kicky van Leeuwen, Joran Lokkerbol, Daniel Oberski, Hine van Os, Niels
+
+Chavannes, Carl Moons
+
+
+20
+
+
+-----
+
+Fase 2 beslaat het ontwikkelen van het AIPA model. Het model is het geheel aan algoritme
+specifieke datastructuren dat in combinatie met een algoritme het AIPA vormt, en is het
+
+resultaat van analyse van de trainingsdata. In dit document wordt geen concreet stappenplan
+
+voor de analytische AIPA modelontwikkeling gegeven, de lezer wordt daarvoor verwezen
+
+naar bestaande literatuur.[1 6].
+
+**Sterk aanbevolen wordt om een gestandaardiseerd stappenplan te gebruiken voor een**
+
+complete vastlegging van de ontwikkelingsstappen en de procedures en resultaten van
+
+interne validatie (zie onder) van het AIPA. (2a)
+
+[De TRIPOD reporting guidelines[7 9] (www.tripod-statement.org) dienen daarbij als leidraad,](http://www.tripod-statement.org/)
+
+en een specifieke TRIPOD-AI reporting guideline is bijna voltooid.
+
+**1.1.** **Uitleg doelgebruik**
+
+De ontwikkelaar van het model moet duidelijk het doelgebruik van het AIPA defini ren en
+
+vastleggen. (2.1a)
+
+In het vastgelegde doelgebruik moet tenminste duidelijk worden gemaakt:
+
+i) Voor welke medische- of gezondheidstoepassing het AIPA bedoeld is (bijv. bij
+
+welke medische context, indicatie of doelpopulatie) en wie de beoogde
+
+eindgebruiker is (bijv. een specifiek specialisme, eerstelijnszorgverlener, of de
+
+pati nt, cli nt of burger zelf);
+
+ii) Welk medisch of gezondheidszorgproces be nvloed beoogt te worden door het
+
+AIPA en wat de verwachte meerwaarde t.o.v. het huidige proces is (bijv. het
+
+maken van een snellere diagnose een betere inschatting van iemands prognose,
+
+of indicatie voor aanpassing van een leefstijlgewoonte);
+
+iii) Wat de beoogde momenten van het AIPA gebruik ofwel van het voorspellen zijn
+
+(bijv. bij opname in ziekenhuis of Intensive Care, bij moment van diagnose met
+
+kanker, bij verwijzing voor CT-scan, of bij constatering van symptomen of
+
+klachten, of controle van het suikergehalte in het bloed);
+
+iv) Of het een diagnostische, prognostische, monitoring, screening of ander type
+
+gezondheidszorgtoepassing betreft;
+
+v) Wat de predictiehorizon van het AIPA is (in geval van prognostische
+
+voorspellingen: hoever in de tijd het AIPA voorspelt). (2.1b)
+
+**Sterk aanbevolen wordt om bij de definitie van doelgebruik stakeholders zoals gebruikers**
+
+en pati nten, cli nten of burgers te betrekken. (2.1c)
+
+_2.1.1 Dataset(s) en doelgebruik_
+
+
+21
+
+
+-----
+
+In fase 1 is reeds een precieze beschrijving vastgelegd van de oorsprong van de dataset(s)
+
+(bijv. tijd/plaats) die worden gebruikt voor ontwikkeling van het AIPA model, het design van
+
+dataverzameling (bijv. opeenvolgende pati nten), meet- en registratieprocedures, eventuele
+
+selecties, in- en exclusiecriteria van deelnemers of datapunten in het onderzoek.
+
+In algemeenheid wordt sterk **aanbevolen een representatieve steekproef uit de**
+
+doelpopulatie (zoals vastgelegd in het doelgebruik, zie sectie 2.1.) te gebruiken voor de
+
+ontwikkeling van het AIPA. (2.1.1a)
+
+Indien het vermoeden bestaat dat de gebruikte data niet (volledig) representatief is moet dit
+
+worden gedocumenteerd en inhoudelijk worden onderbouwd. (2.1.1b)
+
+**2.2** **Analyse- en modeleringstappen**
+
+De ontwikkelaar van het model moet alle analyse- en modelontwikkeling stappen
+
+vastleggen. Daarbij horen alle voorbereidingsstappen (bijv. initi le data analyse[10], feature
+
+engineering), gebruikte modelleringstechniek (bijv. neuraal netwerk, random forest, time-to
+_event, logistische regressie), alle modeleringstappen (bijv. modelselectie, tuning, (her-)_
+
+kalibratie). (2.2a) Het uitgangspunt is dat de achtereenvolgende analyse- en
+
+modeleringstappen voldoende gedetailleerd zijn zodat een derde partij op basis van de
+
+beschrijving alle analyse- en modelstappen exact zou kunnen reproduceren [7 9, 11].
+
+**2.3** **Interne evaluatie van het model**
+
+_2.3.1 Interne validatie_
+
+Interne validatie is een belangrijk onderdeel in het proces van ontwikkeling van het AIPA. De
+
+interne validatie heeft als doel realistische schattingen van de voorspelkracht van het AIPA te
+
+kwantificeren. Een adequate schatter van de voorspelkracht van het model (bijv. de
+
+C(oncordance)-statistic en kalibratiecurve[8,12]) kan verschillen tussen soorten toepassingen
+
+en eindpunten (bv binair, multi-categorie, time-to-event), zie ook sectie 3.1.2. Expliciete
+
+minimale criteria voor voorspelkracht worden niet gegeven in dit document omdat minimale
+
+voorspelkracht context-afhankelijk is.
+
+**Sterk** **aanbevolen wordt om de voorspelkracht zoveel mogelijk in context te beschrijven,**
+
+bijv. door vergelijking met andere voorspelmodellen of AIPA s voor dezelfde medische
+
+context of doelpopulatie, of door vergelijking met een benchmark relevant voor de medische
+
+context zodat de meerwaarde ten opzichte van de huidige medische praktijk beoordeeld kan
+
+worden. (2.3.1a)
+
+
+22
+
+
+-----
+
+Om tot realistische schattingen van de voorspelkracht te komen moeten adequate
+
+maatregelen genomen worden om voorspelkracht optimisme[1,2,5,6] te minimaliseren. (2.3.1b)
+
+Dit betekent dat de interne validatie strikt moet worden gescheiden van de
+
+modelontwikkeling, zoals de variabele- en modelselectie en tuning van het model (d.w.z.
+
+waken voor leakage). Bijvoorbeeld door nested cross-validation, waarin het uitvoeren van
+
+alle modelontwikkelstappen (inner loop) wordt gescheiden van het intern valideren van het
+
+model (outer loop).
+
+**Sterk aanbevolen wordt om statistisch effici nte interne validatiemethoden toe te passen**
+
+(bijv. cross-validatie, bootstrap), waarin alle data die beschikbaar zijn voor de ontwikkeling
+
+worden gebruikt voor de ontwikkeling van het model, boven ineffici nte interne
+
+validatiemethoden (bijv. enkele train-test splits)[13]. (2.3.1c)
+
+Indien hiervan wordt afgeweken, bijvoorbeeld omdat het computationeel niet haalbaar is,
+
+moet dit inhoudelijk worden onderbouwd.
+
+_2.3.2 Analyse van mogelijke (negatieve) impact van het model_
+
+Naast een realistische schatting van de voorspelkracht is het van belang doorlopend in de
+
+ontwikkeling vooruit te kijken naar de (mogelijke) toepassing van het AIPA in de praktijk,
+
+zodat het AIPA in ontwikkeling aangesloten blijft bij de medisch context en het op te lossen
+
+probleem.
+
+**Aanbevolen wordt om een geloofwaardige en transparante analyse van de mogelijke**
+
+negatieve impact van het gebruik of invoer van het AIPA uit te voeren en deze vast te leggen
+
+als onderdeel van de beoordeling van de meerwaarde van het AIPA ten opzichte van de
+
+huidige medische praktijk. (2.3.2a)
+
+Bijvoorbeeld door een analyse van de voorspelfouten van het model (d.w.z. error analyse) te
+
+verrichten en deze expliciet te relateren aan het doelgebruik.
+
+**Aanbevolen wordt om samen met stakeholders uit de medische context die bij het**
+
+doelgebruik beoogd wordt, een inschatting te maken van fairness risico s. Zie sectie 3.3 voor
+
+een gedetailleerdere uitwerking. (2.3.2b)
+
+Voorspelkracht is niet altijd voor alle deelpopulaties waarover gegeneraliseerd wordt gelijk.
+
+Daarom wordt sterk aanbevolen om zoveel mogelijk heterogeniteit in de geschatte
+
+voorspelkracht van het AIPA in kaart te brengen, bijvoorbeeld door gebruik van data uit
+
+meerdere locaties (bijv. verschillende medische centra) of andere pati nt relevante contexten
+
+  bijvoorbeeld met behulp van internal-external cross-validation[14,15]. (2.3.2c).
+
+
+23
+
+
+-----
+
+Indien hiervan wordt afgeweken moet dit worden onderbouwd met verwijzing naar de
+
+doelstelling van het model en een afweging van de risico s voor de robuustheid van het
+
+model.
+
+Ook wordt sterk aanbevolen om de verwachtte meerwaarde in de medische context van het
+
+model te onderzoeken en vast te leggen. (2.3.2d)
+
+Dit kan bijvoorbeeld met een decision curve analysis[16]. Een andere, meer robuuste en
+
+uitgebreidere, manier om de impact op de medische praktijk in een vroeg stadium van de
+
+ontwikkeling van een AIPA te onderzoeken is met een early _Health Technology Assessment_
+
+_(eHTA) van het AIPA[17,18] ._
+
+**2.4** **Technische Robuustheid**
+
+Bij de ontwikkeling van het AIPA moet ook de technische robuustheid van het model worden
+
+onderzocht en bevindingen transparant worden vastgelegd, tenminste voor die modellen die
+
+gebruikt worden in de externe validatie (fase 3). (2.4a)
+
+**Sterk aanbevolen wordt om technische robuustheid, naast voorspelkracht (zoals bedoeld in**
+
+2.3.1), te gebruiken als criterium voor modelselectie. (2.4b)
+
+Om de robuustheid te onderzoeken wordt aanbevolen om diverse sensitiviteitsanalyses uit te
+
+voeren. Hierbij kan worden gedacht aan analyses van de:
+
+- _Architectuur robuustheid: het herhalen van de analyse stappen op dezelfde data leidt tot_
+
+een model dat niet significant afwijkt van het oorspronkelijke model.
+
+- _Consistentie van modelvoorspellingen: het herhalen van de analysestappen op dezelfde_
+
+data leidt tot modellen met voorspellingen die niet veel afwijken van de voorspellingen uit
+
+het oorspronkelijke AIPA.
+
+- _Adversarial robuustheid: de invloed van het (opzettelijk) verstoren van de inputvariabelen_
+
+van het model op de voorspellingen en/of de architectuur.
+
+- _Domeinshift en outliers: de invloed van eventuele outliers in de data en/of bewuste_
+
+verandering van de dataset (bijv. bewust bepaalde groepen in- of excluderen) op de
+
+modelvoorspellingen en/of de architectuur (bijv. outlier rejection analyse). Zie ook fase 4
+
+en 6 voor aanvullende activiteiten.
+
+Daarnaast kan, om de transparantie van het AIPA te vergroten, ervoor worden gekozen om
+
+de invloed van bepaalde inputvariabelen op de voorspelling inzichtelijk te maken met behulp
+
+van bijvoorbeeld feature importance methoden (d.w.z. explainable AI[19]).
+
+Naast het onderzoeken van de technische robuustheid van het AIPA model tijdens de
+
+ontwikkeling, dient ook de robuustheid van het model in combinatie met de software waar het
+
+model deel van uit maakt te worden onderzocht. Zie hiervoor fase 4.
+
+
+24
+
+
+-----
+
+**2.5** **Grootte van de dataset voor ontwikkeling van het AIPA**
+
+Het uitgangspunt voor het kiezen van de grootte van de dataset voor ontwikkeling van het
+
+model is: hoe groter, hoe beter. Wel moet dit uitgangspunt gewogen worden tegen medisch
+ethische overwegingen en de eis van dataminimalisatie uit fase 1. In algemeenheid wordt de
+
+minimaal benodigde grootte van de dataset groter naarmate de incidentie (of prevalentie)
+
+van de te voorspellen uitkomst verder weg van 50% af ligt (d.w.z. hogere class imbalance),
+
+naarmate er minder sterke voorspellers zijn voor de uitkomst in de input (lagere verklaarde
+
+variantie in de uitkomst door de input variabelen) en naarmate het model meer
+
+inputvariabelen bevat en/of computationeel complexer is. Voor op regressie gebaseerde
+
+modellen bestaan er expliciete regels en formules die kunnen worden toegepast om de
+
+minimale grootte van de dataset te kunnen berekenen[20,21]. Voor complexere modellen
+
+bestaan dit soort regels voor a priori berekeningen van minimale grootte van de dataset
+
+(nog) niet. Wel bestaan er a posteriori sample size criteria[22], bijv. zogenaamde learning
+
+_curves[23], waarmee kan worden ge valueerd of de dataset aan minimale criteria voldoet,_
+
+zoals beperkt risico op overfitting en precieze schatting van de ge ndividualiseerde kansen
+
+op de uitkomst.
+
+Het gebruik van a priori of a posteriori methoden om te evalueren of de grootte van de
+
+dataset aan minimale criteria voldoet wordt sterk aanbevolen. (2.5a)
+
+Een METC zal om een rechtvaardiging van de grootte van de dataset vragen.
+
+**2.6** **Vastlegging, beschikbaarheid en versiebeheer**
+
+_2.6.1 Vastlegging, reproduceerbaarheid en repliceerbaarheid_
+
+Reproduceerbaarheid en repliceerbaarheid zijn belangrijke uitgangspunten voor de
+
+ontwikkeling van het AIPA.
+
+Om reproduceerbaarheid (d.w.z. de mogelijkheid van heruitvoering van de ontwikkeling met
+
+andere data) te garanderen moeten alle analyse stappen (zie ook eis 2.2a) en interne
+
+validatiestappen en analyse van technische robuustheid volledig worden vastgelegd. (2.6.1a)
+
+Hierbij is het uitgangspunt opnieuw dat de vastlegging voldoende gedetailleerd is voor
+
+derden om de ontwikkelstappen te kunnen reproduceren. De TRIPOD reporting guidelines[7-9]
+
+[(www.tripod-statement.org) kunnen daarbij gebruikt worden als leidraad.](http://www.tripod-statement.org/)
+
+Daarnaast wordt aanbevolen om waar van toepassing, gevonden resultaten te publiceren in
+
+een wetenschappelijk tijdschrift. (2.6.1b)
+
+Ook wordt aanbevolen om computercodes die gebruikt zijn voor het AIPA ontwikkeling
+
+openbaar of op aanvraag beschikbaar te stellen zodat deze door derden gebruikt kunnen
+
+worden voor een onafhankelijke validatie van het AIPA model[24]. (2.6.1c)
+
+
+25
+
+
+-----
+
+Daarnaast wordt aanbevolen om de repliceerbaarheid (d.w.z. heruitvoering van de
+
+modelontwikkeling met dezelfde data) door derden te waarborgen door waar het kan de data
+
+op aanvraag beschikbaar te stellen. (2.6.1d)
+
+Daarbij dient natuurlijk rekening te worden gehouden met de huidige wet- en regelgeving
+
+omtrent privacy, en daaruit voortkomende beperkingen en risico s zoals de kans op
+
+identificatie van betrokkenen. Ook mogen deze aanbevelingen afgewogen worden tegen
+
+commerci le belangen, en kan als argument aangevoerd worden dat externe validatie door
+
+een vertrouwde derde plaats zal vinden.
+
+_2.6.2 Versiebeheer en beschikbaarheid van model_
+
+De versiegeschiedenis (het uiteindelijke model en eventuele updates van het model) moet
+
+volledig vastgelegd worden, bijvoorbeeld door het toekennen van een versienummer.
+
+**(2.6.2a)**
+
+Deze versiegeschiedenis van het model is een aanvulling op de versiegeschiedenis van de
+
+software, zoals bijv. ge ist door de MDR.
+
+Daarnaast wordt sterk aanbevolen het feitelijke model en/of modellen (bijv.
+
+modelco ffici nten indien van toepassing, nomogrammen, computercode (met het feitelijk
+
+model)) openbaar toegankelijk te maken, indien beschikbaar inclusief (minimale) software
+
+rondom het model ter demonstratie. (2.6.2b)
+
+Indien hiervan wordt afgeweken, moet dit worden onderbouwd. Commerci le belangen
+
+kunnen in deze afweging doorslaggevend zijn.
+
+
+26
+
+
+-----
+
+**2.7** **Referenties**
+
+1. Harrell FE. Regression Modeling Strategies: with applications to linear models, logistic
+
+regression, and survival analysis. New York: Springer; 2001.
+
+2. Steyerberg EW. Clinical Prediction Models. Cham: Springer International Publishing;
+
+2019.
+
+3. Hastie T, Tibshirani R, Friedman J. The Elements of Statistical Learning The Elements of
+
+Statistical LearningData Mining, Inference, and Prediction, Second Edition. Springer Ser.
+
+Stat. 2009.
+
+4. Goodfellow I, Bengio Y, Courville A. Deep learning. Cambridge, Massachusetts: The MIT
+
+Press; 2016.
+
+5. Riley RD, van der Windt D, Croft P, Moons KGM. Prognosis Research in Health Care:
+
+Concepts, Methods, and Impact. Oxford University Press, 2019.
+
+6. Moons KG, Kengne AP, Woordward M, Royston P, Vergouwe Y, Altman DG, Grobbee
+
+DE. Risk prediction models: I. Development, internal validation, and assessing the
+
+incremental value of a new (bio)marker. Heart 2012;98:683-690.
+
+7. Collins GS, Reitsma JB, Altman DG, Moons KGM. Transparent Reporting of a
+
+multivariable prediction model for Individual Prognosis Or Diagnosis (TRIPOD): The
+
+TRIPOD Statement. Ann Intern Med 2015;162:55.
+
+8. Moons KG, Altman DG, Reitsma JB, Ioannidis JP, Macaskill P, Steyerberg EW, Vickers
+
+AJ, Ransohoff DF, Collins GS. Transparent Reporting of a multivariable prediction model
+
+for Individual Prognosis Or Diagnosis (TRIPOD): Explanation and Elaboration. Ann
+
+_Intern Med 2015;162:W1 W73._
+
+9. Collins GS, Moons KGM. Reporting of artificial intelligence prediction models. Lancet
+
+2019; 393:1577-1579.
+
+10. Huebner M, Vach W, Cessie S le. A systematic approach to initial data analysis is good
+
+research practice. J Thorac Cardiovasc Surg 2016;151:25 27.
+
+11. Collins GS, van Smeden M, Riley RD. COVID-19 prediction models should adhere to
+
+methodological and reporting standards. European respiratory journal 2020; 56:
+
+2002643.
+
+12. Van Calster B, McLernon DJ, Smeden M van, Wynants L, Steyerberg EW. Calibration:
+
+the Achilles heel of predictive analytics. BMC Med 2019;17:230.
+
+
+27
+
+
+-----
+
+13. Debray TP, Riley RD, Rovers MM, Reitsma JB, Moons KG; Cochrane IPD Meta-analysis
+
+Methods group. Individual participant data (IPD) meta-analyses of diagnostic and
+
+prognostic modeling studies: guidance on their use. PloS Med. 2015; 12:e1001886.
+
+14. Steyerberg EW, Harrell FE. Prediction models need appropriate internal, internal 
+
+external, and external validation. J Clin Epidemiol 2016;69:245 247.
+
+15. Debray TP, Damen JA, Riley RD, Snell K, Reitsma JB, Hooft L, Collins GS, Moons KG.
+
+A framework for meta-analysis of prediction model studies with binary and time-to-event
+
+outcomes. Stat Methods Med Res. 2019;28:2768-2786.
+
+16. Vickers AJ, Calster B van, Steyerberg EW. A simple, step-by-step guide to interpreting
+
+decision curve analysis. Diagn Progn Res 2019;3:18.
+
+17. Jenniskens K, Lagerweij GR, Naaktgeboren CA, Hooft L, Moons KGM, Poldervaart JM,
+
+Koffijberg H, Reitsma JB. Decision analytic modeling was useful to assess the impact of
+
+a prediction model on health outcomes before a randomized trial. J Clin Epidemiol
+
+2019;115:106-115.
+
+18. Van Giessen A, Wilcher B, Peters J, Hyde C, Moons KG, de Wit GA, Koffijberg H. Health
+
+economic evaluation of diagnostic and prognostic prediction models. A systematic
+
+review. Value in Health 2014;17:A560.
+
+19. Barredo Arrieta A, D az-Rodr guez N, Del Ser J, Bennetot A, Tabik S, Barbado A, Garcia
+
+S, Gil-Lopez S, Molina D, Benjamins R, Chatila R, Herrera F. Explainable Artificial
+
+Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward
+
+responsible AI. Inf Fusion 2020;58:82 115.
+
+20. van Smeden M, Moons KG, de Groot JA, Collins GS, Altman DG, Eijkemans MJ,
+
+Reitsma JB. Sample size for binary logistic prediction models: beyond events per
+
+variable criteria. Statistical methods in medical research 2019;28:2455-2474.
+
+21. Riley RD, Ensor J, Snell KI, Harrell FE, Martin GP, Reitsma JB, Moons KG, Collins GS,
+
+van Smeden M. Calculating the sample size required for developing a clinical prediction
+
+model. Bmj 2020;368: m441.
+
+22. Balki I, Amirabadi A, Levman J, Martel AL, Emersic Z, Meden B, Garcia-Pedrero A,
+
+Ramirez SC, Kong D, Moody AR, Tyrrell PN. Sample-Size Determination Methodologies
+
+for Machine Learning in Medical Imaging Research: A Systematic Review. Can Assoc
+
+_Radiol J 2019;70:344 353._
+
+23. Christodoulou E, Smeden M van, Edlinger M, Timmerman D, Wanitschek M, Steyerberg
+
+EW, Van Calster B. Adaptive sample size determination for the development of clinical
+
+prediction models. Diagn Progn Res 2021;5:6.
+
+
+28
+
+
+-----
+
+24. Community TTW, Arnold B, Bowler L, Gibson S, Herterich P, Higman R, Krystalli A,
+
+Morley A, O Reilly M, Whitaker K. The Turing Way: A Handbook for Reproducible Data
+
+Science. Zenodo; 2019.
+
+
+29
+
+
+-----
+
+## 3 Validatie van het AIPA
+
+**Auteurs**
+
+Maarten van Smeden, Ilse Kant, Lotty Hooft, Huib Burger, Daan van den Donk, Vincent
+
+Stirler, Bart Jan Verhoeff, Wouter Veldhuis, Hine van Os, Niels Chavannes, Carl Moons
+
+
+30
+
+
+-----
+
+Fase 3 beslaat het (extern) valideren van de in fase 2 ontwikkelde AIPA. Met externe
+
+validatie wordt de evaluatie van de voorspellingen van het AIPA model bedoeld met data die
+
+niet is gebruikt voor de ontwikkeling (of doorontwikkeling) in fase 2[1 3]. We maken daarbij
+
+onderscheid tussen de evaluatie van de statistische ofwel voorspellende waarde, de
+
+evaluatie van de (meer)waarde ten opzichte van de huidige zorgpraktijk en de evaluatie van
+
+_fairness en algoritmische bias._
+
+De overgang van fase 2 naar fase 3 is gebaseerd op de aanname dat de ontwikkeling van
+
+het AIPA model voltooid is. Wel kan het voorkomen dat een kleine set van kandidaat
+
+modellen in fase 3 gevalideerd worden om tot een finale keuze van een model te komen. Met
+
+externe validatie wordt expliciet niet bedoeld: het (her-)trainen of (her-)tunen van een model.
+
+Complete of gedeeltelijke her-training van een ontwikkelde AIPA kan wel een consequentie
+
+zijn van een externe validatie. Dit wordt ook wel model updating genoemd[4 6]. Het is dan
+
+nodig (een gedeelte van) fase 1 en 2 nogmaals te doorlopen en vast te leggen.
+
+**3.1** **Evaluatie voorspellende (statistische) eigenschappen van het AIPA**
+
+_3.1.1 Doelpopulatie en -context_
+
+Voor een goede evaluatie van de voorspellende waarde van een AIPA moet de tester een
+
+andere dataset gebruiken voor externe validatie, dan voor de AIPA ontwikkeling in fase 2 is
+
+gebruikt, maar wel een dataset die representatief is voor de doelpopulatie en context[3].
+
+**(3.1.1a)**
+
+Als sprake is van een zogenaamde holdout dataset dan zijn de eigenschappen van deze
+
+dataset reeds in fase 1 volledig vastgelegd. Anders zijn in ieder geval de eigenschappen van
+
+het dataverzamelingsproces vastgelegd.
+
+Het gebruik van onderzoeksdesigns waarin uitsluitend data van gezonde controles wordt
+
+gebruikt die niet representatief zijn voor de beoogde context of doelpopulatie, leidt veelal tot
+
+een te optimistische evaluatie van de voorspellende waarde van het AIPA model (spectrum
+
+_bias[7])._
+
+**Sterk aanbevolen wordt geen onderzoeksdesign te gebruiken waarin uitsluitend data van**
+
+zogenaamde gezonde controles wordt gebruikt. (3.1.1b)
+
+Een precieze beschrijving van de oorsprong van de data (bijv. tijd en plaats), de manier van
+
+dataverzameling (bijv. opvolgende pati nten), meet- en registratieprocedures, eventuele
+
+selecties en in- en exclusiecriteria moeten zijn vastgelegd in het datamanagementplan om
+
+de voorspellende eigenschappen in context te kunnen plaatsen (zie fase 1). (3.1.1c)
+
+Daarbij dient het uiteindelijke doelgebruik van het AIPA ook scherp in het oog worden
+
+gehouden, zoals vastgelegd in fase 2.
+
+
+31
+
+
+-----
+
+**Aanbevolen wordt exclusie van individuen die wel tot de doelpopulatie of  context behoren**
+
+te vermijden. (3.1.1d)
+
+Eventuele onvoorziene exclusie van data of individuen door bijvoorbeeld mislukte metingen
+
+of door het intrekken van toestemming worden nauwkeurig vastgelegd en, bij voorkeur, per
+
+casus of per groep beschreven.
+
+De doelpopulatie of -context bij externe validatie kan in het kader van generaliseerbaarheid
+
+bewust afwijken van de doelpopulatie zoals geformuleerd en gebruikt voor ontwikkeling van
+
+het AIPA model (fase 2).
+
+Bij structurele verschillen tussen de ontwikkeling (fase 2) en externe validatie (fase 3) in
+
+design van dataverzameling, meet- en registratieprocedures, eventuele selecties en in- en
+
+exclusiecriteria, moet de reden voor verschil in doelpopulaties tussen fase 2 en 3 worden
+
+vastgelegd. Daarnaast wordt de aard van de verschillen ook duidelijk vastgelegd in het
+
+datamanagementplan.[8,9] **(3.1.1e)**
+
+Daarnaast wordt aanbevolen om, indien mogelijk, baseline karakteristieken (bijv.
+
+verdelingen van leeftijd, geslacht, comorbiditeit) te vergelijken en statistisch te toetsen tussen
+
+de data gebruikt voor de ontwikkeling (fase 2) en voor externe validatie in fase 3 (ook
+
+wanneer de doelpopulaties hetzelfde zijn)[10]. (3.1.1f)
+
+Hiermee kan in latere fasen eventuele data drift in kaart worden gebracht.
+
+_3.1.2 Voorspelkracht van het AIPA_
+
+Een realistische evaluatie van de voorspelkracht, d.w.z. de overeenkomstigheid van de
+
+uitkomst die wordt voorspeld en de uitkomst die is geobserveerd, is een belangrijk onderdeel
+
+van de externe validatie van het AIPA model.
+
+Bij de evaluatie van voorspelkracht moet bij de keuze voor schatters rekening worden
+
+gehouden met de schaal waarop de voorspellingen worden gedaan. (3.1.2a)
+
+Een juiste schatter of maat van voorspelkracht kan verschillen tussen een binair eindpunt
+
+(bijv. gezondheidsuitkomst aanwezig versus afwezig), multi-categorie eindpunt (bijv. zeker
+
+aanwezig, waarschijnlijk aanwezig, waarschijnlijk afwezig, zeker afwezig), een survival
+
+eindpunt (met mogelijke censoring) of een uitkomst op een continue schaal.
+
+Ook moet bij de keuze voor schatters van voorspelkracht rekening worden gehouden met de
+
+voorspelde output van het AIPA model. (3.1.2b)
+
+Bijvoorbeeld: voor voorspellende modellen die alleen binaire (ja versus nee of aanwezig
+
+versus afwezig) classificaties als output geven, ligt de nadruk vaak op de accuratesse van
+
+classificaties en daaraan verwante maten als de F1-score en C-statistic, terwijl voor een
+
+
+32
+
+
+-----
+
+voorspelmodel met kansen/risico output, de nadruk vaak op de kalibratie en discriminatie (C
+_statistic) van het model ligt. Voor een leidraad voor vastlegging van deze keuzes wordt_
+
+verwezen naar de TRIPOD guidelines[8,9].
+
+**Sterk** **aanbevolen wordt om, net als bij de interne validatie in fase 2, de schattingen van**
+
+voorspelkracht zoveel mogelijk in de beoogde context te plaatsen, bijvoorbeeld door
+
+vergelijking van voorspelkracht met vergelijkbare voorspelmodellen voor dezelfde context of
+
+doelpopulatie of een relevante benchmark voor de medische setting die in het doelgebruik
+
+beoogd wordt. (3.1.2c)
+
+**Sterk aanbevolen wordt ook de schattingen van voorspelkracht van het AIPA bij externe**
+
+validatie te vergelijken met de voorspelkracht gerapporteerd na interne validatie tijdens
+
+ontwikkeling (fase 2). (3.1.2d)
+
+Een grote discrepantie in voorspelkracht die gevonden wordt in fase 3 bij externe validatie
+
+kan onder andere duiden op overfitting van het model tijdens de ontwikkeling in fase 2[5,6].
+
+**3.2** **Evaluatie medische eigenschappen en verwachtingen voor implementatie van**
+
+**het AIPA**
+
+Bij een externe validatie van het AIPA model moet net als in fase 2 bij de interne validatie
+
+ook naar de medische eigenschappen, of de prestaties in de beoogde medische setting,
+
+worden gekeken. (3.2a)
+
+**Aanbevolen wordt een analyse van voorziene kosten en baten te maken. (3.2b)**
+
+Dit kan bijvoorbeeld, net als in fase 2, worden ge mplementeerd door een decision curve
+
+_analysis[11]. Een andere, veelal uitgebreidere, manier om de impact ten opzichte van de_
+
+huidige medische praktijk te onderzoeken is met een early Health Technology Assessment
+
+(eHTA[12,13]), zoals eerder genoemd in fase 2.
+
+**Aanbevolen wordt een inschatting te maken van verwachtte barri res voor implementatie**
+
+van het AIPA en die in deze fase vast te leggen, ten behoeve van fase 5 en 6. (3.2c)
+
+Bijvoorbeeld door een beschrijving van beperkingen veroorzaakt door beschikbaarheid van
+
+data, een inschatting van de tijd (bijv. invoer van data of de rekentijd van het model) en
+
+kosten (bijv. metingen) die nodig zijn om het model te gebruiken in de praktijk, en verwachtte
+
+barri res met betrekking tot de inpassing van het AIPA in de huidige processen van de
+
+beoogde medische praktijk.
+
+**Sterk aanbevolen wordt stakeholders uit de medische setting die bij het doelgebruik beoogd**
+
+wordt (zowel eindgebruikers als pati nten) bij de evaluatie van medische eigenschappen, de
+
+analyse van kosten en baten en de inschatting van barri res te betrekken. (3.2d)
+
+
+33
+
+
+-----
+
+**3.3** **Fairness en algoritmische bias**
+
+Bij de externe validatie van het AIPA model dient men verder te kijken dan alleen naar de
+
+voorspelkracht en medische waarde. Ook evaluatie van eerlijkheid (fairness[17]) en bias is van
+
+groot belang.
+
+Ongelijke behandeling ontstaat meestal door een vorm van algoritmische bias. Verschillende
+
+vormen van algoritmische bias kunnen worden onderscheiden. Het begrippenkader van
+
+Suresh & Guttag (2020)[14] wordt hierin als leidraad genomen. Zij onderscheiden zes vormen
+
+van bias:
+
+- _Historical bias: ongewenste modeluitkomsten of- voorspellingen door de data uit de_
+
+wereld zoals het is of zoals het was. Dit kan bijvoorbeeld worden veroorzaakt doordat het
+
+AIPA model werd ontwikkeld op data waar systematische onder- of overdiagnose een rol
+
+speelde.
+
+- _Representation bias: ongewenste modeluitkomsten of -voorspellingen door in de data_
+
+onder-gerepresenteerde subgroepen. Dit kan bijvoorbeeld worden veroorzaakt doordat
+
+het AIPA model werd ontwikkeld op data die niet representatief was voor de
+
+doelpopulatie of context.
+
+- _Measurement bias: ongewenste modeluitkomsten of -voorspellingen doordat het AIPA_
+
+werd getraind op data waarbij de uitkomstvariabele misclassificaties bevatte (zie sectie
+
+3.4) of door verschillen tussen de (nauwkeurigheid van de) meting van
+
+voorspellers/features voor de ontwikkeling van het AIPA en de externe
+
+validatie/toepassing. Dit wordt ook wel meetheterogeniteit genoemd[15,16].
+
+- _Aggregration bias: ongewenste modeluitkomsten of -voorspellingen voor bepaalde_
+
+subgroepen. Dit kan bijvoorbeeld worden veroorzaakt doordat het AIPA een veel
+
+slechtere voorspelkracht heeft in (vaak onder-representeerde) subgroepen.
+
+- _Evaluation bias: vertekende statistische evaluatie door externe validatie van het AIPA op_
+
+een dataset die niet representatief is voor de doelpopulatie. Hierbij kan men denken aan
+
+het gebruik van een AIPA in de eerstelijns zorg die getraind werd met data uit de tweede
+
+lijn waarin meer ernstige ziekte voorkomt.
+
+- _Deployment bias: mismatch tussen het probleem dat het AIPA probeert op te lossen en_
+
+de manier waarop het gebruikt wordt door anderen.
+
+_Fairness van een algoritme wordt in de regel risicogericht onderzocht: eerst worden_
+
+hypotheses geformuleerd over groepen die mogelijk ongelijk behandeld zouden kunnen
+
+worden door het AIPA, bijvoorbeeld door een systematische analyse in de aanpak
+
+begeleidingsethiek[24], en vervolgens worden deze hypotheses onderzocht tijdens de externe
+
+
+34
+
+
+-----
+
+validatie. Hierbij wordt tenminste, maar zeker niet uitsluitend, rekening gehouden met
+
+groepen die op grond van de bijzondere persoonsgegevens uit de AVG onderscheiden
+
+kunnen worden.
+
+De aanwezigheid van bepaalde soorten bias (zoals algoritmische bias) die kan leiden tot
+
+ongunstige uitkomstenongelijkheden voor bepaalde groepen in de populatie, moet worden
+
+onderzocht en vastgelegd. (3.3a)
+
+Daarnaast moet het risico op ongelijke behandeling of ongewenste uitkomstongelijkheden
+
+voor bepaalde groepen in de populatie worden onderzocht en vastgelegd. (3.3b)
+
+**Sterk aanbevolen wordt stakeholders zoals eindgebruikers en pati nten te betrekken bij**
+
+deze evaluatie van fairness-risico s, bijvoorbeeld m.b.v. de aanpak begeleidingsethiek[24].
+
+**(3.3c)**
+
+**3.4** **Vaststellen van de uitkomstvariabele (labeling)**
+
+Het accuraat vaststellen van de te voorspellen uitkomst in de externe validatie dataset is een
+
+belangrijke factor voor de validiteit van de statistische voorspelkracht en de medische
+
+waarde. In de geneeskunde zijn er veel situaties waarin geen gouden standaard voorhanden
+
+is voor het meten van de uitkomstvariabele (bijv. voor sommige diagnosen, classificaties of
+
+oorzaak-specifiek overlijden), wat mogelijk tot misclassificatie van de uitkomstvariabele
+
+leidt[18,19]. Daarom wordt vaak de term referentiestandaard gehanteerd. In sommige situaties
+
+is beoordeling van een expert of groep experts nodig om tot een oordeel per casus te komen
+
+(bijv. de beoordeling van een tumor op een CT scan[20]).
+
+Het zogenaamde labelen van uitkomsten in de dataset voor externe validatie moet in deze
+
+fase zo accuraat mogelijk te worden gedaan en zo transparant mogelijk worden vastgelegd
+
+en verantwoord. (3.4a)
+
+Daarbij wordt aanbevolen precies bij te houden en te rapporteren welke experts betrokken
+
+waren bij het labelen (bijv. opleiding, expertise), in welke omstandigheden (bijv. aantal
+
+experts per casus, beschikbare tijd), en hoe eventuele discrepanties tussen labels werden
+
+opgelost. (3.4b)
+
+**Sterk** **aanbevolen wordt om de kwaliteit van het labelen te kwantificeren (bijv. door middel**
+
+van measures of agreement (bijv. de kappa statistic of ICC), of door de accuraatheid van het
+
+labelen in te schatten[21]). (3.4c)
+
+**3.5** **Grootte van de dataset voor externe validatie**
+
+Het uitgangspunt voor het kiezen van de grootte van de dataset voor externe validatie is: hoe
+
+groter, hoe beter. Hoe groter de dataset, hoe preciezer de schattingen die worden gebruikt
+
+voor de statistische en medische evaluatie en hoe beter algoritmische bias kan worden
+
+
+35
+
+
+-----
+
+onderzocht. Wel dient het belang van accurate labels (zie sectie 3.4) in het oog gehouden te
+
+worden. Voor een berekening van de minimale grootte van een dataset verwijzen we naar de
+
+literatuur[22,23].
+
+De grootte van de dataset voor externe validatie moet worden beargumenteerd. (3.5a)
+
+Berekening van de minimale grootte van de dataset, indien mogelijk (zie sectie 2.5), wordt
+
+**aanbevolen. (3.5b)**
+
+**3.6** **Vastlegging, reproduceerbaarheid en repliceerbaarheid**
+
+Net als in fase 2 zijn reproduceerbaarheid en repliceerbaarheid belangrijke uitgangspunten
+
+voor externe validatie van het AIPA.
+
+Om reproduceerbaarheid (d.w.z. heruitvoering van de externe validatie met andere data) te
+
+garanderen moet het gevolgde proces en de gebruikte data voor externe validatie volledig
+
+en transparant worden vastgelegd[8,9], ook in het geval van negatieve resultaten. (3.6a) De
+
+[TRIPOD reporting guidelines[7-9 ](www.tripod-statement.org) dienen daarbij als leidraad.](http://www.tripod-statement.org/)
+
+Ook wordt aanbevolen om de computercodes die worden gebruikt voor de externe validatie
+
+openbaar beschikbaar te stellen. (3.6b)
+
+Om de repliceerbaarheid (d.w.z. heruitvoering van de externe validatie met zelfde data) te
+
+vergroten, wordt aanbevolen om de data (openbaar) beschikbaar te stellen. (3.6c)
+
+Daarbij dient natuurlijk rekening te worden gehouden met de regelgeving omtrent privacy en
+
+daaruit voortkomende beperkingen. Ook mogen deze aanbevelingen afgewogen worden
+
+tegen commerci le belangen, en kan als argument aangevoerd worden dat externe validatie
+
+door een vertrouwde derde heeft plaatsgevonden.
+
+
+36
+
+
+-----
+
+**3.7** **Referenties**
+
+1. Altman DG, Royston P. What do we mean by validating a prognostic model? Stat Med
+
+2000;19:453 473.
+
+2. Altman DG, Vergouwe Y, Royston P, Moons KGM. Prognosis and prognostic research:
+
+validating a prognostic model. BMJ 2009;338:b605 b605.
+
+3. Riley RD, Ensor J, Snell KIE, Debray TPA, Altman DG, Moons KGM, Collins GS.
+
+External validation of clinical prediction models using big datasets from e-health records
+
+or IPD meta-analysis: opportunities and challenges. BMJ 2016;i3140.
+
+4. Moons KGM, Kengne AP, Grobbee DE, Royston P, Vergouwe Y, Altman DG, Woodward
+
+M. Risk prediction models: II. External validation, model updating, and impact
+
+assessment. Heart 2012;98:691 698.
+
+5. Harrell FE. Regression Modeling Strategies: with applications to linear models, logistic
+
+regression, and survival analysis. New York: Springer; 2001.
+
+6. Steyerberg EW. Clinical Prediction Models. Cham: Springer International Publishing;
+
+2019.
+
+7. Usher-Smith JA, Sharp, SJ, Griffin SJ. The spectrum effect in tests for risk prediction,
+
+screening, and diagnosis. BMJ 2016;i3139.
+
+8. Collins GS, Reitsma JB, Altman DG, Moons KGM. Transparent Reporting of a
+
+multivariable prediction model for Individual Prognosis Or Diagnosis (TRIPOD): The
+
+TRIPOD Statement. Ann Intern Med 2015;162:55.
+
+9. Moons KGM, Altman DG, Reitsma JB, Ioannidis JP a, Macaskill P, Steyerberg EW,
+
+Vickers AJ, Ransohoff DF, Collins GS. Transparent Reporting of a multivariable
+
+prediction model for Individual Prognosis Or Diagnosis (TRIPOD): Explanation and
+
+Elaboration. Ann Intern Med 2015;162:W1 W73.
+
+10. Debray TPA, Vergouwe Y, Koffijberg H, Nieboer D, Steyerberg EW, Moons KGM. A new
+
+framework to enhance the interpretation of external validation studies of clinical
+
+prediction models. J Clin Epidemiol 2015;68:279 289.
+
+11. Vickers AJ, Calster B van, Steyerberg EW. A simple, step-by-step guide to interpreting
+
+decision curve analysis. Diagn Progn Res 2019;3:18.
+
+12. Jenniskens K, Lagerweij GR, Naaktgeboren CA, Hooft L, Moons KGM, Poldervaart JM,
+
+Koffijberg H, Reitsma JB. Decision analytic modeling was useful to assess the impact of
+
+a prediction model on health outcomes before a randomized trial. J Clin Epidemiol
+
+2019;115:106 115.
+
+13. Van Giessen A, Wilcher B, Peters J, Hyde C, Moons KG, Wit GA de, Koffijberg H. Health
+
+economic evaluation of diagnostic and prognostic models. A systematic review. Value in
+
+_Health 2014;17:A560._
+
+
+37
+
+
+-----
+
+14. Suresh H, Guttag JV. A Framework for Understanding Unintended Consequences of
+
+Machine Learning. ArXiv190110002 Cs Stat 2020;
+
+15. Luijken K, Groenwold RHH, Van Calster B, Steyerberg EW, Smeden M. Impact of
+
+predictor measurement heterogeneity across settings on the performance of prediction
+
+models: A measurement error perspective. Stat Med 2019;sim.8183.
+
+16. Luijken K, Wynants L, Smeden M van, Van Calster B, Steyerberg EW, Groenwold RHH,
+
+Timmerman D, Bourne T, Ukaegbu C. Changing predictor measurement procedures
+
+affected the performance of prediction models in clinical examples. J Clin Epidemiol
+
+2020;119:7 18.
+
+17. Ethics guidelines for trustworthy AI | Shaping Europe s digital future. https://digital
+strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai (25 June 2021)
+
+18. Rutjes AWS, Reitsma JB, Coomarasamy A, Khan KS, Bossuyt PMM. Evaluation of
+
+diagnostic tests when there is no gold standard. A review of methods. Health Technol
+
+_Assess Department of Clinical Epidemiology, Biostatistics and Bioinformatics,_
+
+Academical Medical Center, University of Amsterdam, The Netherlands; 2007;11:ix 51.
+
+19. Naaktgeboren CA, Groot JAH de, Rutjes AWS, Bossuyt PMM, Reitsma JB, Moons KGM.
+
+Anticipating missing reference standard data when planning diagnostic accuracy studies.
+
+_BMJ 2016;i402._
+
+20. Bertens LCM, Broekhuizen BDL, Naaktgeboren CA, Rutten FH, Hoes AW, Mourik Y van,
+
+Moons KGM, Reitsma JB. Use of expert panels to define the reference standard in
+
+diagnostic research: a systematic review of published methods and reporting. PLoS Med
+
+2013;10:e1001531.
+
+21. Jenniskens K, Naaktgeboren CA, Reitsma JB, Hooft L, Moons KGM, Smeden M van.
+
+Forcing dichotomous disease classification from reference standards leads to bias in
+
+diagnostic accuracy estimates: A simulation study. J Clin Epidemiol 2019;111:1 10.
+
+22. Riley RD, Debray TPA, Collins GS, Archer L, Ensor J, Smeden M, Snell KIE. Minimum
+
+sample size for external validation of a clinical prediction model with a binary outcome.
+
+_Stat Med 2021;sim.9025._
+
+23. Archer L, Snell KIE, Ensor J, Hudda MT, Collins GS, Riley RD. Minimum sample size for
+
+external validation of a clinical prediction model with a continuous outcome. Stat Med
+
+2021;40:133 146.
+
+24. ECP. Handleiding aanpak begeleidingsethiek voor AI in de zorg.
+
+https://begeleidingsethiek.nl/publicaties/handleiding-aanpak-begeleidingsethiek-voor-ai
+in-de-zorg/. Published January 15, 2021. Accessed December 8, 2021.
+
+
+38
+
+
+-----
+
+## Toekomstperspectieven
+
+**Auteurs**
+
+Auteurs: Ilse Kant, Maarten van Smeden, namens de werkgroepen medische AI
+
+
+72
+
+
+-----
+
+De werkgroepen  veldnorm medische AI  hadden als doel om gemeenschappelijk
+
+opgestelde, publiek inzichtelijke criteria op te stellen om medische AIPA software te kunnen
+
+evalueren en toetsen, in opdracht van het Ministerie van Volksgezondheid, Welzijn en Sport.
+
+Gezien de snelle ontwikkelingen in het veld moet deze leidraad gezien worden als een
+
+dynamische norm. Zo zijn enkele generieke onderwerpen en toekomstige ontwikkelingen
+
+reeds door de werkgroepleden gesignaleerd en wordt het door hen van belang geacht dat
+
+hier in het bijzonder aandacht aan moet worden besteed bij toekomstige doorontwikkelingen.
+
+**Dynamisch updaten van AIPA s**
+
+AI technologie maakt een snelle ontwikkeling door die de huidige normen en regelgeving op
+
+enkele punten voorbij dreigt te streven. De werkgroepleden signaleren als probleem dat het
+
+naleven van de MDR in zijn huidige vorm  f zeer onzeker  f zeer bewerkelijk is voor een
+
+AIPA die zeer frequent hertraind wordt met nieuwe data om het AIPA continue tijdens
+
+gebruik te verbeteren en up-to-date te houden. Daarmee belemmert onzekerheid bij
+
+ontwikkelaars over de toepassing van de MDR in zijn huidige vorm vele mogelijke
+
+(toekomstige) AI toepassingen. Om geen valse verwachtingen over naleving te scheppen is
+
+dit onderwerp buiten de huidige versie van de leidraad gehouden. Het wordt zeer wenselijk
+
+geacht dit onderwerp, en specifiek de evaluatie van dit soort updates, in toekomstige versies
+
+van de norm op te nemen.
+
+**Kosteneffectiviteitsevaluaties**
+
+In de huidige versie van de norm wordt met markttoelating en de route tot opname van het
+
+AIPA in zorgpakketten en vergoeding vanuit zorgverzekeringen niet expliciet rekening
+
+gehouden. De uitkomsten van impactanalyses d.m.v. modelmatige HTA analyse van het
+
+AIPA (zie fase 5) zullen in toenemende mate een rol gaan spelen in de markttoelating en de
+
+mogelijkheden tot het opnemen van AI in zorgpakketten van verzekeraars. Dit aspect zal
+
+daarom in de toekomst moeten worden opgenomen in de leidraad.
+
+**Data delen**
+
+De werkgroepleden onderstrepen het belang van (inter)nationale samenwerking op het
+
+gebied van data delen en AIPA s om toekomstige ontwikkelingen in de gezondheidszorg aan
+
+te moedigen en ondersteunen. Voorbeelden van initiatieven die hier al aan werken zijn de
+
+stichting NICE[1] en de stichting NEED[2] databases voor respectievelijk intensive care data en
+
+spoedeisende hulp data, Health-RI en de Personal Health Train[3]. De Nederlandse AI coalitie
+
+werkgroep data delen heeft een leidraad gepubliceerd voor het omgaan met data in
+
+samenwerkingsverbanden[4]. Een voorbeeld van een nieuwe ontwikkeling die kan worden
+
+toegepast in dit soort samenwerkingsverbanden is federated learning. Federated learning
+
+maakt grootschalige samenwerking van meerdere instituten mogelijk zonder het gebruik van
+
+
+73
+
+
+-----
+
+een centrale database en is daarmee dus zeer privacy-vriendelijk. Momenteel is dit
+
+onderwerp niet opgenomen in de leidraad. Het wordt wenselijk geacht dit in toekomstige
+
+versies van de norm op te nemen.
+
+**Vroegtijdig multidisciplinair werken**
+
+De werkgroepleden signaleren diverse struikelblokken die de toepassing van een AIPA in de
+
+medische praktijk in de weg kunnen staan. In het medisch-specialistische veld, met name in
+
+de radiologie, neemt het aantal toepassingen snel toe. Maar nog steeds stranden veel
+
+projecten in eerdere fasen (fase 2 of 3 van de leidraad). Door de werkgroepleden wordt het
+
+vroegtijdig betrekken van meerdere eindgebruikers van het AIPA wordt regelmatig als
+
+oplossing aangedragen. Andere struikelblokken die zijn gesignaleerd door de
+
+werkgroepleden gaan over de transporteerbaarheid en generaliseerbaarheid van
+
+voorspellende modellen naar een andere medische context (bijv. een ander ziekenhuis, land
+
+of zelfs medisch werkproces). Hierover is nog veel onbekend. Meer onderzoek is nodig om
+
+(vooraf) tot betere inschattingen te kunnen komen of, en wanneer, een AIPA in een andere
+
+context opnieuw gevalideerd en/of getraind moet worden alvorens te kunnen worden
+
+toegepast. Daarom zijn hier geen specifieke aanbevelingen over opgenomen in de huidige
+
+versie van de leidraad. Daarnaast is het wenselijk specifieke aanbevelingen op te nemen
+
+over de omgang met een verruiming van het beoogd doelgebruik van een bestaande AIPA.
+
+**Monitoren in praktijk**
+
+In fase 6.2 van de veldnorm wordt monitoring na invoer van AIPA software in de real world
+
+(dat wil zeggen: buiten studieverband) medische praktijk beschreven. De werkgroepleden
+
+signaleren als probleem dat na implementatie van AIPA software in de praktijk, waar veelal
+
+een behandelkeuze is gekoppeld aan de uitkomst van het AIPA (bijv. bij
+
+beslisondersteuning), het monitoren op miscalibratie op basis van data uit de praktijk
+
+problematisch is. Over dit vraagstuk is nog veel onbekend en meer onderzoek is gewenst.
+
+Het wordt wenselijk geacht om hier in toekomstige versies van de veldnorm meer
+
+duidelijkheid over te scheppen.
+
+**Educatie**
+
+De snelle opkomst van digitale gezondheidszorg kan mogelijk zorgen voor een disruptieve
+
+verandering in de medische zorgprocessen. De werkgroepleden signaleren echter een
+
+algemeen gebrek aan basiskennis over AI bij zorgorganisaties en op de werkvloer, dat wil
+
+zeggen bij artsen, verpleegkundigen en andere betrokkenen die in toenemende mate met AI
+
+te maken zullen krijgen in hun dagelijkse zorgwerkzaamheden. In voorkomende gevallen is
+
+het zelfs de pati nt die over deze basiskennis zou moeten beschikken. Om AIPA technologie
+
+effectief en verantwoordelijk te kunnen introduceren in de dagelijkse medische praktijk zal
+
+
+74
+
+
+-----
+
+deze kennisachterstand moeten worden ingehaald, ten eerste in het onderwijs van
+
+zorgprofessionals die momenteel werkzaam zijn, en ten tweede in het onderwijs van nieuwe
+
+zorgprofessionals. Daarnaast zullen ontwikkelaars en fabrikanten een basiskennis moeten
+
+opbouwen op het gebied van het veilig en effectief introduceren van een AIPA, waarbij deze
+
+leidraad richtinggevend kan zijn. Tijdens doorontwikkeling van deze norm moet er aandacht
+
+blijven voor (toekomstige) beheersbaarheid en uitvoerbaarheid van de norm voor
+
+ontwikkelaars en fabrikanten.
+
+
+75
+
+
+-----
+
+**Referenties**
+
+[1. Stichting NICE [Available from: https://www.stichting-nice.nl/dd/#start.](https://www.stichting-nice.nl/dd/#start)
+
+[2. Stichting NEED [Available from: https://www.stichting-need.nl/.](https://www.stichting-need.nl/)
+
+[3. Health-RI [Available from: https://www.health-ri.nl.](https://www.health-ri.nl/)
+
+4. Klauw Kvd, Bastiaansen H, Ette Fv. Verantwoord datadelen voor AI: Nederlandse AI
+
+coalitie, 2020.
+
+
+76
+
+
+-----
+
+## Colofon
+
+Deze Leidraad is ontwikkeld door experts uit de breedte van het zorgveld, ondersteund
+
+door een actieteam binnen het programma waardevolle AI voor gezondheid. Deze leidraad
+
+is een eerste versie en is een uitdrukking van wat er in het werkveld als goed professioneel
+
+handelen wordt beschouwd bij het ontwikkelen, toetsen en toepassen van AI in de zorg.
+
+De ambitie is dat deze leidraad als breed gedragen veldnorm wordt geaccepteerd.
+
+Voor inhoudelijke vragen of opmerkingen kunt u terecht bij de auteurs:
+
+dr. Maarten van Smeden - M.vanSmeden@umcutrecht.nl
+
+dr. Ilse Kant   I.M.J.Kant@lumc.nl
+
+
+-----
+
