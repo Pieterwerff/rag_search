@@ -31,6 +31,13 @@
         <p>{{ llm_response }}</p>
     </div>
 
+    <h2>Genoemde bronnen:</h2>
+    {% for source in sources %}
+    <div class="llm-response">
+        <p>{{ source }}</p>
+    </div>
+    {% endfor %}
+    
     <a href="/" class="back-btn">Terug naar de startpagina</a>
 </div>
 

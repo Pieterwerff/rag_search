@@ -14,7 +14,7 @@ storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step: Load markdown Document ---
-document_df = pd.read_csv(r'Bronnen scripts\hoofstukken.csv')
+document_df = pd.read_csv(r'bronnen_scripts\hoofstukken.csv')
 
 # --- Step: Load markdown Document ---
 
