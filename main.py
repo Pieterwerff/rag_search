@@ -1,6 +1,7 @@
 from chunking import chunk_file
 from api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
+from validate import validate_answer
 
 # --- Settings ---
 chunk_size = 1000
@@ -36,4 +37,4 @@ print("Vraag:", user_query)
 print("Antwoord:", response)
 
 # --- Step 7: Validate Output ---
-# TODO
+validate_answer(user_query, response)

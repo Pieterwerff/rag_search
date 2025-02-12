@@ -1,0 +1,86 @@
+[
+    {
+        "question": "Wat wordt bedoeld met externe validatie in het kader van AIPA?",
+        "answer": "Externe validatie betreft de evaluatie van de voorspellende waarde van het AIPA model met data die niet is gebruikt voor de ontwikkeling ervan."
+    },
+    {
+        "question": "Waarom is externe validatie noodzakelijk?",
+        "answer": "Om de voorspelkracht en generaliseerbaarheid van het model te evalueren, zonder bias door trainingsdata."
+    },
+    {
+        "question": "Wat is het verschil tussen interne en externe validatie?",
+        "answer": "Interne validatie evalueert het model binnen de ontwikkelde dataset, terwijl externe validatie de prestaties test met nieuwe data."
+    },
+    {
+        "question": "Wat wordt bedoeld met model updating in het kader van externe validatie?",
+        "answer": "Indien de externe validatie aantoont dat het model niet goed generaliseert, kan gedeeltelijke hertraining nodig zijn om het model te verbeteren."
+    },
+    {
+        "question": "Welke dataset wordt aanbevolen voor externe validatie?",
+        "answer": "Een dataset die representatief is voor de doelpopulatie en -context, maar niet is gebruikt voor modelontwikkeling."
+    },
+    {
+        "question": "Wat wordt verstaan onder spectrum bias bij validatie?",
+        "answer": "Een te optimistische evaluatie door een niet-representatieve dataset, bijvoorbeeld als enkel gezonde controles worden gebruikt."
+    },
+    {
+        "question": "Waarom is reproduceerbaarheid en repliceerbaarheid belangrijk bij externe validatie?",
+        "answer": "Om de resultaten te kunnen verifiëren en de robuustheid van het model te waarborgen."
+    },
+    {
+        "question": "Wat is een aanbevolen maatregel om voorspelkracht optimisme te minimaliseren?",
+        "answer": "Gebruik maken van nested cross-validation om modelontwikkeling te scheiden van validatie."
+    },
+    {
+        "question": "Welke methodologie wordt aanbevolen voor de rapportage van externe validatie?",
+        "answer": "Gebruik van TRIPOD reporting guidelines."
+    },
+    {
+        "question": "Waarom wordt aanbevolen om computercodes openbaar beschikbaar te stellen bij externe validatie?",
+        "answer": "Om de reproduceerbaarheid van de externe validatie te waarborgen."
+    },
+    {
+        "question": "Welke zes vormen van algoritmische bias worden onderscheiden?",
+        "answer": "Historical bias, representation bias, measurement bias, aggregation bias, evaluation bias en deployment bias."
+    },
+    {
+        "question": "Wat is historical bias?",
+        "answer": "Een model neemt bestaande ongelijkheden uit de trainingsdata over, bijvoorbeeld door systematische over- of onderdiagnose."
+    },
+    {
+        "question": "Wat is representation bias?",
+        "answer": "Een model is minder accuraat voor ondervertegenwoordigde subgroepen in de dataset."
+    },
+    {
+        "question": "Wat is het risico van measurement bias?",
+        "answer": "Verschillen in meetnauwkeurigheid of misclassificatie van de uitkomstvariabele kunnen de voorspelkracht van het model negatief beïnvloeden."
+    },
+    {
+        "question": "Hoe kan fairness van een AIPA model worden geëvalueerd?",
+        "answer": "Door systematisch te onderzoeken of bepaalde groepen ongelijk behandeld worden, bijvoorbeeld via begeleidingsethiek."
+    },
+    {
+        "question": "Welke stakeholders moeten betrokken worden bij de evaluatie van fairness-risico’s?",
+        "answer": "Eindgebruikers en patiënten moeten actief worden betrokken bij fairness-evaluaties."
+    },
+    {
+        "question": "Waarom is het labelen van de uitkomstvariabele een cruciale stap in externe validatie?",
+        "answer": "Een foutieve of inconsistente labeling kan de validiteit van het model beïnvloeden."
+    },
+    {
+        "question": "Welke maatstaven kunnen gebruikt worden om de kwaliteit van labeling te kwantificeren?",
+        "answer": "Bijvoorbeeld de kappa statistic of interrater agreement measures."
+    },
+    {
+        "question": "Wat is het aanbevolen formaat voor het vastleggen van verschillen in doelpopulaties tussen ontwikkelings- en validatiefase?",
+        "answer": "Het datamanagementplan moet deze verschillen expliciet beschrijven."
+    },
+    {
+        "question": "Welke risico’s moeten gemonitord worden na implementatie van een AIPA?",
+        "answer": "Foutieve voorspellingen, technische fouten, fairness-impact en deployment bias."
+    },
+    {
+        "question": "Wat moet benoemd worden door de ontwikkelaar in het datamanagementplan?",
+        "answer": "De juridische randvoorwaarden en context moeten door de ontwikkelaar worden benoemd in het datamanagementplan, door middel van beschrijving of verwijzing."
+    }
+]
