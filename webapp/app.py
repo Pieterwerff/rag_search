@@ -8,6 +8,7 @@ from flask import Flask, request, render_template
 from chunking import chunk_file
 from api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
+import pandas as pd
 
 # --- Settings ---
 chunk_size = 1000
@@ -17,13 +18,12 @@ leidraad = 'leidraad_ai_in_zorg'
 storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
-# --- Step 1: Load markdown Document ---
-with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
-    document = file.read()  # Read content into a string
+# --- Step: Load markdown Document ---
+document_df = pd.read_csv(r'Bronnen scripts\hoofstukken.csv')
 
 # --- Step 2: Chunk Document using different types of chunking strategies ---
 
-chunks = chunk_file(document, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
+chunks = chunk_file(document_df, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
 
 # --- Step 3: Store Chunks in specific kind of chunk database ---
 

@@ -5,6 +5,7 @@ from langchain_openai import OpenAIEmbeddings
 from sklearn.metrics.pairwise import cosine_similarity
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 def chunk_recursive (document: str, chunk_size: int) -> list: 
 
@@ -19,24 +20,19 @@ def chunk_recursive (document: str, chunk_size: int) -> list:
     chunks = text_splitter.create_documents([document])
     return chunks
 
-def chunk_paragraph(text):
-    """
-    Splits een tekst op basis van paragrafen, gescheiden door '-----'.
-
-    Args:
-        text (str): De volledige tekst als één string.
-
-    Returns:
-        list: Een lijst met individuele paragrafen.
-    """
-
-
-
-def chunk_paragraph(document: str) -> list:
-    # Splits de tekst op basis van '-----' en verwijder overbodige witruimte
-    chunks = [para.strip() for para in document.split('-----') if para.strip()]
-
+def chunk_paragraph(document: pd.DataFrame) -> pd.DataFrame:
+    chunks = pd.DataFrame()
+    for idx, row in document.iterrows():
+        para = [para.strip() for para in row['content'].split('-----') if para.strip()]
+        new_row = pd.DataFrame([{'chapter_number': row['chapter_number'], 'chapter_name': row['chapter_name'], 'content': p} for p in para])
+        chunks = pd.concat([chunks, new_row], ignore_index=True)
     return chunks
+
+# document_df = pd.read_csv(r'Bronnen scripts\hoofstukken.csv')
+# chunks = chunk_paragraph(document_df)
+
+# print(chunks.head())
+
 
 def combine_sentences(sentences, buffer_size=1):
     # Go through each sentence dict
