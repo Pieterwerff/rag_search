@@ -5,7 +5,7 @@ from validate import validate_answer
 
 # --- Settings ---
 chunk_size = 1000
-chunking_strategy = 'paragraph' # might become a list of strings to iterate through
+chunking_strategy = 'contextual' # might become a list of strings to iterate through
 llm = 'gpt4o-mini' # might become a list of strings to iterate through
 leidraad = 'leidraad_ai_in_zorg'
 storageStrategy = "Qdrant"

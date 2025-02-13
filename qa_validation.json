@@ -4,8 +4,8 @@
         "answer": "Externe validatie betreft de evaluatie van de voorspellende waarde van het AIPA model met data die niet is gebruikt voor de ontwikkeling ervan."
     },
     {
-        "question": "Waarom is externe validatie noodzakelijk?",
-        "answer": "Om de voorspelkracht en generaliseerbaarheid van het model te evalueren, zonder bias door trainingsdata."
+        "question": "In welk geval moet aanbeleving 5.1c worden gevolgd?",
+        "answer": "In het geval van ontwikkeling (van de software met AIPA) binnen een zorganisatie"
     },
     {
         "question": "Wat is het verschil tussen interne en externe validatie?",
