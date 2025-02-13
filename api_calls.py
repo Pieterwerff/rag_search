@@ -61,6 +61,7 @@ def query_llm(retrieved_object, user_query, llm):
                 }
             ]
         )
+        return response.choices[0].message.content
 
 
 

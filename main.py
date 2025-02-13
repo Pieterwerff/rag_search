@@ -13,10 +13,8 @@ leidraad = 'leidraad_ai_in_zorg'
 storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
-# --- Step: Load markdown Document ---
+# --- Step: Laad leidraad uit csv in pandas dataframe ---
 document_df = pd.read_csv(r'bronnen_scripts\hoofstukken.csv')
-
-# --- Step: Load markdown Document ---
 
 # language = language_agent(input("Stel je vraag: "))
 # print(language)

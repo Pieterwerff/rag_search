@@ -21,7 +21,7 @@
     {% for chunk in chunks %}
     <div class="chunk" id="chunk-{{ loop.index }}">
         <p>{{ chunk.payload.document }}</p>
-        <p class="source">Bron: {{ chunk.source }} | Pagina: {{ chunk.page }}</p>
+        <p class="source">Hoofdstuk: {{ chunk.payload.chapter_number }} | Fase leidraad: {{ chunk.payload.chapter_name }}</p>
         <button onclick="toggleChunk('chunk-{{ loop.index }}')">Lees meer</button>
     </div>
     {% endfor %}

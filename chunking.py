@@ -24,15 +24,11 @@ def chunk_paragraph(document: pd.DataFrame) -> pd.DataFrame:
     chunks = pd.DataFrame()
     for idx, row in document.iterrows():
         para = [para.strip() for para in row['content'].split('-----') if para.strip()]
-        new_row = pd.DataFrame([{'chapter_number': row['chapter_number'], 'chapter_name': row['chapter_name'], 'content': p} for p in para])
+        new_row = pd.DataFrame([{'chapter_number': row['chapter_number'], 
+                                 'chapter_name': row['chapter_name'], 
+                                 'content': p} for p in para])
         chunks = pd.concat([chunks, new_row], ignore_index=True)
     return chunks
-
-# document_df = pd.read_csv(r'Bronnen scripts\hoofstukken.csv')
-# chunks = chunk_paragraph(document_df)
-
-# print(chunks.head())
-
 
 def combine_sentences(sentences, buffer_size=1):
     # Go through each sentence dict

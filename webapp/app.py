@@ -39,25 +39,6 @@ import json
 import pandas as pd
 
 def extract_named_sources(response, given_chunks):
-    """
-    Haalt de relevante referenties op voor elke chunk uit de LLM-response.
-
-    Parameters:
-        response (str of dict): De JSON response van de LLM, bijvoorbeeld:
-                                {
-                                    "antwoord": "<antwoordtekst>.",
-                                    "chunks": [
-                                        {"id": "<chunk_id>", "bronnen": [<ref_index>, ...]},
-                                        ...
-                                    ]
-                                }
-        given_chunks (list): Lijst met chunk-objecten (bijv. ScoredPoint of dicts)
-                             waarvan in payload onder andere 'chapter_number' staat.
-                             De payload kan al een dict zijn of een JSON-string.
-
-    Returns:
-        list: Een lijst met de relevante referentieteksten (named_sources).
-    """
     # Zorg dat de response een dict is
     if isinstance(response, str):
         try:
@@ -95,15 +76,9 @@ def extract_named_sources(response, given_chunks):
         chunk = chunk_mapping[chunk_id]
         payload = chunk.get("payload") if isinstance(chunk, dict) else getattr(chunk, "payload", {})
         if isinstance(payload, str):
-            try:
-                payload = json.loads(payload)
-            except json.JSONDecodeError:
-                raise ValueError(f"Payload van chunk {chunk_id} is geen geldige JSON: {payload}")
+            payload = json.loads(payload)
         
         chapter_number = payload.get("chapter_number")
-        if chapter_number is None:
-            print(f"Waarschuwing: Geen chapter_number gevonden in chunk {chunk_id}.")
-            continue
         
         # Voor elke referentie-index in de LLM-response, zoek de bijbehorende referentietekst
         for ref_index in chunk_info.get("bronnen", []):

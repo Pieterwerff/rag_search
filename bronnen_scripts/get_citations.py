@@ -53,10 +53,9 @@ def extract_references(text):
     return references
 
 # Load the CSV file
-csv_filename = "chapters.csv"  # Change this to your actual file
+csv_filename = "chapters.csv"  
 df = pd.read_csv(csv_filename)
 
-# Prepare a list to store extracted references
 references_data = []
 
 # Iterate through chapters
