@@ -15,9 +15,23 @@
     <h1>RAG Resultaten</h1>
 
     <h2>Je vraag:</h2>
-    <p>{{ question }}</p>
+    <p><b>{{ question }}</b></p>
 
-    <h2>Top {{n_chunks}} Chunks:</h2>
+    <h2>Antwoord van de LLM:</h2>
+    <div class="llm-response">
+        <p>{{ llm_response }}</p>
+    </div>
+
+    {% if sources %}
+    <h2>Genoemde bronnen:</h2>
+    {% for source in sources %}
+        <div class="llm-response">
+            <p>{{ source }}</p>
+        </div>
+    {% endfor %}
+{% endif %}
+
+    <h2>Bovenstaand antwoord is gebaseerd op deze {{n_chunks}} stukken tekst:</h2>
     {% for chunk in chunks %}
     <div class="chunk" id="chunk-{{ loop.index }}">
         <p>{{ chunk.payload.document }}</p>
@@ -26,17 +40,6 @@
     </div>
     {% endfor %}
 
-    <h2>Antwoord van de LLM:</h2>
-    <div class="llm-response">
-        <p>{{ llm_response }}</p>
-    </div>
-
-    <h2>Genoemde bronnen:</h2>
-    {% for source in sources %}
-    <div class="llm-response">
-        <p>{{ source }}</p>
-    </div>
-    {% endfor %}
     
     <a href="/" class="back-btn">Terug naar de startpagina</a>
 </div>
