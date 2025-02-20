@@ -55,7 +55,7 @@ def visualize_chunks(chunks):
     return df
 
 # Load the document
-with open("leidraad.txt", "r", encoding="ISO-8859-1") as file:
+with open("../brondocumenten/leidraad.txt", "r", encoding="ISO-8859-1") as file:
     document = file.read()
 
 # Process the document with debugging enabled

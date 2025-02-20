@@ -4,8 +4,8 @@ import os
 # Voeg de bovenliggende map toe aan sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from flask import Flask, json, request, render_template
-from chunking import chunk_file
-from api_calls import query_llm
+from preprocessing.chunking import chunk_file
+from llm_calls.api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
 import pandas as pd
 import json
@@ -15,13 +15,13 @@ import pandas as pd
 # --- Settings ---
 chunk_size = 1000
 chunking_strategy = 'paragraph' # might become a list of strings to iterate through
-llm = 'gpt4o-mini' # might become a list of strings to iterate through
+llm = 'gpt-4o-mini' # might become a list of strings to iterate through
 leidraad = 'leidraad_ai_in_zorg'
 storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step: Load markdown Document ---
-document_df = pd.read_csv(r'bronnen_scripts\hoofstukken.csv')
+document_df = pd.read_csv(r'brondocumenten\hoofstukken.csv')
 
 # --- Step 2: Chunk Document using different types of chunking strategies ---
 
@@ -45,7 +45,7 @@ def extract_named_sources(response, given_chunks):
     
     # Lees het CSV-bestand en maak een dictionary:
     # (chapter_number, reference_index) -> reference_text
-    refs_df = pd.read_csv('extracted_references.csv')
+    refs_df = pd.read_csv('referenties/extracted_references.csv')
     ref_dict = {
         (row["chapter_number"], row["reference_index"]): row["reference_text"]
         for _, row in refs_df.iterrows()

@@ -5,7 +5,7 @@ import sys
 import os
 # Voeg de bovenliggende map toe aan sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from api_calls import query_llm
+from llm_calls.api_calls import query_llm
 from vector_storage import  get_chunks
 from ragas import evaluate
 from ragas.llms import LangchainLLMWrapper

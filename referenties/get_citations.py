@@ -53,7 +53,7 @@ def extract_references(text):
     return references
 
 # Load the CSV file
-csv_filename = "chapters.csv"  
+csv_filename = "../brondocumenten/hoofdstukken.csv"  
 df = pd.read_csv(csv_filename)
 
 references_data = []
