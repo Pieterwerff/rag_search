@@ -21,10 +21,11 @@ def query_llm(retrieved_object, user_query, llm):
     Returns:
         str: Response from the LLM.
     """
-    if llm == 'gpt4o-mini':
+    if llm == 'gpt-4o-mini':
         client = OpenAI()
         response = client.chat.completions.create(
             model = "gpt-4o-mini",
+            response_format={ "type": "json_object"},
             messages=[
                 {
                     "role": "system", 
@@ -35,7 +36,8 @@ def query_llm(retrieved_object, user_query, llm):
                     "content": (
                         f"Baseer je antwoord op de volgende chunks: {retrieved_object}\n\n{user_query}. "
                         "Maak hier een JSON van waarbij de bronnen waaraan wordt gerefereerd in je antwoord worden meegegeven. "
-                        "Als je je antwoord baseert op een zin waar een bron in staat, geef je deze bron mee in het JSON-object. "
+                        "Bronnen staan altijd tussen BLOKHAKEN: []. Nummers tussen RONDE HAKEN: () neem je dus NIET mee als bron!"
+                        "Als je je antwoord baseert op een zin waar een bron in staat, geef je deze bron mee in het JSON-object."
                         "Als de bron NIET wordt gebruikt om een antwoord op te baseren, geef je deze NIET mee aan het JSON-object.\n\n"
                         "Daarnaast geef je de id mee van de chunk waar je je antwoord op hebt gebaseerd. \n\n"
                         "Als je het antwoord niet kan baseren op de informatie uit de chunks, geef dan als antwoord in het JSON-object: \"Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.\".\n\n"
@@ -61,7 +63,7 @@ def query_llm(retrieved_object, user_query, llm):
                 }
             ]
         )
-        return response.choices[0].message.content
+        # return response.choices[0].message.content
 
 
 

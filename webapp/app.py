@@ -1,7 +1,6 @@
 
 import sys
 import os
-
 # Voeg de bovenliggende map toe aan sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from flask import Flask, json, request, render_template
@@ -9,6 +8,9 @@ from chunking import chunk_file
 from api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
 import pandas as pd
+import json
+import pandas as pd
+
 
 # --- Settings ---
 chunk_size = 1000
@@ -32,11 +34,6 @@ collection = store_chunks(chunks, storageStrategy, embeddingStrategy, leidraad, 
 
 app = Flask(__name__)
 
-import json
-import pandas as pd
-
-import json
-import pandas as pd
 
 def extract_named_sources(response, given_chunks):
     # Zorg dat de response een dict is
