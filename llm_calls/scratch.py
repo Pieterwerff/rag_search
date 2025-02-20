@@ -1,4 +1,4 @@
-from api_calls import query_llm_deep_infra
+from llm_calls.api_calls import query_llm_deep_infra
 from user_select import user_input
 
 llm = user_input()

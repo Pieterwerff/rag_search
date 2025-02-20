@@ -10,7 +10,6 @@ import pandas as pd
 def chunk_recursive (document: str, chunk_size: int) -> list: 
 
     text_splitter = RecursiveCharacterTextSplitter(
-    # Set a really small chunk size, just to show.
     chunk_size=chunk_size,
     chunk_overlap=100,
     length_function=len,
@@ -160,17 +159,3 @@ def chunk_file(document, chunking_strategy, chunk_size=1000):
             f"Valid options are: recursive, paragraph, contextual"
         )
     return chunks
- 
-
-# with open ('./leidraad.txt') as leidraad:
-#     leidraad = leidraad.read()
-#     leidraad = leidraad.replace('_', '')
-#     chunksParagraph = chunk_file(leidraad, 'paragraph')
-#     chunksRecursive = chunk_file(leidraad, 'recursive')
-#     # chunksContextual = chunk_file(leidraad, 'contextual')
-
-
-# # print(chunksContextual[:3])
-# print('paragraph chunks: ', chunksParagraph[:3])
-# print('\n\n')
-# print(chunksRecursive[:3])

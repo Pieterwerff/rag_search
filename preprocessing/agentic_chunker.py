@@ -80,7 +80,7 @@ def chunk_file_with_metadata(document, chunking_strategy="semantic"):
         raise ValueError(f"Unsupported chunking strategy: {chunking_strategy}")
 
 if __name__ == "__main__":
-    with open("leidraad_small.txt", "r", encoding="ISO-8859-1") as file:
+    with open("../brondocumenten/leidraad.txt", "r", encoding="ISO-8859-1") as file:
         document = file.read()
     chunks = chunk_file_with_metadata(document)
     for chunk in chunks:
