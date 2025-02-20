@@ -9,6 +9,21 @@ import pandas as pd
 chunk_size = 1000
 chunking_strategy = 'paragraph' # might become a list of strings to iterate through
 llm = 'gpt-4o-mini' # might become a list of strings to iterate through
+'''
+mogelijke opties voor llm:
+    - gpt-4o-mini
+    - gpt-3.5-turbo
+    - meta-llama/Llama-3.3-70B-Instruct
+    - microsoft/phi-4
+    - deepseek-ai/DeepSeek-V3
+    - NousResearch/Hermes-3-Llama-3.1-405B
+    - Qwen/QwQ-32B-Preview
+    - nvidia/Llama-3.1-Nemotron-70B-Instruct
+    - Qwen/Qwen2.5-72B-Instruct
+    - 01-ai/Yi-34B-Chat
+    - databricks/dbrx-instruc   
+'''
+
 leidraad = 'leidraad_ai_in_zorg'
 storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
