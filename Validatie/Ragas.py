@@ -1,3 +1,4 @@
+import json
 from langchain_openai import ChatOpenAI
 from ragas import EvaluationDataset
 import sys
@@ -10,8 +11,9 @@ from ragas import evaluate
 from ragas.llms import LangchainLLMWrapper
 from ragas.metrics import LLMContextRecall, Faithfulness, FactualCorrectness
 
+
 # --- Settings ---
-llm = 'gpt4o-mini' # might become a list of strings to iterate through
+llm = 'gpt-4o-mini'
 leidraad = 'leidraad_ai_in_zorg'
 storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
@@ -55,24 +57,36 @@ expected_responses = [
 
 collection = "leidraad_ai_in_zorg" + "_" + chunking_strategy
 
-dataset = []
+def generate_dataset_from_own_queries (sample_queries,expected_responses):
+    dataset = []
 
-# haal voor alle queries relevante chunks op
-for query,reference in zip(sample_queries,expected_responses):
+    # haal voor alle queries relevante chunks op
+    for query,reference in zip(sample_queries,expected_responses):
 
-    relevant_docs = [chunk.payload['document'] for chunk in get_chunks(collection, query, storageStrategy, n_chunks=5)]
-    response = query_llm(relevant_docs, query, llm)
+        relevant_docs = [chunk.payload['document'] for chunk in get_chunks(collection, query, storageStrategy, n_chunks=5)]
+        response = query_llm(relevant_docs, query, llm)
+
+        try	:
+            object_response = json.loads(response)
+        except json.JSONDecodeError as e:
+            raise ValueError("Kon de JSON-response niet parsen: " + str(response))
+        
+        responseText = object_response.get("antwoord")
+
+        # voeg vraag, antwoord, verwachte antwoord en chunks toe aan eval-dataset
+        dataset.append(
+            {
+                "user_input": query,
+                "retrieved_contexts": relevant_docs,
+                "response": str(responseText),  # Zorg ervoor dat response een string is
+                "reference": reference
+            }
+        )
+        print (query +  " is toegevoegd aan eval-dataset")
+    return dataset
 
 
-    dataset.append(
-        {
-            "user_input":query,
-            "retrieved_contexts":relevant_docs,
-            "response":response,
-            "reference":reference
-        }
-    )
-    # print (query + reference + " is toegevoegd aan eval-dataset")
+dataset = generate_dataset_from_own_queries(sample_queries,expected_responses)
 
 # maak dataset aan, kies een llm om mee te evalueren en start de evaluatie.
 evaluation_dataset = EvaluationDataset.from_list(dataset)
@@ -80,5 +94,7 @@ evaluator_llm = LangchainLLMWrapper(ChatOpenAI(model_name=llm, temperature=0))
 result = evaluate(dataset=evaluation_dataset,metrics=[LLMContextRecall(), Faithfulness(), FactualCorrectness()],llm=evaluator_llm)
 print (result)
 
-os.environ["RAGAS_APP_TOKEN"] = "apt.48d0-808b2ffdce1f-53b2-b54c-067a5c88-82c16"
+from dotenv import load_dotenv
+load_dotenv()
+os.environ["RAGAS_APP_TOKEN"] = os.getenv("RAGAS_APP_TOKEN")
 result.upload()
