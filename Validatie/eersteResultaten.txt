@@ -1,0 +1,147 @@
+Dit bestand bevat de resultaten van het volgende proces:
+1. Inladen van de leidraad uit een CSV-bestand.
+2. Opsplitsen van de tekst in chunks op basis van de 'paragraph'-strategie.
+3. Opslaan van deze chunks in een vector database.
+4. Ophalen van relevante chunks op basis van de vraag: 'Waar gaat fase 5 van de leidraad over?'.
+5. Queryen van verschillende LLM's met dezelfde input en verzamelen van hun antwoorden.
+
+Model: gpt-4o-mini
+Antwoord:
+{
+  "antwoord": "Fase 5 beslaat het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op de beoogde medische praktijk en de gezondheidsuitkomsten van de doelgroep. Dit omvat ook een Health Technology Assessment (HTA). De verantwoordelijkheid ligt bij de fabrikant of ontwikkelende zorgorganisatie, en de samenwerking met zorgorganisaties en eindgebruikers is cruciaal. Er wordt aanbevolen een effectbeoordeling op te stellen die de verwachte effecten en mogelijke risico's in kaart brengt [2].",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c", 
+      "bronnen": [2]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: gpt-3.5-turbo
+Antwoord:
+{
+  "antwoord": "Fase 5 van de leidraad gaat over het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op respectievelijk de beoogde medische praktijk of context, het medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep. Ook een Health technology assessment vindt plaats in deze fase[2]. Het bepalen van impact en meerwaarde is een verantwoordelijkheid van de fabrikant (of in het geval van interne ontwikkeling, de ontwikkelende zorgorganisatie), maar vindt in de regel in samenwerking met ontwikkelaars, zorgorganisaties en eindgebruikers plaats. Impact of meerwaarde van het gebruik van het AIPA, inclusief de benodigde software, op en in de medische praktijk kan op verschillende manieren worden bereikt. Bijvoorbeeld door het ondersteunen van de zorgverlener, patiënt, cliënt, of burger bij het maken van behandel- of leefstijlbeslissingen of door een verandering in het zorgproces die efficiënt (kostenbesparend) werkt. Op dit moment zijn er nog relatief weinig AIPA's in gebruik in de dagelijkse medische praktijk, en daarmee is ook van relatief weinig AIPA's de impact onderzocht. De aansluiting van het AIPA bij de dagelijkse medische praktijk en zorg blijkt een struikelblok. De hoop en verwachting is dat de toepassing in de komende jaren zal toenemen. Voor een overzicht van de stand van zaken omtrent de toepassing van AI in de medische context en praktijk wordt verwezen naar het rapport 'Inventarisatie AI in gezondheid en zorg'",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c",
+      "bronnen": [2]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: meta-llama/Llama-3.3-70B-Instruct
+Antwoord:
+{
+  "antwoord": "Fase 5 van de leidraad gaat over de effectbeoordeling van het AIPA in combinatie met de software. Hierbij wordt de impact van het AIPA op de medische praktijk en de gezondheidsuitkomsten van de beoogde doelgroep onderzocht.",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c",
+      "bronnen": []
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: microsoft/phi-4
+Antwoord:
+```json
+{
+  "antwoord": "Fase 5 van de leidraad bestaat uit het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op respectievelijk de beoogde medische praktijk of context, het medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep (bijv. de patiënt, cliënt of burger). Dit proces omvat ook een Health technology assessment. Er dient een effectbeoordeling van het AIPA binnen het beoogde doelgebruik plaats te vinden. Een van de belangrijke activiteiten in deze fase is het uitvoeren van een beoordeling van de mogelijke impact en meerwaarde, inclusief het betrekken van eindgebruikers bij het ontwikkelingsproces en het uitvoeren van implementatie als een vorm van effectbeoordeling indien deze binnen het zorgproces plaatsvindt.",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c",
+      "bronnen": []
+    }
+  ]
+}
+```
+--------------------------------------------------------------------------------
+Model: deepseek-ai/DeepSeek-V3
+Antwoord:
+```json
+{
+  "antwoord": "Fase 5 van de leidraad gaat over het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op de beoogde medische praktijk, het medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep. Hierbij wordt ook een Health Technology Assessment uitgevoerd. De fabrikant is verantwoordelijk voor het bepalen van de impact en meerwaarde, vaak in samenwerking met ontwikkelaars, zorgorganisaties en eindgebruikers. Er wordt onder meer gekeken naar de ondersteuning van zorgverleners en patiënten bij behandel- of leefstijlbeslissingen en mogelijke efficiëntiewinsten in het zorgproces [2]. Daarnaast wordt een effectbeoordeling uitgevoerd om de potentiële waarde van het AIPA in de dagelijkse medische praktijk te toetsen [8-13].",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c",
+      "bronnen": [2]
+    },
+    {
+      "id": "9dcb53e2-2abd-4ca1-95c6-495a2d1292c0",
+      "bronnen": [8, 9, 10, 11, 12, 13]
+    }
+  ]
+}
+```
+--------------------------------------------------------------------------------
+Model: NousResearch/Hermes-3-Llama-3.1-405B
+Antwoord:
+{
+  "antwoord": "Fase 5 van de leidraad gaat over de effectbeoordeling van het AIPA in combinatie met de software. In deze fase wordt de impact of meerwaarde van het gebruik van het AIPA op de medische praktijk, het medisch handelen en de gezondheidsuitkomsten bepaald. Een Health Technology Assessment (HTA) vindt ook plaats in deze fase[2]. Het doel is om de potentiële toegevoegde waarde van het AIPA in de dagelijkse medische praktijk te toetsen.",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c",
+      "bronnen": [2]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: Qwen/QwQ-32B-Preview
+Antwoord:
+Bij nader inzien is dit de juiste omgangstelling:
+
+Scores:
+
+- Fase 6 beslaat de implementatie en het gebruik van de AIPA in de gezondheidszorgverlening. Centrale thema's zijn in deze fase implementatie, monitoring en educatie door de zorgorganisatie. Voor een AIPA die deel uit maakt van een medisch hulpmiddel als bedoeld in de MDR, moet er in fase 6 ook rekening worden gehouden met de wettelijke eisen aan post-market surveillance voor fabrikanten. Opgemerkt dient te worden dat de ontwikkelaar en de zorgorganisatie waar het AIPA geïmplementeerd wordt dezelfde partij kunnen zijn. In die gevallen is er geen sprake van interactie tussen een fabrikant en een zorgorganisatie. In dat geval dienen de eisen en aanbevelingen gericht aan de fabrikant als eisen en aanbevelingen aan de ontwikkelende zorgorganisatie gelezen te worden en kunnen schijnbare duplicaties die daardoor ontstaan genegeerd worden.
+
+
+
+- Fase 5 beslaat het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op respectievelijk de beoogde medische praktijk of context, het medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep (bijv. de patiënt, cliënt of burger). Ook een Health technology assessment vindt plaats in deze fase[2]. Het bepalen van impact en meerwaarde is een verantwoordelijkheid van de fabrikant (of in het geval van interne ontwikkeling, de ontwikkelende zorgorganisatie), maar vindt in de regel in samenwerking met ontwikkelaars, zorgorganisaties en eindgebruikers plaats. Impact of meerwaarde van het gebruik van het AIPA, inclusief de benodigde software, op en in de medische praktijk kan op verschillende manieren worden bereikt. Bijvoorbeeld door het ondersteunen van de zorgverlener, patiënt, cliënt, of burger bij het maken van behandel- of leefstijlbeslissingen of door een verandering in het zorgproces die efficiënt (kostenbesparend) werkt.
+
+Op dit moment zijn er nog relatief weinig AIPA's in gebruik in de dagelijkse medische praktijk, en daarmee is ook van relatief weinig AIPA's de impact onderzocht[3-6]. De aansluiting van het AIPA bij de dagelijkse medische praktijk en zorg blijkt een struikelblok. De hoop en verwachting is dat de toepassing in de komende jaren zal toenemen. Voor een overzicht van de stand van zaken omtrent de toepassing van AI in de medische context en praktijk wordt verwezen naar het rapport ‘Inventarisatie AI in gezondheid en zorg’[7].
+
+_5.1_ **Effectbeoordeling en bijbehorende studie opzetten** De fabrikant moet een effectbeoordeling van het AIPA (als onderdeel van de software) binnen het beoogde doelgebruik uitvoeren. (5.1a) Dit is nodig om de potentiële toegevoegde waarde van het AIPA in de dagelijkse medische praktijk te toetsen. Naast de generieke methoden voor het empirisch toetsen van de (meer)waarde van (digitale) innovaties en predictiemodellen in de gezondheidszorg[8-13], worden enkele (AI-specifieke) stappen behandeld die in het bijzonder van belang zijn voor een AIPA[14-16]. De ontwikkeling van de software waar het AIPA deel van uitmaakt en de bijbehorende effectbeoordeling moet een proces zijn, waarbij de fabrikant ervoor zorgt dat eindgebruikers (bijv. zorgverleners) en patiënten, cliënten of burgers zo vroeg mogelijk worden betrokken en meerdere contactgelegenheden krijgen. (5.1b) Wanneer de effectbeoordeling plaatsvindt binnen een zorgorganisatie kan een effectbeoordeling als een vorm van implementatie worden beschouwd. In het geval dat de effectbeoordeling (deels) binnen het zorgproces wordt uitgevoerd en daarmee dus wordt geïmplementeerd, wordt sterk aanbevolen een implementatieplan, zoals beschreven in sectie 6.1, op testellen en relevante onderdelen, zoals het invullen van **Box 6.1:** in te lassen. (5.1c) In het geval van ontwikkeling binnen een zorgorganisatie moet aanbeveling 5.1c worden gevolgd. (5.1d) Eventuele benodigde wijzigingen aan de software kunnen dan nog worden doorgevoerd voeren voordat een grootschalige empirische studie wordt gestart. (5.1e) De effectbeoordeling wordt besproken aan de hand van een stappenplan. Dit stappenplan beschrijft het in kaart brengen van de te verwachten effecten van het gebruik van software met een AIPA in de medische praktijk tot aan het ontwerp van een vergelijkende empirische studie om de verwachte effecten aan te kunnen tonen t.o.v. de huidige zorg(processen) in de beoogde context. Hierbij wordt uitgegaan van het beoogd doelgebruik van het AIPA (zie fase 2) en de bijbehorende indications of claims die worden gemaakt door de ontwikkelaar (zie fase 4). Dit laatste is vooral van belang om aan te sluiten bij huidige wet- en regelgeving (MDR), en daarmee voldoende bewijs op meerwaarde te leveren dat nodig is om in de medische praktijk te kunnen worden geïntroduceerd. De stappen zijn de volgende: 1. Verwachte effecten: breng aan de hand van het beoogd doeleind in kaart hoe men verwacht dat het AIPA effect zal hebben op het beoogde medische zorgproces en gezondheidsuitkomsten in de beoogde medische context 2. Risico-inventarisatie: schat mogelijke risico's en onbedoelde effecten voorafgaand aan implementatie van het AIPA in de dagelijkse praktijk in; 3. Mens-machine interactie: Expliciteer hoe zorgproces en zorgverlener interacteren met de software voor een empirische studie uitgevoerd wordt. _5.1.1 De verwachte effecten_ Er moet duidelijk gemaakt worden hoe het AIPA opereert: zelfstandig of adviserend volgens het niveau van automatisering (beter bekend als level of automation; box 5.1). (5.1.1a) Het niveau van automatisering kan invloed hebben op de classificatie in termen van de eerder genoemde regel 11 in bijlage VIII van de MDR. In fase 2 is het beoogd doelgebruik vastgelegd dat na ontwikkeling van de software wordt opgenomen in een digitale bijsluiter, zie sectie 4.1.2. In aanvulling op het vastgelegde beoogd doelgebruik, moet uitgebreider worden vastgesteld wat de te verwachten effecten van het AIPA gebruik zijn op mogelijke relevante (gezondheids- en proces) uitkomsten (m.a.w. definieer het beoogd doeleind ofwel intended _use van het AIPA). (5.1.1b)_ **Box 5.1: Level of Automation** **Definitie Level of Automation (LoA) voor AI-systemen[17]** De Level of Automation (LoA) geeft weer hoe het AI-systeem werkt ten opzichte van de zorgverlener. Er is een schaal van 0 tot 3, waarbij 0 betekent dat het AI-systeem alleen suggesties geeft en 3 betekent dat het AI-systeem alleenstond beslissingen neemt. De drie belangrijkste niveaus zijn: - LoA 0 (adviserend). Het AI-systeem genereert suggesties of waarschuwingen die de zorgverlener kan overnemen of weigeren. De zorgverlener neemt de uiteindelijke beslissing. - LoA 1 (assistent). Het AI-systeem genereert suggesties of waarschuwingen en de zorgverlener moet handelen op basis daarvan. - LoA 2 (semi-autonom). Het AI-systeem neemt automatisch bepaalde beslissingen, maar de zorgverlener heeft de mogelijkheid om de beslissingen te bevestigen of te wijzigen. - LoA 3 (autonom). Het AI-systeem neemt autonome beslissingen en de zorgverlener heeft geen mogelijkheid om de beslissingen te beïnvloeden. **Eerder in praktijk is LoA 0 tot en met LoA 2.** _5.1.2 Risico's en onbedoelde effecten_ De potentiële risico's en onbedoelde effecten van het gebruik van AIPA in de medische praktijk zijn onderdeel van de vanzelfsprekende dobblegaarheid van verdere ontwikkelingen in de gezondheidszorg. Een voorbeeld is een teveel aan beschikbare informatie die zorgverleners overweldigt of onjuiste voorspellingen die leiden tot onnodige interventies of verkeerde beslissingen. Risico-Inventarisatie: Als onderdeel van de voorbereiding op de effectbeoordeling dient een risico-inventarisatie te worden uitgevoerd, waarbij mogelijke risico's en onbedoelde effecten van het AIPA gebruik in de medische praktijk worden geïdentificeerd. Het is belangrijk om systematische problemen in het zorgproces na te gaan, waardoor onverwachte beslissingen of prestaties kunnen ontstaan[18]. (5.1.2a) Deze inventarisatie dient zorgvuldig te worden opgesteld en omvat de identificatie van potentiële risico's en de ontwikkeling van strategieën om deze risico's te beperken en te beheersen. Het sterk wordt aanbevolen om de risicoïnvloedanalyse te koppelen aan een implementatieplan. (5.1.2b) Mens-machine interactie:De manier waarop zorgverleners en patiënten interactie hebben met AI-systemen kan de effectiviteit en veiligheid van het AIPA beïnvloeden. In fase 5 dient het proces van mens-machine interactie te worden gedefinieerd, inclusief hoe de zorgverlener de informatie van het AIPA interpretéért en gebruikt om beslissingen te nemen. (5.1.2c) Het is ook belangrijk om de mogelijkheden voor de zorgverlener om het AIPA te controleren of te corrigeren te beschouwen. In het ontwerp van de empirische studie moet worden nagegaan hoe het AIPA wordt ingebed in het bestaande zorgproces en hoe de zorgverlener met het systeem interacteert. (5.1.2d) De risico's en onbedoelde effecten moeten in de ontwerpfase van de effectbeoordelende studie worden meegenomen. (5.1.2e) **5.1.3 De ontwikkeling van een empirische studie-ontwerp voor effectbeoordeling** **Ontwerp van de empirische studie** De effectbeoordeling van een AIPA vereist een weloverwogen ontwerpproces voor de bijbehorende empirische studie. Het doel is om de impact van het AIPA op de gezondheidsuitkomsten en het medisch handelen te meten in een real-life setting. Een goed ontwerp is cruciaal voor de betrouwbaarheid en de relevantie van de resultaten. 1. **Definieer het beoogde doel en de researchvraag**. Duidelijk stellen welke aspecten van de impact en meerwaarde worden onderzocht, en welke specifieke researchvragen of hypothese zijn. 2. **Identificeer de belangrijke uitkomsten**. Dit kan variëren van klinische uitkomsten zoals mortaliteit en morbiditeit, via proces-uitkomsten zoals zorgstandaarden en tijdsduur, tot economische uitkomsten zoals kosten-efficiëntie. 3. **Selecteer de juiste study design**. Afhankelijk van de vraagstelling en de context kunnen verschillende study designs worden overwogen, zoals observationale studies, quasi-experimentele studies of randomisatiegebonden trials. 4. **Bepaal de populatie en de sample**. Definieer welke groepen worden opgenomen in de studie en bepaal de sample grootte op basis van statistische overwegingen. 5. **Definieer de interventie en de controle**. Beschrijf precies wat de interventie inhoudt, en bepaal welke controle of benchmark wordt gebruikt voor vergelijking. 6. **Deelnemer in- en uitsluitingscriteria bepalen**. Stel criteria op om deelnemers toe te laten of uit te sluiten uit de studie. 7. **Bepaal de tijdstap en de meetmomenten**. Definieer wanneer data worden verzameld en welke voormetingen en namagevingen nodig zijn. 8. **Plan de dataverzameling en -beheer**. Stel procedures op voor het verzamelen, beveiligen en beheren van de data. Het is belangrijk om rekening te houden met privacy- en gegevensbeschermingsregels. 9. **Analyseen plan opstellen**. Definieer welke statistische analyses zullen worden uitgevoerd om de researchvragen te beantwoorden. 10. **Mogelijke beperkingen en risico's beoordelen.** Bereid je voor op eventuele problemen en beperkingen in de studie en stel afzwakkende maatregelen voor. _5.1.4 Implementatie van de effectbeoordelende studie in medische praktijken._ De implementatie van de empirische studie in medische praktijken vereist zorgvuldige planning en coördinatie. Hiervoor zijn verschillende aspecten van belang: **Implementatieplan opstellen**. Een duidelijk implementatieplan is noodzakelijk om de studie succesvol uit te voeren. Dit plan moet alle stappen en activiteiten bevatten die nodig zijn voor de implementatie, inclusief het opzetten van de AIPA-software, het trainen van zorgverleners, en het verzamelen van data. **Pilot of run-in periode voorbereiden.** Voordat de studie op schaal wordt uitgevoerd, is het verstandig om een pilot of run-in periode te organiseren. Deze periode dient om problemen in de implementatie op te sporen en te verhelpen, zodat de hoofdstudie efficiënter kan verlopen. **Zorgverleners en patiënten betrekken.** Het is van cruciaal belang om zorgverleners en patiënten betrokken te houden bij de implementatie van de studie. Dit kan worden gedaan door hen te informeren over het doel en de werking van het AIPA, en door hun vragen en zorgen aan te horen. **Gebruik van implementatiemodels.** Er zijn verschillende implementatiemodels en -kaders die kunnen worden gebruikt om de implementatie van het AIPA in de medische praktijk te faciliteren. Een goed kader helpt bij het structureel opzetten en uitvoeren van de implementatie. **5.2 Health technology assessment** Sterk aanbevolen wordt om in fase 5 ook een modelmatige impactstudie, ofwel een modelmatige Health Technology Assessment (HTA), uit te voeren. (5.2a) Dat wil zeggen, dat men door middel van een mathematisch model (bijv. een Markov model) een objectieve analyse van de verwachte kosten en baten (meerwaarde) van introductie van het AIPA in de medische praktijk maakt t.o.v. de huidige reguliere zorg als benchmark of controle[2 22 23]. Het resultaat van dergelijke HTA zal in toenemende mate een rol spelen in het goedkeuren van digitale gezondheidszorg in Nederland en de EU. Wanneer vergoeding noodzakelijk is, is een passende HTA daarom nodig om voor deze vergoeding, of conditionele vergoeding, van het gebruik in aanmerking te komen. In het rapport ‘Waardevolle AI voor gezondheid’ is een routekaart voor de uitvoering van een HTA voor AIPA software bijgevoegd. Deze routekaart geeft een overzicht van de kosten en de mogelijke financieringsbronnen van HTA onderzoek voor AI en dus ook voor een AIPA[24 25]. _5.3 Onzekerheid, risico's en onverwachte uitkomsten_ _5.3.1 Onzekerheid in voorspellingen_ Bronnen van onzekerheid van toepassing in fase 5 kunnen zijn: de toepasbaarheid van het AIPA in een andere medische context dan waarin het AIPA model oorspronkelijk is ontwikkeld (fase 2) of gevalideerd (fase 3), veranderingen in de lokale zorg- of werkprocessen en een systematische verandering in de mens-machine interactie zoals beschreven in 5.1.1, stap 3. De fabrikant moet expliciteren welke bronnen van onzekerheid bestaan na uitvoeren van de effectbeoordeling en welke mitigerende maatregelen er zijn genomen om deze onzekerheden die men kan tegenkomen bij introductie in de dagelijkse zorgpraktijk te minimaliseren. (5.3.1a) De ontwikkelaar en eindgebruikers dienen hierbij in het bijzonder aandacht besteden aan de transporteerbaarheid van het AIPA naar een andere medische setting en/of context[8 11 12 26]. **5.4 Incidenten en incident management regelen** **Audit en monitoring** De zorgverleners die het AIPA in hun routine gebruiken, zijn belangrijke actoren bij het rapporteren van incidenten of problemen die tijdens de implementatie worden geconstateerd. (5.4a) Het is belangrijk dat zij worden opgeleid om incidenten te herkennen en te melden, en dat er een duidelijk incidentenbeheersysteem is ingesteld. (5.4b) Het incidentenbeheersysteem moet afstemmen op het post-market surveillance systeem van de fabrikant, zodat de fabrikant op de hoogte is van mogelijke problemen of fouten in het AIPA en de bijbehorende software. (5.4c) Het incidentenbeheersysteem moet ook aansluiten bij het bestaande lokaal veiligheidsmanagement systeem, zodat er een geïntegreerde benadering is voor het beheer van risicoïnvloeden en veiligheid in de zorginstelling. (5.4d) _5.5 Resultaten uit fase 5 overbrengen naar andere fasen._ De resultaten van fase 5 zijn van groot belang voor de toekomstige ontwikkeling en implementatie van het AIPA. Ze dienen als input voor het bijwerken van de digitale bijsluiter (zie fase 4), de voorbereiding van de implementatie in andere zorginstellingen (fase 6), en de ontwikkeling van verdere versies of updates van het AIPA (fase 2 en 3). Daarnaast kunnen deze resultaten gebruikt worden voor het opstellen van een business case of om te voldoen aan financiële eisen voor vergoeding (zie fase 5). Het is belangrijk dat de fabrikant en de zorgorganisatie nauw samenwerken om deze resultaten optimaliter te gebruiken en om de kwaliteit en veiligheid van het AIPA voortdurend te waarborgen.]=]
+--------------------------------------------------------------------------------
+Model: nvidia/Llama-3.1-Nemotron-70B-Instruct
+Antwoord:
+{
+  "antwoord": "Fase 5 van de leidraad gaat over het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op respectievelijk de beoogde medische praktijk of context, het medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep. Ook een Health Technology Assessment vindt plaats in deze fase.",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c",
+      "bronnen": [2, 8, 9, 10, 11, 12, 13, 14, 15, 16, 3, 4, 5, 6, 7]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: Qwen/Qwen2.5-72B-Instruct
+Antwoord:
+{
+  "antwoord": "Fase 5 van de Leidraad gaat over het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software. Dit omvat de evaluatie van de effecten van het AIPA op de beoogde medische praktijk, het medisch handelen en de gezondheidsuitkomsten van de doelgroep (bijvoorbeeld de patiënt, cliënt of burger). Bovendien vindt er een Health Technology Assessment plaats in deze fase.",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c", 
+      "bronnen": [2]
+    },
+    {
+      "id": "32c51318-6bcc-4e01-8a79-1912f42cbcd6",
+      "bronnen": [20, 21, 22, 23, 24, 25]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: 01-ai/Yi-34B-Chat
+Antwoord:
+{
+  "antwoord": "Fase 5 van de Leidraad AI in de Zorg beslaat het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op de beoogde medische praktijk of context, het medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep. Dit omvat onder andere de effectbeoordeling en de Health Technology Assessment (HTA).",
+  "chunks": [
+    {
+      "id": "5650e469-71ad-4264-a470-fdcf4dc26c4c",
+      "bronnen": []
+    },
+    {
+      "id": "32c51318-6bcc-4e01-8a79-1912f42cbcd6",
+      "bronnen": [20, 21, 2, 22, 23]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
