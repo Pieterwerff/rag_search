@@ -1,0 +1,110 @@
+Dit bestand bevat de resultaten van het volgende proces:
+1. Inladen van de leidraad uit een CSV-bestand.
+2. Opsplitsen van de tekst in chunks op basis van de 'paragraph'-strategie.
+3. Opslaan van deze chunks in een vector database.
+4. Ophalen van relevante chunks op basis van de vraag: 'Hoe lang is Mark Rutte?'.
+5. Queryen van verschillende LLM's met dezelfde input en verzamelen van hun antwoorden.
+
+Model: gpt-4o-mini
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+--------------------------------------------------------------------------------
+Model: gpt-3.5-turbo
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+--------------------------------------------------------------------------------
+Model: meta-llama/Llama-3.3-70B-Instruct
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+--------------------------------------------------------------------------------
+Model: microsoft/phi-4
+Antwoord:
+```json
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+```
+
+De edgeselen schrijf je gevraagde vraag niet te maken hebben. In plaats daarvan richten ze zich op de Leidraad AI in de zorg en zijn auteurs en inhoud.
+--------------------------------------------------------------------------------
+Model: deepseek-ai/DeepSeek-V3
+Antwoord:
+```json
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+```
+--------------------------------------------------------------------------------
+Model: NousResearch/Hermes-3-Llama-3.1-405B
+Antwoord:
+```json
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+```
+--------------------------------------------------------------------------------
+Model: Qwen/QwQ-32B-Preview
+Antwoord:
+Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.
+
+JSON-object:
+
+```json
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag."
+}
+```
+
+Begronding: De provided chunks zijn over het algemeen gericht op de ontwikkeling, validatie en implementatie van AI in de zorg, met specifieke aandacht voor het AIPA-project. Er wordt gewerkt aan data verzameling, software-ontwikkeling, validatie van AI-modellen en de evaluatie van hun impact in de praktijk. Vanaf deze materiaal is geen informatie te putten over de leeftijd van Mark Rutte, aangezien dit thema het verband met de AI en de zorgsector mist. кнопк
+
+--------------------------------------------------------------------------------
+Model: nvidia/Llama-3.1-Nemotron-70B-Instruct
+Antwoord:
+Based op de ontvangen chunks, kan ik geen antwoord geven op de vraag "Hoe lang is Mark Rutte?" aangezien de chunks informatie bevatten over de Leidraad AI in de zorg, auteurs, hoofdstukken en bronnen, maar geen enkele verwijzing naar Mark Rutte of zijn lengte.
+
+Hier is het antwoord in JSON-formaat:
+
+```
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+```
+
+Note: Aangezien er geen relevantie is tussen de chunks en de vraag, is de `chunks`-lijst leeg.
+--------------------------------------------------------------------------------
+Model: Qwen/Qwen2.5-72B-Instruct
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+--------------------------------------------------------------------------------
+Model: 01-ai/Yi-34B-Chat
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+--------------------------------------------------------------------------------
+Model: databricks/dbrx-instruct
+Antwoord:
+```json
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+```
+--------------------------------------------------------------------------------

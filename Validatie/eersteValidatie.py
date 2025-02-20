@@ -1,3 +1,7 @@
+# Voeg de bovenliggende map toe aan sys.path
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from preprocessing.chunking import chunk_file
 from llm_calls.api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
@@ -29,10 +33,10 @@ storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Stap 1: Laad leidraad uit CSV in een pandas DataFrame ---
-document_df = pd.read_csv(r'../brondocumenten\hoofstukken.csv')
+document_df = pd.read_csv(r'brondocumenten\hoofstukken.csv')
 
 # Vaste vraag
-user_query = "Waar gaat fase 5 van de leidraad over?"
+user_query = "Wat is de sociale impact van de technische robuustheid van mijn AI-model?"
 
 # --- Stap 2: Chunk het document op volgens de ingestelde strategie ---
 chunks = chunk_file(document_df, chunk_size=chunk_size, chunking_strategy=chunking_strategy)
@@ -50,7 +54,7 @@ for current_llm in llm_list:
     results[current_llm] = response
 
 # --- Stap 6: Schrijf de resultaten naar een tekstbestand ---
-with open("resultaten.txt", "w", encoding="utf-8") as file:
+with open("resultatenIrrelevanteQuery.txt", "w", encoding="utf-8") as file:
     file.write("Dit bestand bevat de resultaten van het volgende proces:\n")
     file.write("1. Inladen van de leidraad uit een CSV-bestand.\n")
     file.write("2. Opsplitsen van de tekst in chunks op basis van de 'paragraph'-strategie.\n")
