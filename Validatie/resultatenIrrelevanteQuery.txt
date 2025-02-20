@@ -1,0 +1,154 @@
+Dit bestand bevat de resultaten van het volgende proces:
+1. Inladen van de leidraad uit een CSV-bestand.
+2. Opsplitsen van de tekst in chunks op basis van de 'paragraph'-strategie.
+3. Opslaan van deze chunks in een vector database.
+4. Ophalen van relevante chunks op basis van de vraag: 'Wat is de sociale impact van de technische robuustheid van mijn AI-model?'.
+5. Queryen van verschillende LLM's met dezelfde input en verzamelen van hun antwoorden.
+
+Model: gpt-4o-mini
+Antwoord:
+{
+  "antwoord": "Technische robuustheid van een AI-model speelt een belangrijke rol in de sociale impact, omdat het onderzoek naar technische robuustheid de betrouwbaarheid van het model in verschillende scenario's en toepassingen waarborgt. Dit kan leiden tot een grotere acceptatie en vertrouwen van zorgverleners en patiënten in de AI-technologie, waardoor de zorgkwaliteit verbetert en de kans op negatieve uitkomsten vermindert [19].",
+  "chunks": [
+    {
+      "id": "1c24a727-b3b7-4817-9ed7-0db9dee6346d",
+      "bronnen": [19]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: gpt-3.5-turbo
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag."
+}
+--------------------------------------------------------------------------------
+Model: meta-llama/Llama-3.3-70B-Instruct
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+--------------------------------------------------------------------------------
+Model: microsoft/phi-4
+Antwoord:
+```json
+{
+  "antwoord": "De technische robuustheid van een AI-model heeft een significante sociale impact, vooral binnen de context van zorg en medische toepassingen. Door de robuustheid van het model te waarborgen, wordt ervoor gezorgd dat het model consistent en betrouwbaar functioneert, zelfs wanneer er variaties in input op de testset worden toegepast. Dit is cruciaal om risico's voor de gezondheid van patiënten te minimaliseren en een hoge kwaliteit van de zorg te waarborgen. Verschillende sensitivity-analyses, zoals 'Architectuur robuustheid' en 'Adversarial robuustheid', helpen bij het identificeren van zwakke punten die kunnen leiden tot misclassificaties of onjuiste diagnose, waardoor optimaal gebruik van de software mogelijk is zonder onbedoelde negatieve gevolgen [32c51318-6bcc-4e01-8a79-1912f42cbcd6, 1c24a727-b3b7-4817-9ed7-0db9dee6346d].",
+  "chunks": [
+    {
+      "id": "1c24a727-b3b7-4817-9ed7-0db9dee6346d",
+      "bronnen": [16, 17, 18, 19]
+    },
+    {
+      "id": "32c51318-6bcc-4e01-8a79-1912f42cbcd6",
+      "bronnen": [20, 21, 22, 23, 24, 25]
+    }
+  ]
+}
+```
+--------------------------------------------------------------------------------
+Model: deepseek-ai/DeepSeek-V3
+Antwoord:
+```json
+{
+  "antwoord": "De technische robuustheid van een AI-model heeft een belangrijke sociale impact, vooral in de medische context. Een robuust model draagt bij aan betrouwbare voorspellingen en minimaliseert risico's zoals ongelijkheid in behandeling of foutieve beslissingen. Dit ondersteunt de rechtvaardigheid en betrouwbaarheid van AI in de zorg, wat essentieel is voor het vertrouwen van patiënten en zorgverleners [14] [17]. Bovendien wordt aanbevolen om bij de ontwikkeling van het model diverse sensitiviteitsanalyses uit te voeren, zoals architectuur robuustheid en adversarial robuustheid, om de impact op de medische praktijk te waarborgen.",
+  "chunks": [
+    {
+      "id": "1c24a727-b3b7-4817-9ed7-0db9dee6346d", 
+      "bronnen": [14, 17]
+    }
+  ]
+}
+```
+--------------------------------------------------------------------------------
+Model: NousResearch/Hermes-3-Llama-3.1-405B
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": []
+}
+--------------------------------------------------------------------------------
+Model: Qwen/QwQ-32B-Preview
+Antwoord:
+Nadat ik de gevraagde chunks heb geïndiceerd en gestructureerd, zijn de bronnen niet rechtstreeks toegankelijk. Daarom enkele punten op het gebied van sociale impact en technische robuustheid van AI-modellen.
+
+1. **Robuustheid en Voorspelbaarheid:** De robuustheid van AI-modellen is cruciaal voor hun betrouwbaarheid en veiligheid, vooral in toepassingen die mensen直接影响，如医疗、交通和金融。一个模型如果在不同情况或数据变化下都能保持稳定性能，那么它更能被信任和依赖。
+
+2. **Transparantie en Verantwoording:** Technische robuustheid kan ook betrekking hebben op de transparantie van het model. Als het model beslissingen neemt op basis van ondoorgrondelijke of opzettelijk verwarde patronen in de data, kan dit leiden tot onjuiste ofiscriminerende uitkomsten. Dit kan een negatieve impact hebben op de gebruikers van het systeem, vooral als het gaat om beslissingen die levens van mensen beïnvloeden.
+
+3. **Adaptiviteit en Flexibiliteit:** Robuuste AI-modellen zijn in staat om zich aan te passen aan veranderingen in de omgeving of in de data op welke ze trainen. Bijvoorbeeld, in medische toepassingen, waar nieuwe ziektes of mutaties kunnen opduiken, is het cruciaal dat de AI-modellen flexibel zijn en kunnen aanpassen aan deze nieuwe uitdagingen zonder dat er volledige herontwikkeling nodig is.
+
+4. **Veiligheid en Cyberbeveiliging:** In de context van technische robuustheid, is ook de mate waarin een AI-model tegen cyberaanvallen bestand is een belangrijk aspect. Als een model kwetsbaar is voor adversariale aanvallen, waarbij kleine veranderingen in de input geleid kunnen tot drastische veranderingen in de uitvoer, heeft dit potentiële ernstige gevolgen, vooral in critische infrastructuur of veiligheidsapplicaties.
+
+5. **Wereldbeeld en Bias:** AI-modellen leren uit de data die ze ontvangen, en als deze data bevat bias of een bepaald wereldbeeld, kan het model deze bias overnemen en versterken. Dit kan leiden tot ongelijke behandelingen of discriminatie op grond van bijvoorbeeld leeftijd, geslacht, ras of sociaal-economische地位。因此，确保模型的公平性和无偏见对于其社会影响至关重要。
+
+总结来说，AI-models的健壮性不仅关系到其技术性能，还直接影响到其在社会中的应用和接受度。通过确保模型的透明度、适应性、安全性和公平性，可以最大化其正面影响并最小化潜在风险。
+
+**Antwoord:**
+
+====
+**Antwoord**
+
+De sociale impact van de technische robuustheid van een AI-model is van essentieel belang en draagt bij aan de betrouwbaarheid, de veiligheid en de algemene acceptatie van het model in de maatschappij. Een robuust AI-model garandeert dat de voorspellingen en beslissingen die het genereert, consistent en nauwkeurig zijn, ondanks variaties in de invoerdata of aanvullende omstandigheden. Dit vraagt om een diep begrip van de modelarchitectuur, inputvalidatie en de manier waarop het model reageert op onverwachte of aangepaste data. 
+
+Bovendien is de robuustheid essentieel voor de ethische en morele aspekten van AI. Een model dat vatbaar is voor adversariale aanvallen of gebrekkig is in het vermogen om verschillende scenario's te hanteren, kan potentiële scallofdeskundigen te misleiden of leiden tot ongelijke behandelingen. Hierdoor kan het public trust in AI-systemen worden ondermijnd.
+
+更多針對技術性健壯性的建議和實踐在AI的開發和部署中是必要的，以確保該技術的正面影響並減輕潛在風險。這包括定期的model validation, sensitiviteitsanalyses, en het implementeren van measures to mitigate gegenereerde biases.
+
+====
+**JSON**
+
+```json
+{
+  "antwoord": "De sociale impact van de technische robuustheid van een AI-model is van essentieel belang en draagt bij aan de betrouwbaarheid, de veiligheid en de algemene acceptatie van het model in de maatschappij. Een robuust AI-model garandeert dat de voorspellingen en beslissingen die het genereert, consistent en nauwkeurig zijn, ondanks variaties in de invoerdata of aanvullende omstandigheden. Dit vraagt om een diep begrip van de modelarchitectuur, inputvalidatie en de manier waarop het model reageert op onverwachte of aangepaste data. \n\nBovendien is de robuustheid essentieel voor de ethische en morele aspekten van AI. Een model dat vatbaar is voor adversariale aanvallen of gebrekkig is in het vermogen om verschillende scenario's te hanteren, kan potentiële schade aanrichten of leiden tot ongelijke behandelingen. Hierdoor kan het public trust in AI-systemen worden ondermijnd.\n\nMeerdere voorbeelden van technische robuustheid in AI zijn belangrijk voor de ontwikkeling en implementatie van deze technologieën, om hun positieve invloed te maximaliseren en mogelijke risico's te minimaliseren. Dit omvat regelmatige modelvalidatie, sensitiviteitsanalyses en het implementeren van maatregelen om gegenereerde biases te verminderen.",
+  "chunks": []
+}
+```
+
+====
+--------------------------------------------------------------------------------
+Model: nvidia/Llama-3.1-Nemotron-70B-Instruct
+Antwoord:
+{
+  "antwoord": "Op basis van de meegekregen chunks kan ik geen antwoord geven op deze vraag.",
+  "chunks": [
+    ]
+}
+--------------------------------------------------------------------------------
+Model: Qwen/Qwen2.5-72B-Instruct
+Antwoord:
+{
+  "antwoord": "De technische robuustheid van een AI-model in de zorg heeft verschillende sociale impacten. Enerzijds draagt technische robuustheid bij aan de betrouwbaarheid en veiligheid van het model. Dit betekent dat het model betrouwbaar werkt in verschillende situaties en dat de voorspellingen consistent en nauwkeurig zijn, wat essentieel is voor de kwaliteit van de zorg. Anderzijds kan de robuustheid bijdragen aan de vertrouwbijzering bij zowel zorgverleners als patiënten. Echter, als het model niet robuust is, kunnen er fouten of onteringigheden optreden, wat leidt tot onjuiste diagnostiek of behandelingen met mogelijks nadelige gevolgen voor de patiënt. Daarnaast kan de robuustheid van het model ook een rol spelen in de acceptatie en integratie van AI in de zorg, wat uiteindelijk kan bijdragen aan de verbetering van de gezondheidsuitkomsten van de bevolking [19].",
+  "chunks": [
+    {
+      "id": "1c24a727-b3b7-4817-9ed7-0db9dee6346d", 
+      "bronnen": [19]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: 01-ai/Yi-34B-Chat
+Antwoord:
+{
+  "antwoord": "De sociale impact van de technische robuustheid van een AI-model in de zorg is direct gerelateerd aan de betrouwbaarheid en veiligheid van de modelvoorspellingen. Technische robuustheid:::::::::::: BLOKHAKEN: [] betreft de vermogen van een model om consistente en nauwkeurige voorspellingen te blijven leveren, ondanks eventuele variaties of storingen in de invoerdata. Een robuust AI-model kan bijdragen aan een verbeterde gezondheidszorg door minimaal risico op foutieve voorspellingen te lopen, die mogelijk schadelijk kunnen zijn voor patiënten. Daarnaast kan robuustheid bijdragen aan het vertrouwen van zorgverleners en patiënten in de AI-technologie. ::::::::::BLOKHAKEN: [19]",
+  "chunks": [
+    {
+      "id": "1c24a727-b3b7-4817-9ed7-0db9dee6346d", 
+      "bronnen": [19]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
+Model: databricks/dbrx-instruct
+Antwoord:
+{
+  "antwoord": "De sociale impact van technische robuustheid van een AI-model in de zorg kan significant zijn. Technische robuustheid is cruciaal om te zorgen dat het AI-model consistent en betrouwbaar werkt, zelfs bij variaties in de invoergegevens of in de operationele context. Een robuust model vermindert de kans op fouten of misvoorspellingen, wat direct kan bijdragen aan het verbeteren van patiëntensafety en de kwaliteit van de zorg. Daarnaast kan technische robuustheid de betrouwbaarheid en acceptatie van het model door zorgverleners en patiënten verhogen, wat op zijn beurt kan leiden tot een betere patiëntenervaring en efficiëntere zorgverlening. De robuustheid van het AI-model moet daarom zorgvuldig worden onderzocht en vastgelegd, vooral voor modellen die in de externe validatie worden gebruikt [19].",
+  "chunks": [
+    {
+      "id": "1c24a727-b3b7-4817-9ed7-0db9dee6346d",
+      "bronnen": [19]
+    }
+  ]
+}
+--------------------------------------------------------------------------------
