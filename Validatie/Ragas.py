@@ -57,7 +57,7 @@ expected_responses = [
 
 collection = "leidraad_ai_in_zorg" + "_" + chunking_strategy
 
-def generate_dataset_from_own_queries (sample_queries,expected_responses):
+def generate_dataset_from_own_queries (sample_queries,expected_responses, llm):
     dataset = []
 
     # haal voor alle queries relevante chunks op
@@ -86,7 +86,7 @@ def generate_dataset_from_own_queries (sample_queries,expected_responses):
     return dataset
 
 
-dataset = generate_dataset_from_own_queries(sample_queries,expected_responses)
+dataset = generate_dataset_from_own_queries(sample_queries,expected_responses, llm=llm)
 
 # maak dataset aan, kies een llm om mee te evalueren en start de evaluatie.
 evaluation_dataset = EvaluationDataset.from_list(dataset)
