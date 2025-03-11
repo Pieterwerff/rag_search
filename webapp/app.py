@@ -7,9 +7,10 @@ from flask import Flask, json, request, render_template
 from preprocessing.chunking import chunk_file
 from llm_calls.api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
+from agents.question_preprocessing import preprocessor_agent
 import pandas as pd
 import json
-import pandas as pd
+
 
 
 # --- Settings ---
@@ -21,7 +22,7 @@ storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step: Load markdown Document ---
-document_df = pd.read_csv(r'brondocumenten\hoofstukken.csv')
+document_df = pd.read_csv('brondocumenten/hoofstukken.csv')
 
 # --- Step 2: Chunk Document using different types of chunking strategies ---
 
@@ -93,6 +94,12 @@ def extract_named_sources(response, given_chunks):
 def index():
     if request.method == "POST":
         user_query = request.form["question"]
+        use_query_preprocessor = request.form.get("use_query_translator") == "true"  # Checkbox returns 'true' if checked
+
+        if use_query_preprocessor:
+            user_query = preprocessor_agent(user_query)
+            print("Translated question:", user_query)
+
         chunks = get_chunks(collection, user_query, storageStrategy, n_chunks=int(request.form["chunks"]))
         llm_response = query_llm(retrieved_object=chunks, user_query=user_query, llm=llm)
 
