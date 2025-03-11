@@ -25,7 +25,7 @@ mogelijke opties voor llm:
 '''
 
 leidraad = 'leidraad_ai_in_zorg'
-storageStrategy = "Qdrant"
+storageStrategy = "ChromaDB"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step: Laad leidraad uit csv in pandas dataframe ---

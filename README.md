@@ -52,7 +52,7 @@ Deze tool is een Retrieval-Augmented Generation (RAG)-gebaseerde applicatie die 
 
 ### 5. Webinterface
 
-* Bestand: [webapp/app.py](cci:7://file:///c:/Users/jangl/OneDrive/Documents/GitHub/rag_search/webapp/app.py:0:0-0:0)
+* Bestand: [webapp/app.py]
 * Flask-webapplicatie die gebruikers toelaat vragen te stellen via een eenvoudige interface:
 	+ Indexpagina: Gebruikers kunnen een vraag stellen.
 	+ Resultpagina: Toont het antwoord van de LLM en de bijbehorende bronnen.

@@ -93,9 +93,8 @@ def extract_named_sources(response, given_chunks):
 def index():
     if request.method == "POST":
         user_query = request.form["question"]
-        chunks = get_chunks(collection, user_query, storageStrategy, n_chunks=request.form["chunks"])
+        chunks = get_chunks(collection, user_query, storageStrategy, n_chunks=int(request.form["chunks"]))
         llm_response = query_llm(retrieved_object=chunks, user_query=user_query, llm=llm)
-
 
         sources = extract_named_sources(llm_response, chunks)
         print(sources)

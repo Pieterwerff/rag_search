@@ -50,7 +50,7 @@ expected_responses = [
     "Continue monitoren van het AIPA is een belangrijk onderdeel van kwaliteitsmanagement en een vereiste vanuit de MDR. Voor de inrichting van een kwaliteitsmanagementsysteem conform MDR verwijzen we naar ISO 13485 Medical devices - Quality management systems - Requirements for regulatory purposes.",
     "Het bepalen van de impact of meerwaarde van het gebruik van het AIPA als onderdeel van de software op respectievelijk de beoogde medische praktijk of context , het medisch handelen en de gezondheidsuitkomsten van de beoogde doelgroep (bijv. de patiënt, cliënt of burger)",
     "In het geval van ontwikkeling (van de software met AIPA) binnen een zorganisatie",
-    "In de computer assisted en joint decision making categorieën",
+    "De meeste AIPA's in softwaretoepassingen bevinden zich tot nu toe in de 'computer assisted' of 'joint decision making' categorie",
     "Er moet een vergelijkende studie worden uitgevoerd waarin de effecten van het gebruik van het AIPA worden afgezet tegen dezelfde context waarin zoveel mogelijk dezelfde zorgprocessen worden toegepast zonder gebruik van het AIPA",
     "ISO 13485 Medical devices - Quality management systems - Requirements for regulatory purposes"
 ]
