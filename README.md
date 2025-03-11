@@ -103,9 +103,13 @@ Deze tool is een Retrieval-Augmented Generation (RAG)-gebaseerde applicatie die 
 ## Gebruik
 -----
 
+### Installeren van dependencies
+
+* Installeer de vereiste dependencies met: `pip install -r requirements.txt`
+
 ### Via de webinterface
 
-* Run app.py, ga in je browser naar http://127.0.0.1:5000/
+* Run `app.py`, ga in je browser naar http://127.0.0.1:5000/
 * Open de indexpagina.
 * Stel een vraag in het tekstveld en geef aan hoeveel chunks op moeten worden gehaald.
 * Ontvang een antwoord samen met relevante bronnen op de resultpagina.
@@ -113,7 +117,6 @@ Deze tool is een Retrieval-Augmented Generation (RAG)-gebaseerde applicatie die 
 ### Via main.py
 
 * Gebruik `main.py` om de pipeline te testen en te debuggen: `python main.py`
-
 
 ## Toekomstige verbeteringen
 -------------------------
