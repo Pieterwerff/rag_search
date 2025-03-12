@@ -18,14 +18,14 @@ llm_list = [
     "gpt-4o-mini",
     "gpt-3.5-turbo",
     "meta-llama/Llama-3.3-70B-Instruct",
-    "microsoft/phi-4",
+    # "microsoft/phi-4", - geeft geen json mee
     "deepseek-ai/DeepSeek-V3",
     "NousResearch/Hermes-3-Llama-3.1-405B",
-    "Qwen/QwQ-32B-Preview",
-    "nvidia/Llama-3.1-Nemotron-70B-Instruct",
+    # "Qwen/QwQ-32B-Preview", - sprak ineens chinees
+    # "nvidia/Llama-3.1-Nemotron-70B-Instruct", - geeft geen geldige json mee
     "Qwen/Qwen2.5-72B-Instruct",
     "01-ai/Yi-34B-Chat",
-    "databricks/dbrx-instruct"
+    # "databricks/dbrx-instruct" - geeft geen geldige json mee
 ]
 
 leidraad = 'leidraad_ai_in_zorg'
