@@ -4,7 +4,7 @@ from vector_storage import store_chunks, get_chunks
 # from agents.language_agent import language_agent
 # from preprocessing.agentic_chunker import chunk_file_with_metadata 
 import pandas as pd
-from agents.language_agent import language_agent
+from agents.question_preprocessing import preprocessor_agent
 
  # --- Settings ---
 chunk_size = 1000
@@ -39,7 +39,7 @@ user_query = input("Stel je vraag: ")
 print("Question asked:" + user_query)
 
 if use_query_translator == True:
-    user_query = language_agent(user_query)
+    user_query = preprocessor_agent(user_query)
     print("Translated question:" + user_query)
 
 # --- Step: Chunk Document using different types of chunking strategies ---
