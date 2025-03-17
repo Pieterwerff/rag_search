@@ -157,7 +157,7 @@ def query_llm(retrieved_object, user_query, llm):
             response = requests.post(endpoint, headers=headers, json=data).json()
         except Exception as e:
             response = {"opgegeven llm is niet gevonden": str(e)}
-        print (response)
+        # print (response)
         return response['choices'][0]['message']['content']
 
 

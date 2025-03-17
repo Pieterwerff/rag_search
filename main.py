@@ -8,7 +8,7 @@ import pandas as pd
 # --- Settings ---
 chunk_size = 1000
 chunking_strategy = 'paragraph' 
-llm = 'gpt-4o-mini' 
+llm = 'deepseek-ai/DeepSeek-V3' 
 '''
 mogelijke opties voor llm:
     - gpt-4o-mini

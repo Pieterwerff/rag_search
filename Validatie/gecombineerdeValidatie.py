@@ -98,12 +98,7 @@ expected_responses = [
 # --- Stap 1: Laad leidraad uit CSV in een pandas DataFrame ---
 document_df = pd.read_csv(r'brondocumenten\hoofstukken.csv')
 
-# --- Stap 2: Precompute relevant chunks per sample query ---
-relevant_chunks_dict = {}
-for query in sample_queries:
-    relevant_chunks = [chunk.payload['document'] for chunk in get_chunks(collection, query, storageStrategy, n_chunks=10)]
-    relevant_chunks_dict[query] = relevant_chunks
-    print(f"Precomputed relevant chunks for query: {query}")
+
 
 import os
 import json
@@ -113,52 +108,59 @@ from dotenv import load_dotenv
 load_dotenv()
 os.environ["RAGAS_APP_TOKEN"] = os.getenv("RAGAS_APP_TOKEN")
 
-# --- Stap 3: Loop over alle LLM's en voer de evaluatie uit ---
-for llm in llm_list:
-    print(f"\nEvaluating with LLM: {llm}")
-    dataset = []
-    for query, reference in zip(sample_queries, expected_responses):
-        # Gebruik de vooraf berekende relevante chunks
-        relevant_docs = relevant_chunks_dict[query]
-        response = query_llm(relevant_docs, query, llm)
-        try:
-            object_response = json.loads(response)
-            responseText = object_response.get("antwoord")
-        except json.JSONDecodeError:
-            print(f"Kon de JSON-response niet parsen van {llm} voor query '{query}': {response}")
-            print("Ga verder met ongeparsede response")
-            responseText = response
+for nchunks in [11, 13, 15, 17, 19]:
+    # --- Stap 2: Precompute relevant chunks per sample query ---
+    relevant_chunks_dict = {}
+    for query in sample_queries:
+        relevant_chunks = [chunk.payload['document'] for chunk in get_chunks(collection, query, storageStrategy, n_chunks=nchunks)]
+        relevant_chunks_dict[query] = relevant_chunks
+        print(f"Precomputed relevant chunks for query: {query}")
+    # --- Stap 3: Loop over alle LLM's en voer de evaluatie uit ---
+    for llm in llm_list:
+        print(f"\nEvaluating with LLM: {llm}")
+        dataset = []
+        for query, reference in zip(sample_queries, expected_responses):
+            # Gebruik de vooraf berekende relevante chunks
+            relevant_docs = relevant_chunks_dict[query]
+            response = query_llm(relevant_docs, query, llm)
+            try:
+                object_response = json.loads(response)
+                responseText = object_response.get("antwoord")
+            except json.JSONDecodeError:
+                print(f"Kon de JSON-response niet parsen van {llm} voor query '{query}'")
+                print("Ga verder met ongeparsede response")
+                responseText = response
 
-        dataset.append({
-            "user_input": query,
-            "retrieved_contexts": relevant_docs,
-            "response": str(responseText),
-            "reference": reference
-        })
-        print(f"Query toegevoegd aan eval-dataset voor {llm}: {query}")
-    
-    # Maak het evaluatiedataset aan en voer de evaluatie uit
-    evaluation_dataset = EvaluationDataset.from_list(dataset)
-    # voor een eerlijke vergelijking gebruiken we gpt-4o-mini voor elke evaluatie
-    evaluator_llm = LangchainLLMWrapper(ChatOpenAI(model_name="gpt-4o-mini", temperature=0))
-    result = evaluate(
-        dataset=evaluation_dataset,
-        metrics=[Faithfulness(), FactualCorrectness()],
-        llm=evaluator_llm
-    )
-    print(f"Evaluatieresultaat voor {llm}:")
-    print(result)
-    
-    # Converteer het resultaat naar een pandas DataFrame
-    result_df = result.to_pandas()
-    
-    # Upload het resultaat (zorg dat RAGAS_APP_TOKEN is ingesteld in je .env-bestand)
-    result.upload()
+            dataset.append({
+                "user_input": query,
+                "retrieved_contexts": relevant_docs,
+                "response": str(responseText),
+                "reference": reference
+            })
+            print(f"Query toegevoegd aan eval-dataset voor {llm}: {query}")
+        
+        # Maak het evaluatiedataset aan en voer de evaluatie uit
+        evaluation_dataset = EvaluationDataset.from_list(dataset)
+        # voor een eerlijke vergelijking gebruiken we gpt-4o-mini voor elke evaluatie
+        evaluator_llm = LangchainLLMWrapper(ChatOpenAI(model_name="gpt-4o-mini", temperature=0))
+        result = evaluate(
+            dataset=evaluation_dataset,
+            metrics=[Faithfulness(), FactualCorrectness()],
+            llm=evaluator_llm
+        )
+        print(f"Evaluatieresultaat voor {llm} met {nchunks} chunks:")
+        print(result)
+        
+        # Converteer het resultaat naar een pandas DataFrame
+        result_df = result.to_pandas()
+        
+        # Upload het resultaat (zorg dat RAGAS_APP_TOKEN is ingesteld in je .env-bestand)
+        # result.upload()
 
-    # Schrijf de resultaten naar een CSV-bestand (zonder index)
-    csv_filename = f"./validatieresultaten/evaluation_results_{llm.replace('/', '')}_recursiveChunking.csv"
-    result_df.to_csv(csv_filename, index=False)
-    print(f"Evaluatieresultaat voor {llm} is opgeslagen in {csv_filename}")
+        # Schrijf de resultaten naar een CSV-bestand (zonder index)
+        csv_filename = f"./validatieresultaten/aantalchunksvalidatie/evaluation_results_{llm.replace('/', '')}_{nchunks}_chunks.csv"
+        result_df.to_csv(csv_filename, index=False)
+        print(f"Evaluatieresultaat voor {llm} is opgeslagen in {csv_filename}")
     
 
 
