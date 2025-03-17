@@ -7,17 +7,34 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-def chunk_recursive (document: str, chunk_size: int) -> list: 
-
+def chunk_recursive(document: pd.DataFrame, chunk_size: int) -> pd.DataFrame:
     text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=chunk_size,
-    chunk_overlap=100,
-    length_function=len,
-    is_separator_regex=False,
-    )   
+        chunk_size=chunk_size,
+        chunk_overlap=100,
+        length_function=len,
+        is_separator_regex=False,
+    )
+    
+    chunks_df = pd.DataFrame()
+    
+    for idx, row in document.iterrows():
+        # Create chunks for the current row's content
+        doc_chunks = text_splitter.create_documents([row['content']])
+        
+        # Build a dataframe for each chunk while preserving chapter metadata
+        new_rows = pd.DataFrame([
+            {
+                'chapter_number': row['chapter_number'],
+                'chapter_name': row['chapter_name'],
+                'content': chunk.page_content
+            }
+            for chunk in doc_chunks
+        ])
+        
+        chunks_df = pd.concat([chunks_df, new_rows], ignore_index=True)
+    
+    return chunks_df
 
-    chunks = text_splitter.create_documents([document])
-    return chunks
 
 def chunk_paragraph(document: pd.DataFrame) -> pd.DataFrame:
     chunks = pd.DataFrame()

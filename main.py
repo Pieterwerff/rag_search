@@ -7,8 +7,8 @@ import pandas as pd
 
 # --- Settings ---
 chunk_size = 1000
-chunking_strategy = 'paragraph' # might become a list of strings to iterate through
-llm = 'gpt-4o-mini' # might become a list of strings to iterate through
+chunking_strategy = 'paragraph' 
+llm = 'gpt-4o-mini' 
 '''
 mogelijke opties voor llm:
     - gpt-4o-mini
@@ -25,7 +25,7 @@ mogelijke opties voor llm:
 '''
 
 leidraad = 'leidraad_ai_in_zorg'
-storageStrategy = "ChromaDB"
+storageStrategy = "Qdrant"
 embeddingStrategy = "text-embedding-ada-002"
 
 # --- Step: Laad leidraad uit csv in pandas dataframe ---
