@@ -48,7 +48,9 @@ query_mapping = {
 
 jargon_text = "\n".join([f'- "{k}" → "{v}"' for k, v in query_mapping.items()])
 
-def language_agent(user_query):
+
+def preprocessor_agent(user_query):
+
     """
     Translates the question based on a set of translations from regular language to specific professional language, for example: 
 
@@ -79,4 +81,6 @@ def language_agent(user_query):
         ]
     )
     print("Vertaald antwoord: " + response.choices[0].message.content)
+
     return response.choices[0].message.content
+

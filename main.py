@@ -1,14 +1,17 @@
 from preprocessing.chunking import chunk_file
 from llm_calls.api_calls import query_llm
 from vector_storage import store_chunks, get_chunks
-from agents.language_agent import language_agent
-from preprocessing.agentic_chunker import chunk_file_with_metadata 
+# from agents.language_agent import language_agent
+# from preprocessing.agentic_chunker import chunk_file_with_metadata 
 import pandas as pd
+from agents.question_preprocessing import preprocessor_agent
 
-# --- Settings ---
+ # --- Settings ---
 chunk_size = 1000
-chunking_strategy = 'paragraph' 
-llm = 'deepseek-ai/DeepSeek-V3' 
+chunking_strategy = 'paragraph' # might become a list of strings to iterate through
+llm = 'gpt-4o-mini' # might become a list of strings to iterate through
+use_query_translator = True
+
 '''
 mogelijke opties voor llm:
     - gpt-4o-mini
@@ -34,6 +37,11 @@ document_df = pd.read_csv(r'brondocumenten\hoofstukken.csv')
 # language = language_agent(input("Stel je vraag: "))
 # print(language)
 user_query = input("Stel je vraag: ")
+print("Question asked:" + user_query)
+
+if use_query_translator == True:
+    user_query = preprocessor_agent(user_query)
+    print("Translated question:" + user_query)
 
 # --- Step: Chunk Document using different types of chunking strategies ---
 

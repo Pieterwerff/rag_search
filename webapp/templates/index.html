@@ -41,15 +41,18 @@
 <div class="qa-tool">
     <h4>Stel een vraag over de leidraad</h4>
     <form method="POST">
+
         <input type="text" name="question" placeholder="Typ hier je vraag...">
         <input type="number" name="chunks" placeholder="Aantal chunks (alleen cijfers)" min="1" max="100">
         <div class="checkbox-container">
             <input type="checkbox" name="use_query_translator" value="true">
             <label for="use_query_translator">Vertaal vraag naar vakjargon</label>
         </div>        
+
         <button type="submit">Verstuur</button>
 
     </form>
+    
     <!-- Informatieknop -->
     <div class="info-icon" onclick="toggleInfoPopup()">i</div>
 
