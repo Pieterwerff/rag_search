@@ -41,12 +41,16 @@
 <div class="qa-tool">
     <h4>Stel een vraag over de leidraad</h4>
     <form method="POST">
-        <input type="text" name="question" placeholder="Typ hier je vraag..." required>
-        <input type="number" name="chunks" placeholder="Aantal chunks (alleen cijfers)" min="1" max="100" required>
-        <label>
-            <input type="checkbox" name="use_query_translator" value="true"> Vertaal vraag
-        </label>
+
+        <input type="text" name="question" placeholder="Typ hier je vraag...">
+        <input type="number" name="chunks" placeholder="Aantal chunks (alleen cijfers)" min="1" max="100">
+        <div class="checkbox-container">
+            <input type="checkbox" name="use_query_translator" value="true">
+            <label for="use_query_translator">Vertaal vraag naar vakjargon</label>
+        </div>        
+
         <button type="submit">Verstuur</button>
+
     </form>
     
     <!-- Informatieknop -->
@@ -56,10 +60,10 @@
     <div class="info-popup" id="infoPopup">
         <h3>Belangrijke informatie</h3>
         <p>
-            Om uw vraag te beantwoorden wordt gebruik gemaakt van Retrieval-Augmented Generation (RAG). De RAG gebruikt de leidraad om antwoorden te genereren in combinatie met een Large Language Model (LLM). Hoewel we ons best doen om accurate informatie te leveren, kan de RAG fouten maken. Controleer daarom altijd de gepresenteerde informatie.
+            Om uw vraag te beantwoorden wordt gebruik gemaakt van Retrieval-Augmented Generation (RAG). De RAG gebruikt de leidraad om antwoorden te genereren in combinatie met een Large Language Model (LLM). Hoewel we ons best doen om accurate informatie te leveren, kan een LLM fouten maken. Controleer daarom altijd de gepresenteerde informatie.
         </p>
         <p>
-            Gebruik de leidraad om zelf een goed geïnformeerde beslissing te nemen.
+            Het antwoord van deze tool biedt slechts een richtlijn en hulp bij het zoeken in de Leidraad. Gebruik de Leidraad om zelf een goed geïnformeerde beslissing te nemen.
         </p>
         <button onclick="toggleInfoPopup()">Sluiten</button>
     </div>

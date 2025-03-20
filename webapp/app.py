@@ -11,6 +11,9 @@ from agents.question_preprocessing import preprocessor_agent
 import pandas as pd
 import json
 
+import pandas as pd
+from agents.question_preprocessing import language_agent
+
 
 
 # --- Settings ---
@@ -94,10 +97,10 @@ def extract_named_sources(response, given_chunks):
 def index():
     if request.method == "POST":
         user_query = request.form["question"]
-        use_query_preprocessor = request.form.get("use_query_translator") == "true"  # Checkbox returns 'true' if checked
 
+        use_query_preprocessor = request.form.get("use_query_translator") == "true"
         if use_query_preprocessor:
-            user_query = preprocessor_agent(user_query)
+            user_query = language_agent(user_query)
             print("Translated question:", user_query)
 
         chunks = get_chunks(collection, user_query, storageStrategy, n_chunks=int(request.form["chunks"]))
